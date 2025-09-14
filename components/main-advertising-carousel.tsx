@@ -16,6 +16,13 @@ const mainBanners = [
     alt: "Laboratorios LEAC - Análisis clínicos especializados",
     link: "https://www.instagram.com/laboratorioleac/",
   },
+ {
+    id: "mendez-muebles-hogar",
+    name: "Mendez Muebles Hogar",
+    image: "/images/banners/mendez-muebles-hogar.jpg",
+    alt: "Mueblería, hogar, Deco, todo pino y más",
+    link: "https://www.instagram.com/mendezmuebleshogar/",
+  },
   {
     id: "rincon-natural",
     name: "Rincón Natural",
