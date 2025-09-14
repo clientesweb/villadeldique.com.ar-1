@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Villa del Dique Digital",
     images: [
       {
-        url: "/images/logo-villa-del-dique-digital.webp",
+        url: "/images/og/contacto-og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Contacto Villa del Dique Digital - Envía tu noticia",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contacto - Villa del Dique Digital",
     description: "Contacta con Villa del Dique Digital. Envía tu noticia o promociona tu negocio en nuestra comunidad.",
-    images: ["/images/logo-villa-del-dique-digital.webp"],
+    images: ["/images/og/contacto-og-image.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },

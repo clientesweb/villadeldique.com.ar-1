@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Villa del Dique Digital",
     images: [
       {
-        url: "/images/logo-villa-del-dique-digital.webp",
+        url: "/images/og/turismo-og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Turismo en Villa del Dique - Deportes náuticos y naturaleza",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Turismo en Villa del Dique - Guía Completa",
     description: "Descubre los mejores destinos, actividades y experiencias turísticas en Villa del Dique, Córdoba.",
-    images: ["/images/logo-villa-del-dique-digital.webp"],
+    images: ["/images/og/turismo-og-image.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },

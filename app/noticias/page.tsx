@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Villa del Dique Digital",
     images: [
       {
-        url: "/images/logo-villa-del-dique-digital.webp",
+        url: "/images/og/noticias-og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Villa del Dique - Noticias locales",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Noticias de Villa del Dique",
     description: "Las últimas noticias e información de Villa del Dique, Córdoba, Argentina.",
-    images: ["/images/logo-villa-del-dique-digital.webp"],
+    images: ["/images/og/noticias-og-image.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
