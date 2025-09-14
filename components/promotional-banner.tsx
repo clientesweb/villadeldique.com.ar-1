@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Copy, Heart, Instagram } from "lucide-react"
+import { Copy, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { toast } from "@/hooks/use-toast"
 
@@ -20,30 +20,21 @@ export default function PromotionalBanner() {
   return (
     <section className="relative">
       <div className="relative w-full">
-        <Image
-          src="/images/banner-promocional-villa-del-dique-digital.webp"
-          alt="¡Colaborá con nuestros Bomberos Voluntarios! - Tu aporte ayuda a sostener su labor y proteger a toda la comunidad"
-          width={1920}
-          height={400}
-          className="w-full h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 object-cover object-center"
-          priority
-        />
-
-        <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4">
-          <a
-            href="https://www.instagram.com/bomberosvilladeldique/?hl=es-la"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg px-3 py-2 sm:px-4 sm:py-3 hover:bg-white/80 transition-colors"
-          >
-            <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white p-1.5 sm:p-2 rounded-full">
-              <Instagram className="h-3 w-3 sm:h-4 sm:w-4" />
-            </div>
-            <span className="font-semibold text-brand-navy text-xs sm:text-sm md:text-base">
-              @bomberosvilladeldique
-            </span>
-          </a>
-        </div>
+        <a
+          href="https://www.instagram.com/bomberosvilladeldique/?hl=es-la"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block cursor-pointer"
+        >
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-promocional-villa-del-dique-digital-jctkNqvA4m5aLeT4OhCmTlBa0oy0cF.webp"
+            alt="¡Colaborá con nuestros Bomberos Voluntarios! - Tu aporte ayuda a sostener su labor y proteger a toda la comunidad"
+            width={1920}
+            height={400}
+            className="w-full h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 object-cover object-center hover:opacity-95 transition-opacity"
+            priority
+          />
+        </a>
 
         <div className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 sm:max-w-md md:max-w-lg lg:max-w-xl">
           <Accordion type="single" collapsible className="w-full">
@@ -53,9 +44,7 @@ export default function PromotionalBanner() {
                   <div className="bg-brand-navy text-white p-1.5 sm:p-2 rounded-full">
                     <Heart className="h-3 w-3 sm:h-4 sm:w-4" />
                   </div>
-                  <span className="font-semibold text-brand-navy text-left text-xs sm:text-sm md:text-base">
-                    DONAR
-                  </span>
+                  <span className="font-semibold text-brand-navy text-left text-xs sm:text-sm md:text-base">DONAR</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-3 py-3 sm:px-4 sm:py-4 bg-white/95 rounded-b-lg">
