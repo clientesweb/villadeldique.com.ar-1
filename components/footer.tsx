@@ -101,11 +101,19 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <div className="mb-2 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 space-y-4 md:space-y-0">
+            <div className="text-center md:text-left">
               <p>&copy; 2024 Villa del Dique Digital. Todos los derechos reservados.</p>
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2">
+                <Link href="/terminos" className="hover:text-white transition-colors">
+                  Términos y Condiciones
+                </Link>
+                <Link href="/licencia" className="hover:text-white transition-colors">
+                  Licencia MIT
+                </Link>
+              </div>
             </div>
-            <div>
+            <div className="text-center md:text-right">
               <p>
                 Sitio desarrollado por{" "}
                 <a
