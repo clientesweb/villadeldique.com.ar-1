@@ -21,7 +21,7 @@ export default function PromotionalBanner() {
     <section className="relative">
       <div className="relative w-full">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-promocional-villa-del-dique-digital.webp"
+          src="/images/banner-promocional-villa-del-dique-digital.webp"
           alt="¡Colaborá con nuestros Bomberos Voluntarios! - Tu aporte ayuda a sostener su labor y proteger a toda la comunidad"
           width={1920}
           height={400}
