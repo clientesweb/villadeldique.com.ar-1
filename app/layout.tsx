@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "Villa del Dique Digital",
     images: [
       {
-        url: "/images/logo-villa-del-dique-digital.webp",
+        url: "/images/og/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Villa del Dique Digital - Portal Oficial",
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Villa del Dique Digital - Portal Oficial",
     description: "Noticias, turismo y negocios de Villa del Dique, Córdoba, Argentina",
-    images: ["/images/logo-villa-del-dique-digital.webp"],
+    images: ["/images/og/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -160,8 +160,8 @@ export default function RootLayout({
                     email: "villadeldiquedigital@gmail.com",
                   },
                   sameAs: [
-                    "https://www.instagram.com/vivivilladeldique",
-                    "https://www.villadeldique.org",
+                    "https://www.instagram.com/villadeldique.com.ar",
+                    "https://www.villadeldique.com.ar",
                     "https://wa.me/3546533050",
                   ],
                   areaServed: {
