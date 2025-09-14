@@ -1,0 +1,56 @@
+# Robots.txt para Villa del Dique Digital
+# https://www.villadeldique.com.ar
+
+User-agent: *
+Allow: /
+
+# Permitir acceso a todas las páginas principales
+Allow: /noticias
+Allow: /turismo
+Allow: /suscribirse
+Allow: /contacto
+
+# Permitir acceso a todas las noticias individuales
+Allow: /noticias/*
+
+# Permitir acceso a recursos estáticos
+Allow: /images/
+Allow: /icons/
+Allow: /_next/static/
+Allow: /favicon.ico
+Allow: /manifest.json
+
+# Bloquear archivos de sistema y configuración
+Disallow: /_next/
+Disallow: /api/
+Disallow: /.well-known/
+Disallow: /admin/
+Disallow: /private/
+
+# Configuración específica para bots de noticias
+User-agent: Googlebot-News
+Allow: /
+Allow: /noticias
+Allow: /noticias/*
+
+# Configuración para bots de imágenes
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /icons/
+
+# Configuración para bots de video
+User-agent: Googlebot-Video
+Allow: /
+
+# Sitemap
+Sitemap: https://www.villadeldique.com.ar/sitemap.xml
+
+# Crawl-delay para evitar sobrecarga del servidor
+Crawl-delay: 1
+
+# Información adicional para SEO local
+# Este sitio web es el portal oficial de noticias de Villa del Dique, Córdoba, Argentina
+# Contenido: Noticias locales, turismo, información comunitaria, emprendimientos
+# Audiencia: Residentes y visitantes de Villa del Dique y alrededores
+# Idioma: Español (Argentina)
+# Última actualización: 2025-01-14
