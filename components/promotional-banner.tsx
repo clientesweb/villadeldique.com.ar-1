@@ -54,7 +54,7 @@ export default function PromotionalBanner() {
                     <Heart className="h-3 w-3 sm:h-4 sm:w-4" />
                   </div>
                   <span className="font-semibold text-brand-navy text-left text-xs sm:text-sm md:text-base">
-                    Datos para Transferencia - Mercado Pago
+                    Datos para Transferencia
                   </span>
                 </div>
               </AccordionTrigger>
