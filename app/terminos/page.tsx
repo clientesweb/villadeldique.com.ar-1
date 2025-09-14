@@ -39,7 +39,7 @@ export default function TerminosPage() {
             ← Volver al inicio
           </Link>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Términos y Condiciones</h1>
-          <p className="text-gray-600">Última actualización: Diciembre 2024</p>
+          <p className="text-gray-600">Última actualización: Enero 2025</p>
         </div>
 
         <div className="prose prose-lg max-w-none">

@@ -47,7 +47,7 @@ export default function LicenciaPage() {
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">MIT License</h2>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              <strong>Copyright (c) 2024 Villa del Dique Digital</strong>
+              <strong>Copyright (c) 2025 Villa del Dique Digital</strong>
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -60,7 +60,8 @@ export default function LicenciaPage() {
 
             <p className="text-gray-700 leading-relaxed mb-6">
               The above copyright notice and this permission notice shall be included in all copies or substantial
-              portions of the Software.
+              portions of the Software. Additionally, developer credits must remain intact and visible in any derivative
+              works or distributions.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6 font-semibold">
@@ -101,6 +102,10 @@ export default function LicenciaPage() {
               <li>
                 <strong>Incluir licencia y copyright:</strong> Debes incluir la licencia y el aviso de copyright en
                 todas las copias
+              </li>
+              <li>
+                <strong>Mantener créditos del desarrollador:</strong> Los créditos del desarrollador original deben
+                permanecer visibles y no pueden ser removidos
               </li>
               <li>
                 <strong>Sin garantía:</strong> El software se proporciona "tal como está", sin garantías

@@ -88,7 +88,7 @@ export default function SeptiembreAmarilloPrevencion() {
                 <span className="inline-block bg-yellow-500 text-white text-sm px-3 py-1 rounded-full font-medium">
                   Salud Mental
                 </span>
-                <time className="text-gray-500" dateTime="2025-09-07">
+                <time className="text-gray-800" dateTime="2025-09-07">
                   7 de septiembre de 2025
                 </time>
               </div>
@@ -98,7 +98,7 @@ export default function SeptiembreAmarilloPrevencion() {
               </h1>
 
               <div className="prose prose-sm md:prose-lg max-w-none">
-                <p className="font-sans text-gray-700 leading-relaxed mb-6 text-base md:text-lg">
+                <p className="font-sans text-gray-800 leading-relaxed mb-6 text-base md:text-lg">
                   Cada 7 de septiembre, en el marco del Mes Amarillo, se llevan adelante campañas de prevención del
                   suicidio en todo el mundo. Una fecha que nos invita a reflexionar, sensibilizarnos y, sobre todo,
                   abrir espacios de escucha y acompañamiento para quienes atraviesan momentos difíciles.

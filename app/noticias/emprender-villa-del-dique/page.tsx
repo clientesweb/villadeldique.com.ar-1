@@ -94,8 +94,8 @@ export default function EmprenderVillaDelDiquePage() {
               <span className="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-sans font-medium mb-4">
                 EMPRENDEDORES LOCALES
               </span>
-              <time className="block text-gray-600 font-sans text-sm mb-2">9 de septiembre de 2025</time>
-              <p className="text-gray-600 font-sans text-sm">
+              <time className="block text-gray-800 font-sans text-sm mb-2">9 de septiembre de 2025</time>
+              <p className="text-gray-800 font-sans text-sm">
                 Entrevista realizada por{" "}
                 <a
                   href="https://www.faqundoperez.com/"
@@ -133,7 +133,7 @@ export default function EmprenderVillaDelDiquePage() {
               />
             </div>
 
-            <p className="font-sans text-lg md:text-xl text-gray-700 leading-relaxed text-pretty">
+            <p className="font-sans text-lg md:text-xl text-gray-800 leading-relaxed text-pretty">
               En el corazón del Valle de Calamuchita, Villa del Dique no solo conquista con su lago y paisajes serranos,
               también se nutre de la fuerza de sus vecinos y emprendedores que día a día transforman la vida del pueblo.
             </p>
@@ -173,7 +173,7 @@ export default function EmprenderVillaDelDiquePage() {
               </div>
 
               <div className="space-y-4 mb-6">
-                <p className="font-sans text-gray-700 leading-relaxed">
+                <p className="font-sans text-gray-800 leading-relaxed">
                   La primera escala nos lleva a{" "}
                   <a
                     href="https://www.dieteticarinconnatural.com.ar"
@@ -186,7 +186,7 @@ export default function EmprenderVillaDelDiquePage() {
                   , la dietética de Ruth Prado, un espacio donde la alimentación saludable se entrelaza con la filosofía
                   de vida.
                 </p>
-                <p className="font-sans text-gray-700 leading-relaxed">
+                <p className="font-sans text-gray-800 leading-relaxed">
                   Muy cerca,{" "}
                   <a
                     href="https://instagram.com/namaskar_movimiento_"
@@ -200,12 +200,12 @@ export default function EmprenderVillaDelDiquePage() {
                 </p>
               </div>
 
-              <p className="font-sans text-gray-700 leading-relaxed mb-4">
+              <p className="font-sans text-gray-800 leading-relaxed mb-4">
                 Desde cereales, legumbres y productos artesanales hasta opciones sin TACC y cosmética natural, el local
                 es un punto de encuentro para quienes buscan cuidar su cuerpo de manera integral.
               </p>
 
-              <blockquote className="border-l-4 border-blue-600 pl-4 italic text-gray-700 mb-4">
+              <blockquote className="border-l-4 border-blue-600 pl-4 italic text-gray-800 mb-4">
                 "Queríamos que en Villa del Dique existiera un lugar donde la gente pueda acceder a productos sanos,
                 accesibles y de calidad" - Ruth Prado
               </blockquote>
@@ -228,7 +228,7 @@ export default function EmprenderVillaDelDiquePage() {
                 </div>
               </div>
 
-              <p className="font-sans text-gray-700 leading-relaxed mb-4">
+              <p className="font-sans text-gray-800 leading-relaxed mb-4">
                 La segunda parada nos traslada al{" "}
                 <a
                   href="https://www.iowa.ar"
@@ -242,7 +242,7 @@ export default function EmprenderVillaDelDiquePage() {
                 la calidez de la cocina casera con la hospitalidad de siempre.
               </p>
 
-              <p className="font-sans text-gray-700 leading-relaxed mb-4">
+              <p className="font-sans text-gray-800 leading-relaxed mb-4">
                 Los entrevistados resaltan que "la comida no es solo alimento, es también un encuentro", y esa esencia
                 se respira en cada mesa: historias familiares, charlas con amigos y el paso de generaciones que vuelven
                 al lugar una y otra vez.
@@ -266,13 +266,13 @@ export default function EmprenderVillaDelDiquePage() {
                 </div>
               </div>
 
-              <p className="font-sans text-gray-700 leading-relaxed mb-4">
+              <p className="font-sans text-gray-800 leading-relaxed mb-4">
                 El recorrido cierra con el evento de boxeo organizado por la Municipalidad de Villa del Dique, que logró
                 reunir a vecinos y visitantes en una jornada cargada de energía. Más allá del deporte, fue una
                 celebración comunitaria.
               </p>
 
-              <p className="font-sans text-gray-700 leading-relaxed mb-4">
+              <p className="font-sans text-gray-800 leading-relaxed mb-4">
                 Estos eventos no solo promueven la actividad física, también fortalecen la identidad local y generan
                 oportunidades para los comercios, bares y alojamientos de la zona.
               </p>
@@ -283,14 +283,14 @@ export default function EmprenderVillaDelDiquePage() {
                 Un pueblo que late con sus emprendedores
               </h2>
 
-              <p className="font-sans text-gray-700 leading-relaxed mb-4">
+              <p className="font-sans text-gray-800 leading-relaxed mb-4">
                 La historia de Ruth Prado, la disciplina de Namaskar, la tradición de Iowa.ar y la emoción del boxeo
                 muestran que Villa del Dique es mucho más que un destino turístico. Es un lugar donde emprender es
                 construir comunidad, donde cada iniciativa suma para hacer del pueblo un rincón único del Valle de
                 Calamuchita.
               </p>
 
-              <p className="font-sans text-gray-700 leading-relaxed">
+              <p className="font-sans text-gray-800 leading-relaxed">
                 Como concluye el video: se trata de un paraíso que no solo se contempla, sino que también se vive, se
                 cuida y se sueña en comunidad.
               </p>
