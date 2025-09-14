@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+Sitemap: https://www.villadeldique.com.ar/sitemap.xml
+
+# Block access to admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow access to important pages
+Allow: /noticias/
+Allow: /turismo/
+Allow: /suscribirse/
+Allow: /contacto/
