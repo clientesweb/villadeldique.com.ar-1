@@ -36,7 +36,8 @@ export default function PromotionalBanner() {
           />
         </a>
 
-        <div className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 sm:max-w-md md:max-w-lg lg:max-w-xl">
+        {/* CONTENEDOR CENTRADO */}
+        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 sm:bottom-4 sm:left-1/2 sm:-translate-x-1/2 sm:max-w-md md:max-w-lg lg:max-w-xl">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="donation-info" className="border-0 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg">
               <AccordionTrigger className="px-3 py-2 sm:px-4 sm:py-3 hover:bg-white/80 rounded-t-lg">
