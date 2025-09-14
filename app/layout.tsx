@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code", // Placeholder for Google verification code
+    google: "google-site-verification=l43oagagLLjGqoWzzMuQvJ3qFwcF3j3Pu7VMo4MPXk4", // Placeholder for Google verification code
   },
   generator: "Next.js",
 }
