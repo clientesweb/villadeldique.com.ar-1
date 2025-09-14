@@ -19,7 +19,7 @@ const mainBanners = [
  {
     id: "mendez-muebles-hogar",
     name: "Mendez Muebles Hogar",
-    image: "/images/banners/mendez-muebles-hogar.jpg",
+    image: "/images/banners/mendez-muebles-hogar.webp",
     alt: "Mueblería, hogar, Deco, todo pino y más",
     link: "https://www.instagram.com/mendezmuebleshogar/",
   },
