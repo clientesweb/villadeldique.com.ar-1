@@ -94,7 +94,7 @@ export default function EmprenderVillaDelDiquePage() {
               <span className="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-sans font-medium mb-4">
                 EMPRENDEDORES LOCALES
               </span>
-              <time className="block text-gray-800 font-sans text-sm mb-2">9 de septiembre de 2025</time>
+              <time className="block text-gray-900 font-sans text-sm mb-2">9 de septiembre de 2025</time>
               <p className="text-gray-800 font-sans text-sm">
                 Entrevista realizada por{" "}
                 <a

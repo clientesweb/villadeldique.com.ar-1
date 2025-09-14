@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
 
 interface AdBanner {
   id: string
@@ -42,14 +41,6 @@ export default function AdvertisingCarousel({
     return () => clearInterval(timer)
   }, [autoPlay, interval, banners])
 
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? banners.length - 1 : prevIndex - 1))
-  }
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length)
-  }
-
   const handleBannerClick = (banner: AdBanner) => {
     if (banner.whatsapp) {
       window.open(`https://wa.me/${banner.whatsapp}`, "_blank")
@@ -60,7 +51,7 @@ export default function AdvertisingCarousel({
 
   return (
     <div className={`relative w-full max-w-[728px] mx-auto bg-white rounded-lg shadow-lg overflow-hidden ${className}`}>
-      <div className="relative h-[90px]">
+      <div className="relative h-[90px] sm:h-[100px] md:h-[110px] lg:h-[120px]">
         {banners.map((banner, index) => (
           <div
             key={banner.id}
@@ -76,46 +67,13 @@ export default function AdvertisingCarousel({
                 src={banner.image || "/placeholder.svg"}
                 alt={banner.alt}
                 fill
-                className="object-contain hover:scale-105 transition-transform duration-300"
+                className="object-cover hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 728px, 728px"
               />
             </div>
           </div>
         ))}
       </div>
-
-      {banners.length > 1 && (
-        <>
-          <button
-            onClick={goToPrevious}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white p-2 rounded-full transition-all duration-200"
-            aria-label="Banner anterior"
-          >
-            <ChevronLeft className="w-4 h-4" />
-          </button>
-          <button
-            onClick={goToNext}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white p-2 rounded-full transition-all duration-200"
-            aria-label="Banner siguiente"
-          >
-            <ChevronRight className="w-4 h-4" />
-          </button>
-        </>
-      )}
-
-      {banners.length > 1 && (
-        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
-          {banners.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                index === currentIndex ? "bg-white" : "bg-white bg-opacity-50"
-              }`}
-              aria-label={`Ir al banner ${index + 1}`}
-            />
-          ))}
-        </div>
-      )}
     </div>
   )
 }

@@ -64,7 +64,7 @@ export default function InauguracionPoloCulturalPage() {
               <span className="inline-block bg-brand-blue text-white text-sm px-3 py-1 rounded-full font-medium">
                 Cultura
               </span>
-              <time className="text-gray-500" dateTime="2025-09-12">
+              <time className="text-gray-900" dateTime="2025-09-12">
                 12 de septiembre de 2025
               </time>
             </div>

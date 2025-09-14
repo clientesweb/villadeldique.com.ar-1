@@ -79,7 +79,7 @@ export default function CampanaPrevencionIncendios() {
                 <span className="inline-block bg-red-600 text-white text-sm px-3 py-1 rounded-full font-medium">
                   Seguridad
                 </span>
-                <time className="text-gray-500" dateTime="2025-09-09">
+                <time className="text-gray-800" dateTime="2025-09-09">
                   9 de septiembre de 2025
                 </time>
               </div>

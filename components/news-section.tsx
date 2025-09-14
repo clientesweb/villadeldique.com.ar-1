@@ -53,7 +53,7 @@ export default function NewsSection() {
                 <h3 className="font-serif text-xl font-bold text-gray-900 mb-3">{article.title}</h3>
                 <p className="font-sans text-gray-900 mb-4 leading-relaxed text-sm">{article.excerpt}</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-xs text-gray-800 font-sans">
+                  <span className="text-xs text-gray-900 font-sans">
                     {article.displayDate ||
                       new Date(article.date).toLocaleDateString("es-AR", {
                         year: "numeric",
