@@ -25,7 +25,7 @@ export default function Header() {
   }
 
   const navigationItems = [
-    { href: "/", label: "Noticias" },
+    { href: "/noticias", label: "Noticias" },
     { href: "/turismo", label: "Turismo" },
     { href: "/suscribirse", label: "Suscribirse" },
     { href: "/contacto", label: "Contacto" },

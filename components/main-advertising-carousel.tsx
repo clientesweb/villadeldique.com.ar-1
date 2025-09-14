@@ -10,13 +10,20 @@ const mainBanners = [
     whatsapp: "5493546534000",
   },
   {
+    id: "aca-ypf-vdd",
+    name: "ACA YPF Villa del Dique",
+    image: "/images/banners/aca-ypf-vdd.webp",
+    alt: "ACA YPF Villa del Dique - ¡Asociate al mejor club!",
+    link: "https://www.instagram.com/aca.ypf.vdd/",
+  },
+  {
     id: "laboratorios-leac",
     name: "Laboratorios LEAC",
     image: "/images/banners/laboratorios-leac.webp",
     alt: "Laboratorios LEAC - Análisis clínicos especializados",
     link: "https://www.instagram.com/laboratorioleac/",
   },
- {
+  {
     id: "mendez-muebles-hogar",
     name: "Mendez Muebles Hogar",
     image: "/images/banners/mendez-muebles-hogar.webp",

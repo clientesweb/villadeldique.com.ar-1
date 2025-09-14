@@ -64,7 +64,7 @@ export default function InauguracionPoloCulturalPage() {
               <span className="inline-block bg-brand-blue text-white text-sm px-3 py-1 rounded-full font-medium">
                 Cultura
               </span>
-              <time className="text-gray-900" dateTime="2025-09-12">
+              <time className="text-gray-700 font-medium" dateTime="2025-09-12">
                 12 de septiembre de 2025
               </time>
             </div>
@@ -78,8 +78,8 @@ export default function InauguracionPoloCulturalPage() {
               conformado por la renovada Casa de la Cultura y el Anfiteatro Municipal.
             </p>
 
-            <div className="text-sm text-gray-500 mb-8">
-              Por <span className="font-medium">Asociación de Comercio, Turismo y Afines</span>
+            <div className="text-sm text-gray-600 mb-8">
+              Por <span className="font-medium text-gray-700">Asociación de Comercio, Turismo y Afines</span>
             </div>
           </header>
 

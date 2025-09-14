@@ -3,6 +3,26 @@ import Link from "next/link"
 
 const newsData = [
   {
+    id: "mega-feria-villa-del-dique",
+    title: "Villa del Dique vive su primera Mega Feria en el Centro Cultural Pato Carret",
+    excerpt:
+      "Este domingo se inaugura la primera edición de la Mega Feria, un evento que reúne a emprendedores, artesanos y propuestas de moda circular en un mismo espacio pensado para toda la familia.",
+    image: "/images/portada-mega-feria.jpg",
+    date: "2025-09-14",
+    displayDate: "14 de septiembre de 2025",
+    slug: "mega-feria-villa-del-dique",
+  },
+  {
+    id: "desafio-cerro-lago",
+    title: "Rumbo al 6° Desafío Cerro y Lago: todo listo para vivir la previa en Villa del Dique",
+    excerpt:
+      "La pasión por el ciclismo de montaña vuelve a encenderse en la región con la llegada de la 6° edición del Desafío Cerro y Lago, una competencia que ya se ha convertido en un clásico esperado por deportistas y amantes del MTB de todo el país.",
+    image: "/images/portada-desafio-cerro-lago.jpg",
+    date: "2025-09-13",
+    displayDate: "13 de septiembre de 2025",
+    slug: "desafio-cerro-lago",
+  },
+  {
     id: "inauguracion-polo-cultural-asociacion",
     title: "Villa del Dique celebra la inauguración de su nuevo Polo Cultural",
     excerpt:
@@ -50,10 +70,10 @@ export default function NewsSection() {
                 <Image src={article.image || "/placeholder.svg"} alt={article.title} fill className="object-cover" />
               </div>
               <div className="p-6">
-                <h3 className="font-serif text-xl font-bold text-gray-900 mb-3">{article.title}</h3>
-                <p className="font-sans text-gray-900 mb-4 leading-relaxed text-sm">{article.excerpt}</p>
+                <h3 className="font-serif text-xl font-bold text-brand-navy mb-3">{article.title}</h3>
+                <p className="font-sans text-gray-700 mb-4 leading-relaxed text-sm">{article.excerpt}</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-xs text-gray-900 font-sans">
+                  <span className="text-xs text-gray-600 font-sans">
                     {article.displayDate ||
                       new Date(article.date).toLocaleDateString("es-AR", {
                         year: "numeric",

@@ -5,6 +5,7 @@ import { Montserrat } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Suspense } from "react"
+import EmergencyButton from "@/components/emergency-button"
 import "./globals.css"
 
 const inter = Inter({
@@ -257,6 +258,8 @@ export default function RootLayout({
         >
           <div className="min-h-screen flex flex-col">{children}</div>
         </Suspense>
+
+        <EmergencyButton />
 
         <Analytics />
         <SpeedInsights />
