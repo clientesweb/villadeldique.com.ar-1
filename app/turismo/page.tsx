@@ -158,7 +158,7 @@ export default function TurismoPage() {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center max-w-4xl mx-auto">
               <a
-                href="https://www.villadeldique.gob.ar/turistas"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-brand-navy text-white px-8 py-4 rounded-lg font-sans font-semibold text-lg hover:bg-brand-navy/90 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto text-center"
