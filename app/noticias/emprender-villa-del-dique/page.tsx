@@ -10,14 +10,14 @@ import ShareButtons from "@/components/share-buttons"
 export const metadata: Metadata = {
   title: "Emprender en el Paraíso: Historias que laten en Villa del Dique | Villa del Dique",
   description:
-    "Descubre las historias de emprendedores locales: Rincón Natural, Namaskar Movimiento, Iowa.ar y el evento de boxeo que unió a toda la comunidad en Villa del Dique.",
+    "Descubre las historias de emprendedores locales: Rincón Natural, Namaskar Movimiento, Parilla - Restaurante Iowa y el evento de boxeo que unió a toda la comunidad en Villa del Dique.",
   keywords:
     "emprendedores Villa del Dique, Rincón Natural, Namaskar, Iowa restaurante, boxeo Villa del Dique, negocios locales, Valle de Calamuchita",
   authors: [{ name: "Facundo Perez", url: "https://www.faqundoperez.com/" }],
   openGraph: {
     title: "Emprender en el Paraíso: Historias que laten en Villa del Dique",
     description:
-      "Descubre las historias de emprendedores locales: Rincón Natural, Namaskar Movimiento, Iowa.ar y el evento de boxeo que unió a toda la comunidad.",
+      "Descubre las historias de emprendedores locales: Rincón Natural, Namaskar Movimiento, Parrilla & Restaurante Iowa y el evento de boxeo que unió a toda la comunidad.",
     url: "https://www.villadeldique.com.ar/noticias/emprender-villa-del-dique",
     siteName: "Villa del Dique",
     images: [
@@ -284,7 +284,7 @@ export default function EmprenderVillaDelDiquePage() {
               </h2>
 
               <p className="font-sans text-gray-800 leading-relaxed mb-4">
-                La historia de Ruth Prado, la disciplina de Namaskar, la tradición de Iowa.ar y la emoción del boxeo
+                La historia de Ruth Prado, la disciplina de Namaskar, la tradición de Nicolás Barra con IOWA y la emoción del boxeo
                 muestran que Villa del Dique es mucho más que un destino turístico. Es un lugar donde emprender es
                 construir comunidad, donde cada iniciativa suma para hacer del pueblo un rincón único del Valle de
                 Calamuchita.
