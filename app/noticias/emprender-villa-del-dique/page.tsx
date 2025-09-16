@@ -236,14 +236,14 @@ export default function EmprenderVillaDelDiquePage() {
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline"
                 >
-                  restaurante Iowa.ar
+                  restaurante IOWA
                 </a>
                 , un clásico de Villa del Dique que forma parte de la memoria colectiva del pueblo. Su propuesta combina
-                la calidez de la cocina casera con la hospitalidad de siempre.
+                la calidez de la cocina de primer nivel con la hospitalidad de siempre. Cuarta generación y una de las familias más antiguas de Villa del Dique 
               </p>
 
               <p className="font-sans text-gray-800 leading-relaxed mb-4">
-                Los entrevistados resaltan que "la comida no es solo alimento, es también un encuentro", y esa esencia
+                Nicolás Barra resalta que "la comida no es solo alimento, es también un encuentro", y esa esencia
                 se respira en cada mesa: historias familiares, charlas con amigos y el paso de generaciones que vuelven
                 al lugar una y otra vez.
               </p>
