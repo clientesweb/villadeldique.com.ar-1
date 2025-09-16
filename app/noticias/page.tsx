@@ -80,6 +80,16 @@ export const metadata: Metadata = {
 
 const allNews = [
   {
+    id: "dia-derechos-estudiantes-secundarios",
+    title: "16 de septiembre: Día de los Derechos de los Estudiantes Secundarios",
+    excerpt:
+      "Cada 16 de septiembre, Argentina recuerda La Noche de los Lápices y reafirma el compromiso con la defensa de los derechos estudiantiles, la educación y la democracia.",
+    image: "/images/portada-dia-derechos-estudiantes.webp",
+    date: "2025-09-16",
+    category: "Comunidad",
+    author: "Camila Insaurralde",
+  },
+  {
     id: "dia-internacional-democracia",
     title: "15 de septiembre: Día Internacional de la Democracia",
     excerpt:
