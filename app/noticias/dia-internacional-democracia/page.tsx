@@ -158,7 +158,6 @@ export default function DiaInternacionalDemocraciaPage() {
 
               <div className="prose prose-lg max-w-none">
                 <p className="text-xl text-gray-700 leading-relaxed mb-6 font-medium">
-                  Villa del Dique, 15 de septiembre de 2025.
                 </p>
 
                 <p className="text-gray-700 leading-relaxed mb-6">
