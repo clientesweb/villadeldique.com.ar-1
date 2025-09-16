@@ -55,13 +55,13 @@ export default function EntrevistaBomberosPage() {
       <div className="bg-brand-blue text-white py-8 md:py-12">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <Link
-            href="/"
+            href="/noticias"
             className="inline-flex items-center text-white/80 hover:text-white mb-4 md:mb-6 transition-colors"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            Volver al inicio
+            ← Volver a Noticias
           </Link>
 
           <div className="flex flex-wrap items-center gap-4 mb-4">
@@ -219,6 +219,63 @@ export default function EntrevistaBomberosPage() {
               description="Entrevista exclusiva con los Bomberos Voluntarios de Villa del Dique sobre su labor incansable y dedicación a la comunidad."
             />
           </div>
+
+          <section className="mt-12 pt-8 border-t border-gray-200">
+            <h2 className="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-6">Noticias relacionadas</h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                <div className="relative h-48">
+                  <Image
+                    src="/images/no-desafiemos-al-fuego-portada.webp"
+                    alt="Campaña Prevención Incendios"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                    Campaña de Prevención de Incendios en Villa del Dique
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+                    Un descuido puede terminar en tragedia. Súmate a las acciones de prevención de incendios.
+                  </p>
+                  <Link
+                    href="/noticias/campana-prevencion-incendios"
+                    className="text-brand-blue hover:text-blue-700 font-medium text-sm transition-colors"
+                  >
+                    Leer más →
+                  </Link>
+                </div>
+              </article>
+
+              <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                <div className="relative h-48">
+                  <Image
+                    src="/images/portada-septiembre-amarillo.jpg"
+                    alt="Septiembre Amarillo"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                    Septiembre Amarillo: Mes de Prevención del Suicidio
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+                    Septiembre es el mes mundial de la prevención del suicidio. Hablemos, escuchemos y actuemos juntos.
+                  </p>
+                  <Link
+                    href="/noticias/septiembre-amarillo-prevencion"
+                    className="text-brand-blue hover:text-blue-700 font-medium text-sm transition-colors"
+                  >
+                    Leer más →
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </section>
 
           <div className="border-t border-gray-200 pt-6 md:pt-8 mt-8 md:mt-12">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center text-sm md:text-base text-gray-600 space-y-2 md:space-y-0">

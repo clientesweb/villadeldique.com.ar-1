@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import Header from "@/components/header"
 import AnnouncementBar from "@/components/announcement-bar"
 import Footer from "@/components/footer"
@@ -59,6 +60,16 @@ export default function InauguracionPoloCulturalPage() {
 
       <main className="min-h-screen">
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
+          <Link
+            href="/noticias"
+            className="inline-flex items-center text-brand-blue hover:text-blue-700 mb-6 font-sans transition-colors"
+          >
+            <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            ← Volver a Noticias
+          </Link>
+
           <header className="mb-6 md:mb-8">
             <div className="flex flex-wrap items-center gap-4 mb-4">
               <span className="inline-block bg-brand-blue text-white text-sm px-3 py-1 rounded-full font-medium">
@@ -160,36 +171,14 @@ export default function InauguracionPoloCulturalPage() {
                     </a>
                   </p>
                   <p>
-                    <strong>Contenido patrocinado por:</strong>{" "}
-                    <a
-                      href="https://www.dualitydomain.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-brand-blue hover:text-blue-700 transition-colors"
-                    >
-                      @dualitydomain
-                    </a>
-                  </p>
-                  <p>
                     <strong>Municipalidad:</strong>{" "}
                     <a
-                      href="https://www.villadeldique.gob.ar"
+                      href="https://www.instagram.com/munivilladeldique/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-brand-blue hover:text-blue-700 transition-colors"
                     >
                       @munivilladeldique
-                    </a>
-                  </p>
-                  <p>
-                    <strong>Video de la inauguración:</strong>{" "}
-                    <a
-                      href="https://www.instagram.com/reel/DOhfLmdDZQs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-brand-blue hover:text-blue-700 transition-colors"
-                    >
-                      Ver en Instagram
                     </a>
                   </p>
                 </div>
@@ -210,6 +199,63 @@ export default function InauguracionPoloCulturalPage() {
               description="La comunidad de Villa del Dique vivió una noche histórica con la inauguración del Polo Cultural, conformado por la renovada Casa de la Cultura y el Anfiteatro Municipal."
             />
           </div>
+
+          <section className="mt-12 pt-8 border-t border-gray-200">
+            <h2 className="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-6">Noticias relacionadas</h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                <div className="relative h-48">
+                  <Image
+                    src="/images/portada-mega-feria.jpg"
+                    alt="Mega Feria Villa del Dique"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                    Villa del Dique vive su primera Mega Feria
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+                    Una propuesta única que combina gastronomía, artesanías, música en vivo y entretenimiento familiar.
+                  </p>
+                  <Link
+                    href="/noticias/mega-feria-villa-del-dique"
+                    className="text-brand-blue hover:text-blue-700 font-medium text-sm transition-colors"
+                  >
+                    Leer más →
+                  </Link>
+                </div>
+              </article>
+
+              <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                <div className="relative h-48">
+                  <Image
+                    src="/images/portada-desafio-cerro-lago.jpg"
+                    alt="6° Desafío Cerro y Lago"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                    Rumbo al 6° Desafío Cerro y Lago
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+                    La pasión por el ciclismo de montaña vuelve a encenderse en la región.
+                  </p>
+                  <Link
+                    href="/noticias/desafio-cerro-lago"
+                    className="text-brand-blue hover:text-blue-700 font-medium text-sm transition-colors"
+                  >
+                    Leer más →
+                  </Link>
+                </div>
+              </article>
+            </div>
+          </section>
         </article>
       </main>
 

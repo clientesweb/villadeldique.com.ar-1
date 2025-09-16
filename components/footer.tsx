@@ -19,8 +19,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Tu fuente confiable de noticias e información sobre Villa del Dique. Conectando a la comunidad con lo que
-              realmente importa.
+              Noticias e información sobre Villa del Dique. Conectando a la comunidad con lo que realmente importa.
             </p>
             <div className="flex space-x-4">
               <a

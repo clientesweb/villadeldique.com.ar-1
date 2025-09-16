@@ -45,8 +45,8 @@ export default function HeroBanner() {
                 textShadow: "2px 2px 4px rgba(0,0,0,0.9), -1px -1px 2px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.7)",
               }}
             >
-              Tu medio digital de confianza para mantenerte informado sobre las últimas noticias, descubrir los mejores
-              destinos turísticos y conectar con los negocios locales de Villa del Dique.
+              Últimas noticias, descubre los mejores destinos turísticos y contacta con los negocios locales de villa
+              del dique.
             </p>
           </div>
         </div>

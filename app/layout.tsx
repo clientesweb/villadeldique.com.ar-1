@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Montserrat } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Suspense } from "react"
 import EmergencyButton from "@/components/emergency-button"
@@ -25,12 +24,22 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Villa del Dique Digital - Noticias, Turismo y Negocios",
+  title: "Villa del Dique Digital - Portal Oficial de Noticias, Turismo y Negocios",
   description:
-    "Portal digital oficial de Villa del Dique, Córdoba. Noticias locales, información turística, directorio de negocios y eventos de la comunidad. Tu fuente confiable de información sobre Villa del Dique.",
+    "Portal digital oficial de Villa del Dique, Córdoba, Argentina. Noticias locales actualizadas, información turística completa, directorio de negocios y eventos de la comunidad. La fuente más confiable de información sobre Villa del Dique.",
   keywords: [
     "Villa del Dique",
     "Villa del Dique Córdoba",
+    "Villa del Dique Argentina",
+    "Villa del Dique noticias",
+    "Villa del Dique turismo",
+    "Villa del Dique negocios",
+    "Villa del Dique eventos",
+    "Villa del Dique digital",
+    "Villa del Dique portal",
+    "Villa del Dique oficial",
+    "Villa del Dique información",
+    "Villa del Dique comunidad",
     "noticias Villa del Dique",
     "turismo Villa del Dique",
     "negocios Villa del Dique",
@@ -39,44 +48,70 @@ export const metadata: Metadata = {
     "lago Villa del Dique",
     "dique Los Molinos",
     "Calamuchita",
+    "Valle de Calamuchita",
     "portal digital",
     "información local",
-    "comunidad",
+    "comunidad Villa del Dique",
     "cultura Villa del Dique",
     "emprendimientos locales",
-    "bomberos voluntarios",
-    "polo cultural",
+    "bomberos voluntarios Villa del Dique",
+    "polo cultural Villa del Dique",
     "anfiteatro Villa del Dique",
+    "Casa de la Cultura Villa del Dique",
+    "deportes náuticos Villa del Dique",
+    "pesca deportiva Villa del Dique",
+    "turismo familiar Villa del Dique",
+    "naturaleza Villa del Dique",
+    "actividades Villa del Dique",
+    "alojamiento Villa del Dique",
+    "gastronomía Villa del Dique",
+    "Villa del Dique 5194",
+    "Villa del Dique Córdoba Argentina",
   ],
-  authors: [{ name: "Villa del Dique Digital" }],
+  authors: [{ name: "Villa del Dique Digital", url: "https://www.villadeldique.com.ar" }],
   creator: "Villa del Dique Digital",
   publisher: "Villa del Dique Digital",
   metadataBase: new URL("https://www.villadeldique.com.ar"),
   alternates: {
     canonical: "/",
+    languages: {
+      "es-AR": "/",
+      es: "/",
+    },
   },
   openGraph: {
-    title: "Villa del Dique Digital - Portal Oficial de Noticias y Turismo",
+    title: "Villa del Dique Digital - Portal Oficial de Villa del Dique, Córdoba",
     description:
-      "Portal digital oficial de Villa del Dique, Córdoba. Noticias locales, turismo, negocios y eventos de la comunidad.",
+      "Portal digital oficial de Villa del Dique, Córdoba, Argentina. Noticias locales, turismo, negocios y eventos de la comunidad. Tu fuente confiable de información sobre Villa del Dique.",
     url: "https://www.villadeldique.com.ar",
     siteName: "Villa del Dique Digital",
     images: [
       {
-        url: "/images/og/og-image.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Villa del Dique Digital - Portal Oficial",
+        alt: "Villa del Dique Digital - Portal Oficial de Villa del Dique, Córdoba",
+      },
+      {
+        url: "/images/villa-del-dique-lago.webp",
+        width: 1200,
+        height: 630,
+        alt: "Villa del Dique - Lago y paisaje natural en Córdoba",
       },
     ],
     locale: "es_AR",
     type: "website",
+    countryName: "Argentina",
+    region: "Córdoba",
+    placeName: "Villa del Dique",
   },
   twitter: {
     card: "summary_large_image",
     title: "Villa del Dique Digital - Portal Oficial",
-    description: "Noticias, turismo y negocios de Villa del Dique, Córdoba, Argentina",
-    images: ["/images/og/og-image.jpg"],
+    description: "Noticias, turismo y negocios de Villa del Dique, Córdoba, Argentina. Portal digital oficial.",
+    images: ["/images/og-image.jpg"],
+    site: "@villadeldique",
+    creator: "@villadeldique",
   },
   robots: {
     index: true,
@@ -89,10 +124,21 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  category: "Local News and Tourism",
+  classification: "Portal de noticias y turismo local",
   verification: {
-    google: "google-site-verification: google45fe8791982d4a42.html", // Placeholder for Google verification code
+    google: "your-google-verification-code", // Placeholder for Google verification code
   },
   generator: "Next.js",
+  applicationName: "Villa del Dique Digital",
+  referrer: "origin-when-cross-origin",
+  colorScheme: "light",
+  themeColor: "#050a30",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
 }
 
 export default function RootLayout({
@@ -107,6 +153,23 @@ export default function RootLayout({
         <meta name="theme-color" content="#050a30" />
         <meta name="color-scheme" content="light" />
         <meta name="format-detection" content="telephone=no" />
+        <meta name="geo.region" content="AR-X" />
+        <meta name="geo.placename" content="Villa del Dique" />
+        <meta name="geo.position" content="-32.1833;-64.4833" />
+        <meta name="ICBM" content="-32.1833, -64.4833" />
+        <meta name="DC.title" content="Villa del Dique Digital - Portal Oficial" />
+        <meta name="DC.creator" content="Villa del Dique Digital" />
+        <meta name="DC.subject" content="Villa del Dique, noticias, turismo, Córdoba, Argentina" />
+        <meta name="DC.description" content="Portal digital oficial de Villa del Dique, Córdoba, Argentina" />
+        <meta name="DC.publisher" content="Villa del Dique Digital" />
+        <meta name="DC.contributor" content="Comunidad Villa del Dique" />
+        <meta name="DC.date" content="2025" />
+        <meta name="DC.type" content="Text" />
+        <meta name="DC.format" content="text/html" />
+        <meta name="DC.identifier" content="https://www.villadeldique.com.ar" />
+        <meta name="DC.language" content="es-AR" />
+        <meta name="DC.coverage" content="Villa del Dique, Córdoba, Argentina" />
+        <meta name="DC.rights" content="© 2025 Villa del Dique Digital" />
 
         {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -122,123 +185,8 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
 
         {/* Preload critical resources */}
-        <link rel="preload" href="/images/logo-villa-del-dique-digital.webp" as="image" type="image/webp" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "NewsMediaOrganization",
-                  "@id": "https://www.villadeldique.com.ar/#organization",
-                  name: "Villa del Dique Digital",
-                  alternateName: "VDD Digital",
-                  url: "https://www.villadeldique.com.ar",
-                  logo: {
-                    "@type": "ImageObject",
-                    url: "https://www.villadeldique.com.ar/images/logo-villa-del-dique-digital.webp",
-                    width: 400,
-                    height: 200,
-                  },
-                  description:
-                    "Portal digital oficial de Villa del Dique, Córdoba. Noticias locales, turismo, negocios y eventos.",
-                  foundingDate: "2025",
-                  address: {
-                    "@type": "PostalAddress",
-                    addressLocality: "Villa del Dique",
-                    addressRegion: "Córdoba",
-                    addressCountry: "AR",
-                    postalCode: "5194",
-                  },
-                  contactPoint: {
-                    "@type": "ContactPoint",
-                    telephone: "+54-3546-533050",
-                    contactType: "customer service",
-                    availableLanguage: "Spanish",
-                    email: "villadeldiquedigital@gmail.com",
-                  },
-                  sameAs: [
-                    "https://www.instagram.com/villadeldique.com.ar",
-                    "https://www.villadeldique.com.ar",
-                    "https://wa.me/3546533050",
-                  ],
-                  areaServed: {
-                    "@type": "Place",
-                    name: "Villa del Dique, Córdoba, Argentina",
-                    geo: {
-                      "@type": "GeoCoordinates",
-                      latitude: -32.1833,
-                      longitude: -64.4833,
-                    },
-                  },
-                  knowsAbout: [
-                    "Villa del Dique",
-                    "Turismo Córdoba",
-                    "Noticias locales",
-                    "Dique Los Molinos",
-                    "Valle de Calamuchita",
-                    "Emprendimientos locales",
-                    "Cultura Villa del Dique",
-                  ],
-                },
-                {
-                  "@type": "WebSite",
-                  "@id": "https://www.villadeldique.com.ar/#website",
-                  url: "https://www.villadeldique.com.ar",
-                  name: "Villa del Dique Digital",
-                  description:
-                    "Portal digital oficial de Villa del Dique, Córdoba. Noticias locales, información turística, directorio de negocios y eventos de la comunidad.",
-                  inLanguage: "es-AR",
-                  publisher: {
-                    "@id": "https://www.villadeldique.com.ar/#organization",
-                  },
-                  potentialAction: {
-                    "@type": "SearchAction",
-                    target: {
-                      "@type": "EntryPoint",
-                      urlTemplate: "https://www.villadeldique.com.ar/noticias?q={search_term_string}",
-                    },
-                    "query-input": "required name=search_term_string",
-                  },
-                },
-                {
-                  "@type": "TouristDestination",
-                  "@id": "https://www.villadeldique.com.ar/#destination",
-                  name: "Villa del Dique",
-                  description:
-                    "Hermosa localidad turística en Córdoba, Argentina, conocida por su lago, deportes náuticos y naturaleza.",
-                  url: "https://www.villadeldique.com.ar/turismo",
-                  address: {
-                    "@type": "PostalAddress",
-                    addressLocality: "Villa del Dique",
-                    addressRegion: "Córdoba",
-                    addressCountry: "AR",
-                  },
-                  geo: {
-                    "@type": "GeoCoordinates",
-                    latitude: -32.1833,
-                    longitude: -64.4833,
-                  },
-                  touristType: ["Turismo familiar", "Turismo de naturaleza", "Deportes náuticos", "Turismo rural"],
-                  includesAttraction: [
-                    {
-                      "@type": "TouristAttraction",
-                      name: "Dique Los Molinos",
-                      description: "Lago artificial ideal para deportes náuticos y pesca deportiva",
-                    },
-                    {
-                      "@type": "TouristAttraction",
-                      name: "Polo Cultural Villa del Dique",
-                      description: "Centro cultural con anfiteatro y Casa de la Cultura",
-                    },
-                  ],
-                },
-              ],
-            }),
-          }}
-        />
+        <link rel="preload" href="/images/og-image.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/images/villa-del-dique-lago.webp" as="image" type="image/webp" />
       </head>
       <body className="font-sans antialiased bg-white text-gray-900 overflow-x-hidden">
         <Suspense
@@ -261,7 +209,6 @@ export default function RootLayout({
 
         <EmergencyButton />
 
-        <Analytics />
         <SpeedInsights />
 
         {/* Skip to main content link for accessibility */}
@@ -271,6 +218,198 @@ export default function RootLayout({
         >
           Saltar al contenido principal
         </a>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "NewsMediaOrganization",
+                  "@id": "https://www.villadeldique.com.ar/#organization",
+                  name: "Villa del Dique Digital",
+                  alternateName: ["VDD Digital", "Portal Villa del Dique", "Villa del Dique Noticias"],
+                  url: "https://www.villadeldique.com.ar",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://www.villadeldique.com.ar/images/logo-villa-del-dique-digital.webp",
+                    width: 400,
+                    height: 200,
+                  },
+                  description:
+                    "Portal digital oficial de Villa del Dique, Córdoba, Argentina. La fuente más confiable de noticias locales, información turística y directorio de negocios.",
+                  foundingDate: "2025",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "Villa del Dique",
+                    addressLocality: "Villa del Dique",
+                    addressRegion: "Córdoba",
+                    addressCountry: "AR",
+                    postalCode: "5194",
+                  },
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    telephone: "+54-3546-533050",
+                    contactType: "customer service",
+                    availableLanguage: ["Spanish", "es"],
+                    email: "villadeldiquedigital@gmail.com",
+                    areaServed: "Villa del Dique, Córdoba, Argentina",
+                  },
+                  sameAs: [
+                    "https://www.instagram.com/vivivilladeldique",
+                    "https://www.villadeldique.org",
+                    "https://wa.me/3546533050",
+                  ],
+                  areaServed: {
+                    "@type": "Place",
+                    name: "Villa del Dique, Córdoba, Argentina",
+                    geo: {
+                      "@type": "GeoCoordinates",
+                      latitude: -32.1833,
+                      longitude: -64.4833,
+                    },
+                    containedInPlace: {
+                      "@type": "Place",
+                      name: "Valle de Calamuchita, Córdoba, Argentina",
+                    },
+                  },
+                  knowsAbout: [
+                    "Villa del Dique",
+                    "Villa del Dique Córdoba",
+                    "Villa del Dique Argentina",
+                    "Turismo Villa del Dique",
+                    "Noticias Villa del Dique",
+                    "Dique Los Molinos",
+                    "Valle de Calamuchita",
+                    "Emprendimientos Villa del Dique",
+                    "Cultura Villa del Dique",
+                    "Deportes náuticos",
+                    "Turismo Córdoba",
+                    "Bomberos Voluntarios Villa del Dique",
+                    "Polo Cultural Villa del Dique",
+                    "Anfiteatro Villa del Dique",
+                    "Casa de la Cultura",
+                    "Pesca deportiva",
+                    "Turismo familiar",
+                    "Naturaleza Córdoba",
+                  ],
+                  publishingPrinciples: "https://www.villadeldique.com.ar/terminos",
+                  actionableFeedbackPolicy: "https://www.villadeldique.com.ar/contacto",
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.villadeldique.com.ar/#website",
+                  url: "https://www.villadeldique.com.ar",
+                  name: "Villa del Dique Digital",
+                  alternateName: "Portal Oficial Villa del Dique",
+                  description:
+                    "Portal digital oficial de Villa del Dique, Córdoba, Argentina. Noticias locales, información turística, directorio de negocios y eventos de la comunidad.",
+                  inLanguage: "es-AR",
+                  publisher: {
+                    "@id": "https://www.villadeldique.com.ar/#organization",
+                  },
+                  potentialAction: {
+                    "@type": "SearchAction",
+                    target: {
+                      "@type": "EntryPoint",
+                      urlTemplate: "https://www.villadeldique.com.ar/noticias?q={search_term_string}",
+                    },
+                    "query-input": "required name=search_term_string",
+                  },
+                  mainEntity: {
+                    "@id": "https://www.villadeldique.com.ar/#destination",
+                  },
+                },
+                {
+                  "@type": "TouristDestination",
+                  "@id": "https://www.villadeldique.com.ar/#destination",
+                  name: "Villa del Dique",
+                  alternateName: ["Villa del Dique Córdoba", "Villa del Dique Argentina"],
+                  description:
+                    "Hermosa localidad turística en el Valle de Calamuchita, Córdoba, Argentina. Conocida por su lago, deportes náuticos, naturaleza y tranquilidad familiar.",
+                  url: "https://www.villadeldique.com.ar/turismo",
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Villa del Dique",
+                    addressRegion: "Córdoba",
+                    addressCountry: "AR",
+                    postalCode: "5194",
+                  },
+                  geo: {
+                    "@type": "GeoCoordinates",
+                    latitude: -32.1833,
+                    longitude: -64.4833,
+                  },
+                  touristType: [
+                    "Turismo familiar",
+                    "Turismo de naturaleza",
+                    "Deportes náuticos",
+                    "Turismo rural",
+                    "Turismo de aventura",
+                    "Pesca deportiva",
+                    "Turismo cultural",
+                  ],
+                  includesAttraction: [
+                    {
+                      "@type": "TouristAttraction",
+                      name: "Dique Los Molinos",
+                      description:
+                        "Lago artificial ideal para deportes náuticos, pesca deportiva y actividades familiares",
+                      geo: {
+                        "@type": "GeoCoordinates",
+                        latitude: -32.1833,
+                        longitude: -64.4833,
+                      },
+                    },
+                    {
+                      "@type": "TouristAttraction",
+                      name: "Polo Cultural Villa del Dique",
+                      description: "Centro cultural con anfiteatro, Casa de la Cultura y espacios para eventos",
+                    },
+                    {
+                      "@type": "TouristAttraction",
+                      name: "Anfiteatro Villa del Dique",
+                      description: "Espacio cultural al aire libre para espectáculos y eventos comunitarios",
+                    },
+                  ],
+                  availableLanguage: "es",
+                  currenciesAccepted: "ARS",
+                  paymentAccepted: ["Cash", "Credit Card", "Debit Card"],
+                },
+                {
+                  "@type": "LocalBusiness",
+                  "@id": "https://www.villadeldique.com.ar/#localbusiness",
+                  name: "Villa del Dique Digital",
+                  description: "Portal digital oficial de Villa del Dique con noticias, turismo y negocios locales",
+                  url: "https://www.villadeldique.com.ar",
+                  telephone: "+54-3546-533050",
+                  email: "villadeldiquedigital@gmail.com",
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Villa del Dique",
+                    addressRegion: "Córdoba",
+                    addressCountry: "AR",
+                    postalCode: "5194",
+                  },
+                  geo: {
+                    "@type": "GeoCoordinates",
+                    latitude: -32.1833,
+                    longitude: -64.4833,
+                  },
+                  openingHours: "Mo-Su 00:00-23:59",
+                  serviceArea: {
+                    "@type": "Place",
+                    name: "Villa del Dique, Valle de Calamuchita, Córdoba, Argentina",
+                  },
+                  priceRange: "Gratis",
+                  currenciesAccepted: "ARS",
+                  paymentAccepted: "No aplica",
+                },
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   )

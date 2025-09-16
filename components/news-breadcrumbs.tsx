@@ -78,24 +78,6 @@ export default function NewsBreadcrumbs({ currentArticleId, currentTitle }: News
   return (
     <div className="bg-gray-50 py-8 md:py-12">
       <div className="max-w-4xl mx-auto px-4 md:px-6">
-        <nav className="mb-6 md:mb-8">
-          <ol className="flex items-center space-x-2 text-sm md:text-base">
-            <li>
-              <Link href="/" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">
-                Inicio
-              </Link>
-            </li>
-            <li className="text-gray-500">/</li>
-            <li>
-              <Link href="/noticias" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">
-                Noticias
-              </Link>
-            </li>
-            <li className="text-gray-500">/</li>
-            <li className="text-gray-800 font-medium truncate max-w-xs md:max-w-md">{currentTitle}</li>
-          </ol>
-        </nav>
-
         <div className="border-t border-gray-200 pt-6 md:pt-8">
           <h2 className="font-serif text-xl md:text-2xl font-bold text-brand-navy mb-6 md:mb-8">
             Noticias relacionadas

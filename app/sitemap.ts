@@ -3,8 +3,23 @@ import type { MetadataRoute } from "next"
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.villadeldique.com.ar"
 
-  // Noticias con sus fechas reales
   const newsArticles = [
+    {
+      id: "mega-feria-villa-del-dique",
+      date: "2025-09-15",
+    },
+    {
+      id: "dia-internacional-democracia",
+      date: "2025-09-15",
+    },
+    {
+      id: "dia-mundial-linfoma",
+      date: "2025-09-15",
+    },
+    {
+      id: "desafio-cerro-lago",
+      date: "2025-09-14",
+    },
     {
       id: "inauguracion-polo-cultural-asociacion",
       date: "2025-09-12",
@@ -32,44 +47,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   return [
-    // Página principal
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
+      changeFrequency: "hourly",
+      priority: 1.0,
     },
-    // Páginas principales
+    // Páginas principales con mayor frecuencia de actualización
     {
       url: `${baseUrl}/noticias`,
+      lastModified: new Date(),
+      changeFrequency: "hourly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/turismo`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/turismo`,
+      url: `${baseUrl}/suscribirse`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/suscribirse`,
+      url: `${baseUrl}/contacto`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/contacto`,
+      url: `${baseUrl}/terminos`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.3,
     },
-    // Noticias individuales
+    {
+      url: `${baseUrl}/licencia`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
     ...newsArticles.map((article) => ({
       url: `${baseUrl}/noticias/${article.id}`,
       lastModified: new Date(article.date),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
+      changeFrequency: "daily" as const,
+      priority: 0.85,
     })),
   ]
 }

@@ -1,124 +1,158 @@
 "use client"
 
-import Image from "next/image"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Copy, Heart } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { toast } from "@/hooks/use-toast"
+import { useState } from "react"
 
 export default function PromotionalBanner() {
-  const copyToClipboard = (text: string, label: string) => {
-    navigator.clipboard.writeText(text).then(() => {
-      toast({
-        title: "¡Copiado!",
-        description: `${label} copiado al portapapeles`,
-        duration: 2000,
-      })
-    })
+  const [isAccordionOpen, setIsAccordionOpen] = useState(false)
+  const [copySuccess, setCopySuccess] = useState(false)
+
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopySuccess(true)
+      setTimeout(() => setCopySuccess(false), 2000)
+    } catch (err) {
+      console.error("Failed to copy: ", err)
+    }
   }
 
   return (
-    <section className="relative">
-      <div className="relative w-full">
-        <a
-          href="https://www.instagram.com/bomberosvilladeldique/?hl=es-la"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block cursor-pointer"
-        >
-          <Image
-            src="/images/banner-promocional-villa-del-dique-digital.webp"
-            alt="¡Colaborá con nuestros Bomberos Voluntarios! - Tu aporte ayuda a sostener su labor y proteger a toda la comunidad"
-            width={1920}
-            height={400}
-            className="w-full h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 object-cover object-center hover:opacity-95 transition-opacity"
-            priority
-          />
-        </a>
+    <section className="py-6 md:py-8 px-4 md:px-6 lg:px-8" style={{ backgroundColor: "#dc2626" }}>
+      <div className="max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
+          <div className="text-center md:text-left md:flex-1">
+            <h2 className="font-serif text-xl md:text-2xl font-bold mb-2" style={{ color: "#ffffff" }}>
+              ¡Colaborá con los Bomberos Voluntarios!
+            </h2>
+            <p className="font-sans text-sm md:text-base mb-4 md:mb-0 leading-relaxed" style={{ color: "#ffffff" }}>
+              Tu aporte ayuda a sostener su labor y a proteger a toda la comunidad.
+            </p>
+          </div>
 
-        {/* CONTENEDOR CENTRADO */}
-        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 sm:bottom-4 sm:left-1/2 sm:-translate-x-1/2 sm:max-w-md md:max-w-lg lg:max-w-xl">
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="donation-info" className="border-0 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg">
-              <AccordionTrigger className="px-3 py-2 sm:px-4 sm:py-3 hover:bg-white/80 rounded-t-lg">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <div className="bg-brand-navy text-white p-1.5 sm:p-2 rounded-full">
-                    <Heart className="h-3 w-3 sm:h-4 sm:w-4" />
-                  </div>
-                  <span className="font-semibold text-brand-navy text-left text-xs sm:text-sm md:text-base">DONAR</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="px-3 py-3 sm:px-4 sm:py-4 bg-white/95 rounded-b-lg">
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="grid gap-2 sm:gap-3 grid-cols-1 sm:grid-cols-2">
-                    <div className="bg-white p-2 sm:p-3 rounded-lg border border-gray-200">
-                      <div className="flex items-center justify-between mb-1 sm:mb-2">
-                        <label className="text-xs font-medium text-gray-700">Alias</label>
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          onClick={() => copyToClipboard("bomberos.villa.dique", "Alias")}
-                          className="h-5 w-5 sm:h-6 sm:w-6 p-0"
-                        >
-                          <Copy className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
-                        </Button>
-                      </div>
-                      <p className="font-mono text-xs sm:text-sm font-bold text-brand-navy">bomberos.villa.dique</p>
-                    </div>
-
-                    <div className="bg-white p-2 sm:p-3 rounded-lg border border-gray-200">
-                      <div className="flex items-center justify-between mb-1 sm:mb-2">
-                        <label className="text-xs font-medium text-gray-700">CUIT/CUIL</label>
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          onClick={() => copyToClipboard("30-66868497-8", "CUIT/CUIL")}
-                          className="h-5 w-5 sm:h-6 sm:w-6 p-0"
-                        >
-                          <Copy className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
-                        </Button>
-                      </div>
-                      <p className="font-mono text-xs sm:text-sm font-bold text-brand-navy">30-66868497-8</p>
-                    </div>
-                  </div>
-
-                  <div className="bg-white p-2 sm:p-3 rounded-lg border border-gray-200">
-                    <div className="flex items-center justify-between mb-1 sm:mb-2">
-                      <label className="text-xs font-medium text-gray-700">Nombre / Razón Social</label>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        onClick={() => copyToClipboard("Sociedad De Bomberos Voluntarios De Villa", "Razón Social")}
-                        className="h-5 w-5 sm:h-6 sm:w-6 p-0"
-                      >
-                        <Copy className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
-                      </Button>
-                    </div>
-                    <p className="font-semibold text-brand-navy text-xs sm:text-sm">
-                      Sociedad De Bomberos Voluntarios De Villa
+          <div className="flex-shrink-0">
+            <div className="bg-black/20 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+              <button
+                onClick={() => setIsAccordionOpen(!isAccordionOpen)}
+                className="flex items-center justify-between w-full text-left"
+                aria-expanded={isAccordionOpen}
+              >
+                <div className="flex items-center gap-3">
+                  <svg
+                    className="w-8 h-8 flex-shrink-0"
+                    style={{ color: "#ffd54f" }}
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                  <div>
+                    <h3 className="font-sans text-sm font-semibold" style={{ color: "#ffffff" }}>
+                      Donar
+                    </h3>
+                    <p className="font-sans text-xs" style={{ color: "#ffffff" }}>
+                      Información de donación
                     </p>
                   </div>
+                </div>
+                <svg
+                  className={`w-5 h-5 transition-transform duration-200 ${isAccordionOpen ? "rotate-180" : ""}`}
+                  style={{ color: "#ffffff" }}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
 
-                  <div className="bg-white p-2 sm:p-3 rounded-lg border border-gray-200">
-                    <label className="text-xs font-medium text-gray-700 block mb-1 sm:mb-2">Entidad</label>
-                    <div className="flex items-center gap-2">
-                      <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+              {isAccordionOpen && (
+                <div className="mt-4 pt-4 border-t border-white/10 space-y-3">
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="font-sans text-xs font-semibold" style={{ color: "#ffd54f" }}>
+                        Alias:
+                      </span>
+                      <div className="flex items-center gap-2">
+                        <span className="font-sans text-xs" style={{ color: "#ffffff" }}>
+                          bomberos.villa.dique
+                        </span>
+                        <button
+                          onClick={() => copyToClipboard("bomberos.villa.dique")}
+                          className="p-1 rounded hover:bg-white/10 transition-colors"
+                          title="Copiar alias"
+                        >
+                          {copySuccess ? (
+                            <svg
+                              className="w-3 h-3"
+                              style={{ color: "#4ade80" }}
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          ) : (
+                            <svg
+                              className="w-3 h-3"
+                              style={{ color: "#ffffff" }}
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                              />
+                            </svg>
+                          )}
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="text-xs space-y-1" style={{ color: "#ffffff" }}>
+                      <div>
+                        <span className="font-semibold" style={{ color: "#ffd54f" }}>
+                          Nombre:
+                        </span>{" "}
+                        Sociedad De Bomberos Voluntarios De Villa
+                      </div>
+                      <div>
+                        <span className="font-semibold" style={{ color: "#ffd54f" }}>
+                          CUIT/CUIL:
+                        </span>{" "}
+                        30-66868497-8
+                      </div>
+                      <div>
+                        <span className="font-semibold" style={{ color: "#ffd54f" }}>
+                          Entidad:
+                        </span>{" "}
                         Mercado Pago
                       </div>
                     </div>
-                  </div>
 
-                  <div className="bg-brand-navy text-white p-2 sm:p-3 rounded-lg text-center">
-                    <p className="text-xs">
-                      <strong>¡Gracias por tu solidaridad!</strong>
-                      <br />
-                      Cada donación nos ayuda a mantener nuestros equipos.
-                    </p>
+                    <a
+                      href="https://www.instagram.com/bomberosvilladeldique?igsh=dWMxZ3B3ZjB1cDlp"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-3 py-2 rounded-lg font-sans font-bold text-xs hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 w-full justify-center mt-3"
+                      style={{ backgroundColor: "#ffd54f", color: "#dc2626" }}
+                    >
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                      </svg>
+                      <span>Seguir en Instagram</span>
+                    </a>
                   </div>
                 </div>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </section>

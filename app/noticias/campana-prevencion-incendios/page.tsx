@@ -54,13 +54,13 @@ export default function CampanaPrevencionIncendios() {
       <main className="min-h-screen bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 md:px-6 py-6 md:py-8">
           <Link
-            href="/"
+            href="/noticias"
             className="inline-flex items-center text-brand-blue hover:text-blue-700 mb-6 font-sans transition-colors"
           >
             <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            Volver a inicio
+            ← Volver a Noticias
           </Link>
 
           <article className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -140,6 +140,65 @@ export default function CampanaPrevencionIncendios() {
                   description="Un descuido puede terminar en tragedia. Súmate a las acciones de prevención de incendios y cuidemos entre todos nuestro entorno."
                 />
               </div>
+
+              <section className="mt-12 pt-8 border-t border-gray-200">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-6">Noticias relacionadas</h2>
+                <div className="grid gap-6 md:grid-cols-2">
+                  <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div className="relative h-48">
+                      <Image
+                        src="/images/portada-bomberos-voluntarios.jpg"
+                        alt="Entrevista con Bomberos Voluntarios"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                        Entrevista con Bomberos Voluntarios de Villa del Dique
+                      </h3>
+                      <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+                        Conoce el trabajo y dedicación de los Bomberos Voluntarios de Villa del Dique en esta entrevista
+                        exclusiva.
+                      </p>
+                      <Link
+                        href="/noticias/entrevista-bomberos-voluntarios"
+                        className="text-brand-blue hover:text-blue-700 font-medium text-sm transition-colors"
+                      >
+                        Leer más →
+                      </Link>
+                    </div>
+                  </article>
+
+                  <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div className="relative h-48">
+                      <Image
+                        src="/images/portada-septiembre-amarillo.jpg"
+                        alt="Septiembre Amarillo"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                        Septiembre Amarillo: Mes de Prevención del Suicidio
+                      </h3>
+                      <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+                        Septiembre es el mes mundial de la prevención del suicidio. Hablemos, escuchemos y actuemos
+                        juntos.
+                      </p>
+                      <Link
+                        href="/noticias/septiembre-amarillo-prevencion"
+                        className="text-brand-blue hover:text-blue-700 font-medium text-sm transition-colors"
+                      >
+                        Leer más →
+                      </Link>
+                    </div>
+                  </article>
+                </div>
+              </section>
             </div>
           </article>
         </div>

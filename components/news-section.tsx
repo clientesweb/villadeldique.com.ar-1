@@ -3,6 +3,26 @@ import Link from "next/link"
 
 const newsData = [
   {
+    id: "dia-internacional-democracia",
+    title: "15 de septiembre: Día Internacional de la Democracia",
+    excerpt:
+      "Cada 15 de septiembre el mundo conmemora el Día Internacional de la Democracia. En Villa del Dique reflexionamos sobre la importancia de fortalecer los valores democráticos en nuestras comunidades.",
+    image: "/images/portada-dia-de-la-democracia.jpg",
+    date: "2025-09-15",
+    displayDate: "15 de septiembre de 2025",
+    slug: "dia-internacional-democracia",
+  },
+  {
+    id: "dia-mundial-linfoma",
+    title: "15 de septiembre: Día Mundial de la Concientización sobre el Linfoma",
+    excerpt:
+      "Una fecha para visibilizar y sensibilizar a la población sobre este tipo de cáncer hematológico. Información sobre síntomas, detección temprana y recursos disponibles.",
+    image: "/images/portada-dia-mundial-linfoma.jpg",
+    date: "2025-09-15",
+    displayDate: "15 de septiembre de 2025",
+    slug: "dia-mundial-linfoma",
+  },
+  {
     id: "mega-feria-villa-del-dique",
     title: "Villa del Dique vive su primera Mega Feria en el Centro Cultural Pato Carret",
     excerpt:
@@ -70,7 +90,7 @@ export default function NewsSection() {
                 <Image src={article.image || "/placeholder.svg"} alt={article.title} fill className="object-cover" />
               </div>
               <div className="p-6">
-                <h3 className="font-serif text-xl font-bold text-brand-navy mb-3">{article.title}</h3>
+                <h3 className="font-serif text-xl font-bold text-gray-900 mb-3">{article.title}</h3>
                 <p className="font-sans text-gray-700 mb-4 leading-relaxed text-sm">{article.excerpt}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-xs text-gray-600 font-sans">

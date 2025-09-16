@@ -6,6 +6,7 @@ import AnnouncementBar from "@/components/announcement-bar"
 import Footer from "@/components/footer"
 import NewsBreadcrumbs from "@/components/news-breadcrumbs"
 import ShareButtons from "@/components/share-buttons"
+import NewsAdvertisingCarousel from "@/components/news-advertising-carousel"
 
 export const metadata: Metadata = {
   title: "Septiembre Amarillo: prevenir es acompañar | Villa del Dique Digital",
@@ -63,13 +64,13 @@ export default function SeptiembreAmarilloPrevencion() {
       <main className="min-h-screen bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 md:px-6 py-6 md:py-8">
           <Link
-            href="/"
-            className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-6 font-sans transition-colors"
+            href="/noticias"
+            className="inline-flex items-center text-brand-blue hover:text-blue-700 mb-6 font-sans transition-colors"
           >
             <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            Volver a inicio
+            ← Volver a Noticias
           </Link>
 
           <article className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -203,6 +204,8 @@ export default function SeptiembreAmarilloPrevencion() {
                 </div>
               </div>
 
+              <NewsAdvertisingCarousel />
+
               <div className="mt-8">
                 <ShareButtons
                   title="Septiembre Amarillo: prevenir es acompañar"
@@ -214,6 +217,63 @@ export default function SeptiembreAmarilloPrevencion() {
                   description="Cada 7 de septiembre se conmemora el Día Mundial de la Prevención del Suicidio. Una fecha que nos invita a reflexionar y abrir espacios de acompañamiento."
                 />
               </div>
+
+              <section className="mt-12 pt-8 border-t border-gray-200">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-6">Noticias relacionadas</h2>
+                <div className="grid gap-6 md:grid-cols-2">
+                  <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div className="relative h-48">
+                      <Image
+                        src="/images/portada-bomberos-voluntarios.webp"
+                        alt="Bomberos Voluntarios"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                        Bomberos Voluntarios de Villa del Dique: Vocación, Riesgo y Compromiso Comunitario
+                      </h3>
+                      <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+                        Entrevista exclusiva con los Bomberos Voluntarios sobre su labor incansable y dedicación.
+                      </p>
+                      <Link
+                        href="/noticias/entrevista-bomberos-voluntarios"
+                        className="text-brand-blue hover:text-blue-700 font-medium text-sm transition-colors"
+                      >
+                        Leer más →
+                      </Link>
+                    </div>
+                  </article>
+
+                  <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div className="relative h-48">
+                      <Image
+                        src="/images/portada-dia-mundial-linfoma.jpg"
+                        alt="Día Mundial del Linfoma"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                        Día Mundial del Linfoma: Información y Prevención
+                      </h3>
+                      <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+                        Conoce más sobre el linfoma, sus síntomas y la importancia de la detección temprana.
+                      </p>
+                      <Link
+                        href="/noticias/dia-mundial-linfoma"
+                        className="text-brand-blue hover:text-blue-700 font-medium text-sm transition-colors"
+                      >
+                        Leer más →
+                      </Link>
+                    </div>
+                  </article>
+                </div>
+              </section>
             </div>
           </article>
         </div>

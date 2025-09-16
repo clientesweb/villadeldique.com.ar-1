@@ -80,6 +80,26 @@ export const metadata: Metadata = {
 
 const allNews = [
   {
+    id: "dia-internacional-democracia",
+    title: "15 de septiembre: Día Internacional de la Democracia",
+    excerpt:
+      "Cada 15 de septiembre el mundo conmemora el Día Internacional de la Democracia. En Villa del Dique reflexionamos sobre la importancia de fortalecer los valores democráticos en nuestras comunidades.",
+    image: "/images/portada-dia-de-la-democracia.jpg",
+    date: "2025-09-15",
+    category: "Comunidad",
+    author: "Villa del Dique Digital",
+  },
+  {
+    id: "dia-mundial-linfoma",
+    title: "15 de septiembre: Día Mundial de la Concientización sobre el Linfoma",
+    excerpt:
+      "Una fecha para visibilizar y sensibilizar a la población sobre este tipo de cáncer hematológico. Información sobre síntomas, detección temprana y recursos disponibles.",
+    image: "/images/portada-dia-mundial-linfoma.jpg",
+    date: "2025-09-15",
+    category: "Salud",
+    author: "Villa del Dique Digital",
+  },
+  {
     id: "mega-feria-villa-del-dique",
     title: "Villa del Dique vive su primera Mega Feria en el Centro Cultural Pato Carret",
     excerpt:

@@ -4,8 +4,7 @@ import Link from "next/link"
 import Header from "@/components/header"
 import AnnouncementBar from "@/components/announcement-bar"
 import Footer from "@/components/footer"
-import NewsBreadcrumbs from "@/components/news-breadcrumbs"
-import ShareButtons from "@/components/share-buttons"
+import NewsAdvertisingCarousel from "@/components/news-advertising-carousel"
 
 export const metadata: Metadata = {
   title: "Villa del Dique vive su primera Mega Feria en el Centro Cultural Pato Carret | Villa del Dique Digital",
@@ -103,10 +102,15 @@ export default function MegaFeriaPage() {
 
       <main className="min-h-screen bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 md:px-6 py-6 md:py-8">
-          <NewsBreadcrumbs
-            category="Eventos"
-            title="Villa del Dique vive su primera Mega Feria en el Centro Cultural Pato Carret"
-          />
+          <Link
+            href="/noticias"
+            className="inline-flex items-center text-brand-blue hover:text-blue-700 mb-6 font-sans transition-colors"
+          >
+            <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            ← Volver a Noticias
+          </Link>
 
           <article className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64 md:h-96">
@@ -190,16 +194,26 @@ export default function MegaFeriaPage() {
                       @turismoycultura.villadeldique
                     </a>
                   </p>
+                  <p className="text-sm text-gray-500 mb-4">
+                    Organiza: Municipalidad Villa del Dique{" "}
+                    <a
+                      href="https://www.instagram.com/munivilladeldique/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-brand-blue hover:underline"
+                    >
+                      @munivilladeldique
+                    </a>
+                  </p>
                   <p className="text-sm text-gray-500">Por Villa del Dique Digital</p>
                 </div>
               </div>
             </div>
-          </article>
 
-          <ShareButtons
-            url="https://www.villadeldique.com.ar/noticias/mega-feria-villa-del-dique"
-            title="Villa del Dique vive su primera Mega Feria en el Centro Cultural Pato Carret"
-          />
+            <NewsAdvertisingCarousel />
+
+            <div className="p-6 md:p-8">{/* ... existing code ... */}</div>
+          </article>
 
           <section className="mt-12 bg-white rounded-lg shadow-lg p-6 md:p-8">
             <h2 className="font-serif text-2xl font-bold text-brand-navy mb-6">Noticias relacionadas</h2>
@@ -262,18 +276,6 @@ export default function MegaFeriaPage() {
               </article>
             </div>
           </section>
-
-          <div className="mt-8 text-center">
-            <Link
-              href="/noticias"
-              className="inline-flex items-center bg-brand-blue text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              Volver a noticias
-            </Link>
-          </div>
         </div>
       </main>
 

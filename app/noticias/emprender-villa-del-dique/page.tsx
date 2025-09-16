@@ -393,6 +393,64 @@ export default function EmprenderVillaDelDiquePage() {
                 description="Descubre las historias de emprendedores locales: Rincón Natural, Namaskar Movimiento, Iowa.ar y el evento de boxeo que unió a toda la comunidad en Villa del Dique."
               />
             </div>
+
+            <section className="mt-12 pt-8 border-t border-gray-200">
+              <h2 className="font-serif text-xl sm:text-2xl font-bold text-gray-900 mb-6">Noticias relacionadas</h2>
+              <div className="grid gap-6 md:grid-cols-2">
+                <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                  <div className="relative h-48">
+                    <Image
+                      src="/images/portada-mega-feria.jpg"
+                      alt="Mega Feria Villa del Dique"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                      Villa del Dique vive su primera Mega Feria
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+                      Una propuesta única que combina gastronomía, artesanías, música en vivo y entretenimiento
+                      familiar.
+                    </p>
+                    <Link
+                      href="/noticias/mega-feria-villa-del-dique"
+                      className="text-brand-blue hover:text-blue-700 font-medium text-sm transition-colors"
+                    >
+                      Leer más →
+                    </Link>
+                  </div>
+                </article>
+
+                <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                  <div className="relative h-48">
+                    <Image
+                      src="/images/portada-inaguacion-polo-asociacion.webp"
+                      alt="Inauguración Polo Cultural"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-serif text-lg font-bold text-gray-900 mb-2 line-clamp-2">
+                      Villa del Dique celebra la inauguración de su nuevo Polo Cultural
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+                      La comunidad vivió una noche histórica con la inauguración del Polo Cultural.
+                    </p>
+                    <Link
+                      href="/noticias/inauguracion-polo-cultural-asociacion"
+                      className="text-brand-blue hover:text-blue-700 font-medium text-sm transition-colors"
+                    >
+                      Leer más →
+                    </Link>
+                  </div>
+                </article>
+              </div>
+            </section>
           </div>
         </article>
 
