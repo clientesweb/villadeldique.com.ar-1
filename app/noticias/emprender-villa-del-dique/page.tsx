@@ -369,7 +369,7 @@ export default function EmprenderVillaDelDiquePage() {
                     </li>
                     <li>
                       <a
-                        href="https://www.villadeldique.gob.ar"
+                        href="https://instagram.com/munivilladeldique"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:underline"
