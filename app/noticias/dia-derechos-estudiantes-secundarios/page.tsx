@@ -161,9 +161,7 @@ export default function DiaDerechosEstudiantesSecundariosPage() {
 
               <div className="prose prose-lg max-w-none">
                 <p className="text-xl text-gray-700 leading-relaxed mb-6 font-medium">
-                  Villa del Dique, 16 de septiembre de 2025.
                 </p>
-
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Cada 16 de septiembre, Argentina recuerda uno de los capítulos más dolorosos de su historia reciente:
                   <strong> La Noche de los Lápices</strong>, cuando en 1976 un grupo de estudiantes secundarios de La
