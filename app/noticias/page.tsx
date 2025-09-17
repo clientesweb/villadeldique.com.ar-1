@@ -80,6 +80,26 @@ export const metadata: Metadata = {
 
 const allNews = [
   {
+    id: "dia-del-profesor",
+    title: "Día del Profesor: Celebrando a quienes inspiran con su enseñanza",
+    excerpt:
+      "Una fecha para reconocer la vocación, el esfuerzo y la guía de nuestros educadores. Desde Villa del Dique Digital saludamos a todos los docentes en su día.",
+    image: "/images/feliz-dia-del-profesor.jpg",
+    date: "2025-09-17",
+    category: "Comunidad",
+    author: "Villa del Dique Digital",
+  },
+  {
+    id: "dia-del-psicopedagogo",
+    title: "Día del Psicopedagogo: acompañando el aprendizaje y el desarrollo",
+    excerpt:
+      "Reconocimiento a los profesionales que integran la educación y la salud. Hoy 17 de septiembre en Argentina se conmemora el Día del Psicopedagogo.",
+    image: "/images/dia-del-profesor-aula.jpg",
+    date: "2025-09-17",
+    category: "Salud",
+    author: "Villa del Dique Digital",
+  },
+  {
     id: "dia-derechos-estudiantes-secundarios",
     title: "16 de septiembre: Día de los Derechos de los Estudiantes Secundarios",
     excerpt:

@@ -201,15 +201,51 @@ header nav span:hover {
   color: #ffd54f !important;
 }
 
-/* Specific override for navigation text in header to prevent brand-navy color inheritance */
+/* Enhanced specificity for all navigation links to ensure white text */
 header nav a[href="/suscribirse"],
 header nav a[href="/suscribirse"] span,
 header nav a[href="/contacto"],
 header nav a[href="/contacto"] span,
 header nav a[href="/turismo"],
 header nav a[href="/turismo"] span,
+header nav a[href="/noticias"],
+header nav a[href="/noticias"] span,
 header nav a[href="/"],
-header nav a[href="/"] span {
+header nav a[href="/"] span,
+header .bg-brand-navy nav a,
+header .bg-brand-navy nav a span,
+header .bg-brand-navy nav span,
+.bg-brand-navy nav a,
+.bg-brand-navy nav a span,
+.bg-brand-navy nav span {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Ensure hover states work properly for all navigation links */
+header nav a[href="/suscribirse"]:hover,
+header nav a[href="/suscribirse"]:hover span,
+header nav a[href="/contacto"]:hover,
+header nav a[href="/contacto"]:hover span,
+header nav a[href="/turismo"]:hover,
+header nav a[href="/turismo"]:hover span,
+header nav a[href="/noticias"]:hover,
+header nav a[href="/noticias"]:hover span,
+header nav a[href="/"]:hover,
+header nav a[href="/"]:hover span,
+header .bg-brand-navy nav a:hover,
+header .bg-brand-navy nav a:hover span,
+header .bg-brand-navy nav span:hover,
+.bg-brand-navy nav a:hover,
+.bg-brand-navy nav a:hover span,
+.bg-brand-navy nav span:hover {
+  color: #ffd54f !important;
+}
+
+/* Additional override to prevent any brand-navy color inheritance on text */
+header nav .text-brand-navy,
+header .text-brand-navy,
+.bg-brand-navy .text-brand-navy {
   color: #ffffff !important;
 }
 

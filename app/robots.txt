@@ -9,6 +9,8 @@ Allow: /noticias
 Allow: /turismo
 Allow: /suscribirse
 Allow: /contacto
+Allow: /terminos
+Allow: /licencia
 
 # Permitir acceso a todas las noticias individuales
 Allow: /noticias/*
@@ -42,15 +44,15 @@ Allow: /icons/
 User-agent: Googlebot-Video
 Allow: /
 
-# Sitemap
+# Sitemaps
 Sitemap: https://www.villadeldique.com.ar/sitemap.xml
+Sitemap: https://www.villadeldique.com.ar/news-sitemap.xml
 
-# Crawl-delay para evitar sobrecarga del servidor
-Crawl-delay: 1
+Crawl-delay: 0.5
 
 # Información adicional para SEO local
-# Este sitio web es el portal oficial de noticias de Villa del Dique, Córdoba, Argentina
+# Este sitio web es el portal de noticias de Villa del Dique, Córdoba, Argentina
 # Contenido: Noticias locales, turismo, información comunitaria, emprendimientos
 # Audiencia: Residentes y visitantes de Villa del Dique y alrededores
 # Idioma: Español (Argentina)
-# Última actualización: 2025-01-14
+# Última actualización: 2025-09-17

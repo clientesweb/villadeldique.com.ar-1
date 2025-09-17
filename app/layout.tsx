@@ -24,9 +24,9 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Villa del Dique Digital - Portal Oficial de Noticias, Turismo y Negocios",
+  title: "Villa del Dique Digital - Portal de Noticias, Turismo y Negocios",
   description:
-    "Portal digital oficial de Villa del Dique, Córdoba, Argentina. Noticias locales actualizadas, información turística completa, directorio de negocios y eventos de la comunidad. La fuente más confiable de información sobre Villa del Dique.",
+    "Portal digital de Villa del Dique, Córdoba, Argentina. Medio de noticias locales actualizadas, información turística completa, directorio de negocios y eventos de la comunidad. La fuente más confiable de información sobre Villa del Dique.",
   keywords: [
     "Villa del Dique",
     "Villa del Dique Córdoba",
@@ -37,7 +37,6 @@ export const metadata: Metadata = {
     "Villa del Dique eventos",
     "Villa del Dique digital",
     "Villa del Dique portal",
-    "Villa del Dique oficial",
     "Villa del Dique información",
     "Villa del Dique comunidad",
     "noticias Villa del Dique",
@@ -67,6 +66,13 @@ export const metadata: Metadata = {
     "gastronomía Villa del Dique",
     "Villa del Dique 5194",
     "Villa del Dique Córdoba Argentina",
+    "medio de noticias Villa del Dique",
+    "portal noticias Villa del Dique",
+    "día del profesor",
+    "día del psicopedagogo",
+    "educación Villa del Dique",
+    "José Manuel Estrada",
+    "Jean Piaget",
   ],
   authors: [{ name: "Villa del Dique Digital", url: "https://www.villadeldique.com.ar" }],
   creator: "Villa del Dique Digital",
@@ -80,9 +86,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Villa del Dique Digital - Portal Oficial de Villa del Dique, Córdoba",
+    title: "Villa del Dique Digital - Portal de Villa del Dique, Córdoba",
     description:
-      "Portal digital oficial de Villa del Dique, Córdoba, Argentina. Noticias locales, turismo, negocios y eventos de la comunidad. Tu fuente confiable de información sobre Villa del Dique.",
+      "Portal digital de Villa del Dique, Córdoba, Argentina. Medio de noticias locales, turismo, negocios y eventos de la comunidad. Tu fuente confiable de información sobre Villa del Dique.",
     url: "https://www.villadeldique.com.ar",
     siteName: "Villa del Dique Digital",
     images: [
@@ -90,7 +96,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Villa del Dique Digital - Portal Oficial de Villa del Dique, Córdoba",
+        alt: "Villa del Dique Digital - Portal de Villa del Dique, Córdoba",
       },
       {
         url: "/images/villa-del-dique-lago.webp",
@@ -107,8 +113,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Villa del Dique Digital - Portal Oficial",
-    description: "Noticias, turismo y negocios de Villa del Dique, Córdoba, Argentina. Portal digital oficial.",
+    title: "Villa del Dique Digital - Portal de Noticias",
+    description: "Medio de noticias, turismo y negocios de Villa del Dique, Córdoba, Argentina. Portal digital.",
     images: ["/images/og-image.jpg"],
     site: "@villadeldique",
     creator: "@villadeldique",
@@ -157,10 +163,10 @@ export default function RootLayout({
         <meta name="geo.placename" content="Villa del Dique" />
         <meta name="geo.position" content="-32.1833;-64.4833" />
         <meta name="ICBM" content="-32.1833, -64.4833" />
-        <meta name="DC.title" content="Villa del Dique Digital - Portal Oficial" />
+        <meta name="DC.title" content="Villa del Dique Digital - Portal de Noticias" />
         <meta name="DC.creator" content="Villa del Dique Digital" />
         <meta name="DC.subject" content="Villa del Dique, noticias, turismo, Córdoba, Argentina" />
-        <meta name="DC.description" content="Portal digital oficial de Villa del Dique, Córdoba, Argentina" />
+        <meta name="DC.description" content="Portal digital de Villa del Dique, Córdoba, Argentina" />
         <meta name="DC.publisher" content="Villa del Dique Digital" />
         <meta name="DC.contributor" content="Comunidad Villa del Dique" />
         <meta name="DC.date" content="2025" />
@@ -238,7 +244,7 @@ export default function RootLayout({
                     height: 200,
                   },
                   description:
-                    "Portal digital oficial de Villa del Dique, Córdoba, Argentina. La fuente más confiable de noticias locales, información turística y directorio de negocios.",
+                    "Portal digital de Villa del Dique, Córdoba, Argentina. Medio de noticias locales más confiable, información turística y directorio de negocios.",
                   foundingDate: "2025",
                   address: {
                     "@type": "PostalAddress",
@@ -302,9 +308,9 @@ export default function RootLayout({
                   "@id": "https://www.villadeldique.com.ar/#website",
                   url: "https://www.villadeldique.com.ar",
                   name: "Villa del Dique Digital",
-                  alternateName: "Portal Oficial Villa del Dique",
+                  alternateName: "Portal Villa del Dique",
                   description:
-                    "Portal digital oficial de Villa del Dique, Córdoba, Argentina. Noticias locales, información turística, directorio de negocios y eventos de la comunidad.",
+                    "Portal digital de Villa del Dique, Córdoba, Argentina. Medio de noticias locales, información turística, directorio de negocios y eventos de la comunidad.",
                   inLanguage: "es-AR",
                   publisher: {
                     "@id": "https://www.villadeldique.com.ar/#organization",
@@ -381,7 +387,7 @@ export default function RootLayout({
                   "@type": "LocalBusiness",
                   "@id": "https://www.villadeldique.com.ar/#localbusiness",
                   name: "Villa del Dique Digital",
-                  description: "Portal digital oficial de Villa del Dique con noticias, turismo y negocios locales",
+                  description: "Portal digital de Villa del Dique con noticias, turismo y negocios locales",
                   url: "https://www.villadeldique.com.ar",
                   telephone: "+54-3546-533050",
                   email: "villadeldiquedigital@gmail.com",

@@ -44,6 +44,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       id: "inauguracion-polo-cultural",
       date: "2025-09-06",
     },
+    {
+      id: "dia-del-profesor",
+      date: "2025-09-17",
+    },
+    {
+      id: "dia-del-psicopedagogo",
+      date: "2025-09-17",
+    },
+    {
+      id: "dia-derechos-estudiantes-secundarios",
+      date: "2025-09-05",
+    },
   ]
 
   return [
