@@ -17,6 +17,22 @@ interface NewsBreadcrumbsProps {
 
 const allNews: RelatedNews[] = [
   {
+    id: "dia-del-profesor",
+    title: "Día del Profesor: Celebrando a quienes inspiran con su enseñanza",
+    excerpt: "Una fecha para reconocer la vocación, el esfuerzo y la guía de nuestros educadores.",
+    image: "/images/feliz-dia-del-profesor.jpg",
+    date: "2025-09-17",
+    category: "Comunidad",
+  },
+  {
+    id: "dia-del-psicopedagogo",
+    title: "Día del Psicopedagogo: acompañando el aprendizaje y el desarrollo",
+    excerpt: "Reconocimiento a los profesionales que integran la educación y la salud.",
+    image: "/images/dia-del-profesor-aula.jpg",
+    date: "2025-09-17",
+    category: "Salud",
+  },
+  {
     id: "septiembre-amarillo-prevencion",
     title: "Septiembre Amarillo: prevenir es acompañar",
     excerpt:

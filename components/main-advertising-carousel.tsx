@@ -38,6 +38,21 @@ const mainBanners = [
     link: "https://www.instagram.com/rn.almacen/",
   },
   {
+    id: "namaskar-centro-holistico",
+    name: "Namaskar Centro Holístico",
+    image: "/images/banners/namaskar-centro-holistico.webp",
+    alt: "Namaskar Centro Holístico - www.namaskar.com.ar",
+    link: "https://www.namaskar.com.ar",
+  },
+  {
+    id: "pasion-y-vinos",
+    name: "Pasión & Vinos",
+    image: "/images/banners/pasion-y-vinos.webp",
+    alt: "Pasión & Vinos - @pasionyvinos_ok",
+    link: "https://www.instagram.com/pasionyvinos_ok/",
+    whatsapp: "5493546566391",
+  },
+  {
     id: "nadivas-estetica",
     name: "Nadivas Estética",
     image: "/images/banners/nadivas-estetica.webp",
@@ -50,6 +65,13 @@ const mainBanners = [
     image: "/images/banners/conte-construccion.webp",
     alt: "Conte Construcción - Bancor 100% financiada",
     link: "https://www.instagram.com/construccionconte/",
+  },
+  {
+    id: "psiquiatria-dra-josefina-pernas",
+    name: "Psiquiatría Dra. Josefina Pernas",
+    image: "/images/banners/psiquiatria-dra-josefina-pernas.webp",
+    alt: "Psiquiatría - www.drajosefinapernas.com",
+    link: "https://www.drajosefinapernas.com",
   },
   {
     id: "tucassa-prefabricadas",
