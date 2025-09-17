@@ -94,7 +94,7 @@ const allNews = [
     title: "Día del Psicopedagogo: acompañando el aprendizaje y el desarrollo",
     excerpt:
       "Reconocimiento a los profesionales que integran la educación y la salud. Hoy 17 de septiembre en Argentina se conmemora el Día del Psicopedagogo.",
-    image: "/images/dia-del-profesor-aula.jpg",
+    image: "/images/dia-de-psicopedadogo.jpeg",
     date: "2025-09-17",
     category: "Salud",
     author: "Villa del Dique Digital",
