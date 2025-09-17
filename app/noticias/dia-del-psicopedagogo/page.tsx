@@ -13,7 +13,7 @@ const article = {
   title: "17 de septiembre: Día del Psicopedagogo",
   excerpt:
     "Acompañando el aprendizaje y el desarrollo integral de las personas. Reconocimiento a los profesionales que integran la educación y la salud.",
-  image: "/images/dia-del-profesor-aula.jpg",
+  image: "/images/dia-de-psicopedadogo.jpg",
   date: "2025-09-17",
   category: "Salud",
   author: "Villa del Dique Digital",
@@ -23,7 +23,7 @@ const relatedNews = [
   {
     id: "dia-del-profesor",
     title: "17 de septiembre: Día del Profesor",
-    image: "/images/feliz-dia-del-profesor.jpg",
+    image: "/images/dia-de-psicopedadogo.jpg",
     date: "2025-09-17",
     category: "Comunidad",
   },
