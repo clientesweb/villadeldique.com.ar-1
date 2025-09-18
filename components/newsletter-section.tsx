@@ -1,11 +1,14 @@
 export default function NewsletterSection() {
   return (
-    <section className="py-6 px-4" style={{ backgroundColor: "#050a30" }}>
+    <section className="py-4 md:py-6 px-4" style={{ backgroundColor: "#050a30" }}>
       <div className="max-w-4xl mx-auto">
-        <div className="flex items-center justify-between gap-6">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-6">
           {/* Contenido de texto */}
-          <div className="text-left flex-1">
-            <h2 className="font-serif text-xl md:text-2xl font-bold mb-2" style={{ color: "#ffffff" }}>
+          <div className="text-center flex-1 w-full md:w-auto">
+            <h2
+              className="font-serif text-lg md:text-xl lg:text-2xl font-bold mb-1 md:mb-2"
+              style={{ color: "#ffffff" }}
+            >
               Boletín Informativo
             </h2>
             <p className="font-sans text-sm md:text-base leading-relaxed" style={{ color: "#ffffff" }}>
@@ -14,11 +17,11 @@ export default function NewsletterSection() {
           </div>
 
           {/* Botón de suscripción */}
-          <div className="flex-shrink-0">
-            <div className="bg-black/20 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-              <div className="flex items-center gap-3 mb-3">
+          <div className="flex-shrink-0 w-full md:w-auto">
+            <div className="bg-black/20 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/10">
+              <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3">
                 <svg
-                  className="w-8 h-8 flex-shrink-0"
+                  className="w-6 h-6 md:w-8 md:h-8 flex-shrink-0"
                   style={{ color: "#ffd54f" }}
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -27,7 +30,7 @@ export default function NewsletterSection() {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                <div>
+                <div className="flex-1">
                   <h3 className="font-sans text-sm font-semibold" style={{ color: "#ffffff" }}>
                     ¡Únete a nuestra comunidad!
                   </h3>
@@ -41,7 +44,7 @@ export default function NewsletterSection() {
                 href="https://wa.me/3546533050?text=Hola%2C%20quiero%20suscribirme%20al%20bolet%C3%ADn%20informativo%20de%20Villa%20del%20Dique%20Digital"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-lg font-sans font-bold text-sm hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center space-x-2 w-full justify-center"
+                className="px-3 md:px-4 py-2 rounded-lg font-sans font-bold text-sm hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center space-x-2 w-full justify-center"
                 style={{ backgroundColor: "#ffd54f", color: "#050a30" }}
                 aria-label="Suscribirse al boletín por WhatsApp"
               >
