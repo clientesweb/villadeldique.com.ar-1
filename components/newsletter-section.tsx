@@ -1,14 +1,14 @@
 export default function NewsletterSection() {
   return (
-    <section className="py-6 md:py-8 px-4 md:px-6 lg:px-8" style={{ backgroundColor: "#050a30" }}>
+    <section className="py-6 px-4" style={{ backgroundColor: "#050a30" }}>
       <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
+        <div className="flex items-center justify-between gap-6">
           {/* Contenido de texto */}
-          <div className="text-center md:text-left md:flex-1">
+          <div className="text-left flex-1">
             <h2 className="font-serif text-xl md:text-2xl font-bold mb-2" style={{ color: "#ffffff" }}>
               Boletín Informativo
             </h2>
-            <p className="font-sans text-sm md:text-base mb-4 md:mb-0 leading-relaxed" style={{ color: "#ffffff" }}>
+            <p className="font-sans text-sm md:text-base leading-relaxed" style={{ color: "#ffffff" }}>
               Mantente al día con las últimas noticias y eventos de Villa del Dique.
             </p>
           </div>
