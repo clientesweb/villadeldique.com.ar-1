@@ -27,11 +27,20 @@ export default function HomePage() {
             </h2>
             <div className="flex justify-center">
               <div className="w-full max-w-4xl bg-white rounded-xl p-4 shadow-lg border border-gray-200">
-                <div id="c_fbd492fb4cc1996720a500d37287fc5e" className="ancho"></div>
+                <a
+                  className="weatherwidget-io"
+                  href="https://forecast7.com/es/n32d17n64d45/villa-del-dique/"
+                  data-label_1="VILLA DEL DIQUE"
+                  data-label_2="Clima"
+                  data-theme="original"
+                >
+                  VILLA DEL DIQUE Clima
+                </a>
                 <script
-                  type="text/javascript"
-                  src="https://www.clima.com/widget/widget_loader/fbd492fb4cc1996720a500d37287fc5e"
-                ></script>
+                  dangerouslySetInnerHTML={{
+                    __html: `!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');`,
+                  }}
+                />
               </div>
             </div>
           </div>
