@@ -89,6 +89,16 @@ export const metadata: Metadata = {
 
 const allNews = [
   {
+    id: "villa-del-dique-perla-calamuchita",
+    title: "Villa del Dique: la perla de Calamuchita",
+    excerpt:
+      "Un rincón serrano donde la naturaleza, la historia y las tradiciones se encuentran. Descubre todo lo que hace especial a Villa del Dique, desde su fundación hasta sus atractivos turísticos.",
+    image: "/images/portada-villa-del-dique-perla-de-calamuchita.webp",
+    date: "2025-09-18",
+    category: "Turismo",
+    author: "Camila Insaurralde",
+  },
+  {
     id: "dia-del-profesor",
     title: "Día del Profesor: Celebrando a quienes inspiran con su enseñanza",
     excerpt:
@@ -176,7 +186,7 @@ const allNews = [
     image: "/images/portada-bomberos-voluntarios.webp",
     date: "2025-09-11",
     category: "Entrevistas",
-    author: "Facundo Pérez",
+    author: "Facundo Pérez • Contenido patrocinado por Duality Domain",
   },
   {
     id: "campana-prevencion-incendios",
@@ -192,11 +202,11 @@ const allNews = [
     id: "emprender-villa-del-dique",
     title: "Emprender en el Paraíso: Historias que laten en Villa del Dique",
     excerpt:
-      "Descubre las historias de emprendedores locales: Rincón Natural, Namaskar Movimiento, Iowa.ar y el evento de boxeo que unió a toda la comunidad.",
+      "Descubre las historias de emprendedores locales: Rincón Natural, Namaskar Movimiento, Parrilla & Restaurante Iowa y el evento de boxeo que unió a toda la comunidad.",
     image: "/images/emprender-villa-del-dique.webp",
     date: "2025-09-09",
     category: "Emprendedores",
-    author: "Facundo Pérez",
+    author: "Facundo Pérez • Contenido patrocinado por Duality Domain",
   },
   {
     id: "septiembre-amarillo-prevencion",
@@ -359,7 +369,7 @@ export default function NoticiasPage({ searchParams }: NewsPageProps) {
                         {article.excerpt}
                       </p>
                       <div className="flex items-center justify-between">
-                        <p className="text-sm text-gray-500">Por {article.author}</p>
+                        <p className="text-sm text-gray-500">{article.author}</p>
                         <Link
                           href={`/noticias/${article.id}`}
                           className="inline-flex items-center bg-brand-blue text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm md:text-base font-medium"

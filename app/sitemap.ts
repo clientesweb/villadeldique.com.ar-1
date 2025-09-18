@@ -5,56 +5,56 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const newsArticles = [
     {
-      id: "mega-feria-villa-del-dique",
-      date: "2025-09-15",
-    },
-    {
-      id: "dia-internacional-democracia",
-      date: "2025-09-15",
-    },
-    {
-      id: "dia-mundial-linfoma",
-      date: "2025-09-15",
-    },
-    {
-      id: "desafio-cerro-lago",
-      date: "2025-09-14",
-    },
-    {
-      id: "inauguracion-polo-cultural-asociacion",
-      date: "2025-09-12",
-    },
-    {
-      id: "entrevista-bomberos-voluntarios",
-      date: "2025-09-11",
-    },
-    {
-      id: "campana-prevencion-incendios",
-      date: "2025-09-10",
-    },
-    {
-      id: "emprender-villa-del-dique",
-      date: "2025-09-09",
-    },
-    {
-      id: "septiembre-amarillo-prevencion",
-      date: "2025-09-07",
-    },
-    {
-      id: "inauguracion-polo-cultural",
-      date: "2025-09-06",
-    },
-    {
       id: "dia-del-profesor",
-      date: "2025-09-17",
+      date: "2024-09-17",
     },
     {
       id: "dia-del-psicopedagogo",
-      date: "2025-09-17",
+      date: "2024-09-17",
     },
     {
       id: "dia-derechos-estudiantes-secundarios",
-      date: "2025-09-05",
+      date: "2024-09-16",
+    },
+    {
+      id: "dia-internacional-democracia",
+      date: "2024-09-15",
+    },
+    {
+      id: "dia-mundial-linfoma",
+      date: "2024-09-15",
+    },
+    {
+      id: "mega-feria-villa-del-dique",
+      date: "2024-09-14",
+    },
+    {
+      id: "desafio-cerro-lago",
+      date: "2024-09-13",
+    },
+    {
+      id: "inauguracion-polo-cultural-asociacion",
+      date: "2024-09-12",
+    },
+    {
+      id: "entrevista-bomberos-voluntarios",
+      date: "2024-09-11",
+    },
+    {
+      id: "campana-prevencion-incendios",
+      date: "2024-09-10",
+    },
+    {
+      id: "emprender-villa-del-dique",
+      date: "2024-09-09",
+    },
+    {
+      id: "septiembre-amarillo-prevencion",
+      date: "2024-09-07",
+    },
+    {
+      id: "inauguracion-polo-cultural",
+      date: "2024-09-06",
     },
   ]
 
@@ -65,30 +65,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "hourly",
       priority: 1.0,
     },
-    // Páginas principales con mayor frecuencia de actualización
     {
       url: `${baseUrl}/noticias`,
       lastModified: new Date(),
       changeFrequency: "hourly",
-      priority: 0.95,
+      priority: 0.98,
     },
     {
       url: `${baseUrl}/turismo`,
       lastModified: new Date(),
       changeFrequency: "daily",
-      priority: 0.9,
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/suscribirse`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/contacto`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/terminos`,
@@ -106,7 +105,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/noticias/${article.id}`,
       lastModified: new Date(article.date),
       changeFrequency: "daily" as const,
-      priority: 0.85,
+      priority: 0.9,
     })),
   ]
 }

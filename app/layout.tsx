@@ -133,7 +133,7 @@ export const metadata: Metadata = {
   category: "Local News and Tourism",
   classification: "Portal de noticias y turismo local",
   verification: {
-    google: "your-google-verification-code", // Placeholder for Google verification code
+    google: "google45fe8791982d4a42", // Replace with your actual Google Search Console verification code
   },
   generator: "Next.js",
   applicationName: "Villa del Dique Digital",
@@ -169,13 +169,13 @@ export default function RootLayout({
         <meta name="DC.description" content="Portal digital de Villa del Dique, Córdoba, Argentina" />
         <meta name="DC.publisher" content="Villa del Dique Digital" />
         <meta name="DC.contributor" content="Comunidad Villa del Dique" />
-        <meta name="DC.date" content="2025" />
+        <meta name="DC.date" content="2024" />
         <meta name="DC.type" content="Text" />
         <meta name="DC.format" content="text/html" />
         <meta name="DC.identifier" content="https://www.villadeldique.com.ar" />
         <meta name="DC.language" content="es-AR" />
         <meta name="DC.coverage" content="Villa del Dique, Córdoba, Argentina" />
-        <meta name="DC.rights" content="© 2025 Villa del Dique Digital" />
+        <meta name="DC.rights" content="© 2024 Villa del Dique Digital" />
 
         {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -183,6 +183,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.youtube.com" />
         <link rel="dns-prefetch" href="https://www.instagram.com" />
         <link rel="dns-prefetch" href="https://vercel.live" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
 
         {/* Favicon and app icons */}
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
@@ -199,6 +201,25 @@ export default function RootLayout({
         {/* Preload critical resources */}
         <link rel="preload" href="/images/og-image.jpg" as="image" type="image/jpeg" />
         <link rel="preload" href="/images/villa-del-dique-lago.webp" as="image" type="image/webp" />
+
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+                    page_title: 'Villa del Dique Digital',
+                    custom_map: {'custom_parameter_1': 'villa_del_dique_page'}
+                  });
+                `,
+              }}
+            />
+          </>
+        )}
       </head>
       <body className="font-sans antialiased bg-white text-gray-900 overflow-x-hidden">
         <Suspense
@@ -251,7 +272,7 @@ export default function RootLayout({
                   },
                   description:
                     "Portal digital de Villa del Dique, Córdoba, Argentina. Medio de noticias locales más confiable, información turística y directorio de negocios.",
-                  foundingDate: "2025",
+                  foundingDate: "2024",
                   address: {
                     "@type": "PostalAddress",
                     streetAddress: "Villa del Dique",

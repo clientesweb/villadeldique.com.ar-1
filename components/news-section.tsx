@@ -3,6 +3,16 @@ import Link from "next/link"
 
 const newsData = [
   {
+    id: "villa-del-dique-perla-calamuchita",
+    title: "Villa del Dique: la perla de Calamuchita",
+    excerpt:
+      "Un rincón serrano donde la naturaleza, la historia y las tradiciones se encuentran. Descubre todo lo que hace especial a Villa del Dique, desde su fundación hasta sus atractivos turísticos.",
+    image: "/images/portada-villa-del-dique-perla-de-calamuchita.webp",
+    date: "2025-09-18",
+    displayDate: "18 de septiembre de 2025",
+    slug: "villa-del-dique-perla-calamuchita",
+  },
+  {
     id: "dia-del-profesor",
     title: "Día del Profesor: Celebrando a quienes inspiran con su enseñanza",
     excerpt:
@@ -84,12 +94,23 @@ const newsData = [
   },
   {
     id: "entrevista-bomberos-voluntarios",
-    title: "Bomberos Voluntarios: Vocación, Riesgo y Compromiso Comunitario",
+    title: "Bomberos Voluntarios de Villa del Dique: Vocación, Riesgo y Compromiso Comunitario",
     excerpt:
-      "En una entrevista exclusiva, los Bomberos Voluntarios de Villa del Dique nos abren las puertas de su cuartel para compartir detalles sobre su labor incansable.",
+      "Entrevista exclusiva con los Bomberos Voluntarios de Villa del Dique sobre su labor incansable y dedicación a la comunidad.",
     image: "/images/portada-bomberos-voluntarios.webp",
-    date: "2025-09-10",
+    date: "2025-09-11",
+    displayDate: "11 de septiembre de 2025",
     slug: "entrevista-bomberos-voluntarios",
+  },
+  {
+    id: "emprender-villa-del-dique",
+    title: "Emprender en el Paraíso: Historias que laten en Villa del Dique",
+    excerpt:
+      "Descubre las historias de emprendedores locales: Rincón Natural, Namaskar Movimiento, Parrilla & Restaurante Iowa y el evento de boxeo que unió a toda la comunidad.",
+    image: "/images/emprender-villa-del-dique.webp",
+    date: "2025-09-09",
+    displayDate: "9 de septiembre de 2025",
+    slug: "emprender-villa-del-dique",
   },
   {
     id: "campana-prevencion-incendios",

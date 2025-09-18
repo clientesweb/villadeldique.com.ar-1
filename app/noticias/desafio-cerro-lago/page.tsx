@@ -84,7 +84,7 @@ export default function DesafioCerroLagoPage() {
               </time>
             </div>
 
-            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-4 text-balance leading-tight">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 text-balance leading-tight">
               Rumbo al 6° Desafío Cerro y Lago: todo listo para vivir la previa en Villa del Dique
             </h1>
 

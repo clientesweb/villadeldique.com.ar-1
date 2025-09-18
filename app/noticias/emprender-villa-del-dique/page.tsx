@@ -119,7 +119,7 @@ export default function EmprenderVillaDelDiquePage() {
           </div>
 
           <header className="mb-8">
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6 text-balance">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 text-balance">
               Emprender en el Paraíso: Historias que laten en Villa del Dique
             </h1>
 
@@ -239,13 +239,14 @@ export default function EmprenderVillaDelDiquePage() {
                   restaurante IOWA
                 </a>
                 , un clásico de Villa del Dique que forma parte de la memoria colectiva del pueblo. Su propuesta combina
-                la calidez de la cocina de primer nivel con la hospitalidad de siempre. Cuarta generación y una de las familias más antiguas de Villa del Dique 
+                la calidez de la cocina de primer nivel con la hospitalidad de siempre. Cuarta generación y una de las
+                familias más antiguas de Villa del Dique
               </p>
 
               <p className="font-sans text-gray-800 leading-relaxed mb-4">
-                Nicolás Barra resalta que "la comida no es solo alimento, es también un encuentro", y esa esencia
-                se respira en cada mesa: historias familiares, charlas con amigos y el paso de generaciones que vuelven
-                al lugar una y otra vez.
+                Nicolás Barra resalta que "la comida no es solo alimento, es también un encuentro", y esa esencia se
+                respira en cada mesa: historias familiares, charlas con amigos y el paso de generaciones que vuelven al
+                lugar una y otra vez.
               </p>
             </section>
 
@@ -284,10 +285,10 @@ export default function EmprenderVillaDelDiquePage() {
               </h2>
 
               <p className="font-sans text-gray-800 leading-relaxed mb-4">
-                La historia de Ruth Prado, la disciplina de Namaskar, la tradición de Nicolás Barra con IOWA y la emoción del boxeo
-                muestran que Villa del Dique es mucho más que un destino turístico. Es un lugar donde emprender es
-                construir comunidad, donde cada iniciativa suma para hacer del pueblo un rincón único del Valle de
-                Calamuchita.
+                La historia de Ruth Prado, la disciplina de Namaskar, la tradición de Nicolás Barra con IOWA y la
+                emoción del boxeo muestran que Villa del Dique es mucho más que un destino turístico. Es un lugar donde
+                emprender es construir comunidad, donde cada iniciativa suma para hacer del pueblo un rincón único del
+                Valle de Calamuchita.
               </p>
 
               <p className="font-sans text-gray-800 leading-relaxed">

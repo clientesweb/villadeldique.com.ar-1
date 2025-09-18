@@ -316,7 +316,7 @@ export default function SuscribirsePage() {
                 className="bg-brand-navy text-white px-10 py-4 rounded-lg font-sans font-bold text-xl hover:bg-brand-navy/90 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block"
                 aria-label="Contactar por WhatsApp para elegir plan"
               >
-                Elegir Plan
+                ¡Contáctanos!
               </a>
             </div>
           </div>
