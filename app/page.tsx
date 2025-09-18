@@ -22,9 +22,6 @@ export default function HomePage() {
 
         <section className="py-8 px-4 md:px-6 lg:px-8 bg-gray-50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-center text-brand-navy mb-6">
-              Clima en Villa del Dique
-            </h2>
             <div className="flex justify-center">
               <div className="w-full max-w-4xl bg-white rounded-xl p-4 shadow-lg border border-gray-200">
                 <a
@@ -33,6 +30,16 @@ export default function HomePage() {
                   data-label_1="VILLA DEL DIQUE"
                   data-label_2="Clima"
                   data-theme="original"
+                  data-font="Arial"
+                  data-basecolor="#050a30"
+                  data-textcolor="#ffffff"
+                  data-highcolor="#ffd54f"
+                  data-lowcolor="#87ceeb"
+                  data-suncolor="#ffd54f"
+                  data-mooncolor="#ffffff"
+                  data-cloudcolor="#d3d3d3"
+                  data-raincolor="#87ceeb"
+                  data-snowcolor="#ffffff"
                 >
                   VILLA DEL DIQUE Clima
                 </a>
