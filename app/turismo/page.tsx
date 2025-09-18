@@ -233,28 +233,6 @@ export default function TurismoPage() {
               </div>
             </div>
 
-            <div className="mb-12">
-              <div className="max-w-7xl mx-auto">
-                <h2 className="font-serif text-2xl font-bold text-center text-gray-900 mb-6">
-                  Clima en Villa del Dique
-                </h2>
-                <div className="flex justify-center">
-                  <div className="w-full max-w-6xl bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl p-2 shadow-lg border border-blue-100 h-32 flex items-center justify-center">
-                    <div
-                      id="mrwidbc29e125abf9a4d7a3cb8098f63d5627"
-                      className="w-full h-full flex items-center justify-center"
-                    >
-                      <script
-                        type="text/javascript"
-                        async
-                        src="https://api.meteored.com/widget/loader/bc29e125abf9a4d7a3cb8098f63d5627"
-                      ></script>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="mt-8 text-center">
               <p className="font-sans text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed">
                 Encuentra información sobre negocios, servicios, capacitaciones, eventos y todo lo que necesitas para
