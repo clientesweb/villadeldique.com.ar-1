@@ -20,6 +20,23 @@ export default function HomePage() {
 
         <MainAdvertisingCarousel />
 
+        <section className="py-8 px-4 md:px-6 lg:px-8 bg-gray-50">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-center text-brand-navy mb-6">
+              Clima en Villa del Dique
+            </h2>
+            <div className="flex justify-center">
+              <div className="w-full max-w-4xl bg-white rounded-xl p-4 shadow-lg border border-gray-200">
+                <div id="c_fbd492fb4cc1996720a500d37287fc5e" className="ancho"></div>
+                <script
+                  type="text/javascript"
+                  src="https://www.clima.com/widget/widget_loader/fbd492fb4cc1996720a500d37287fc5e"
+                ></script>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <NewsletterSection />
       </main>
 
