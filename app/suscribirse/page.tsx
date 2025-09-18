@@ -6,22 +6,30 @@ import MainAdvertisingCarousel from "@/components/main-advertising-carousel"
 import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Suscríbete a Villa del Dique Digital - Promociona tu Negocio",
+  title: "Suscríbete a Villa del Dique Digital - Promociona tu Negocio Local | Marketing Digital Córdoba",
   description:
-    "Únete a Villa del Dique Digital y obtén cobertura periodística, entrevistas, vuelos de dron y publicidad personalizada para tu negocio o emprendimiento.",
+    "Únete a Villa del Dique Digital y obtén cobertura periodística profesional, entrevistas exclusivas, vuelos de dron, publicidad personalizada y descuentos en diseño web para tu negocio o emprendimiento en Villa del Dique, Córdoba.",
   keywords: [
     "suscripción Villa del Dique Digital",
     "promocionar negocio Villa del Dique",
     "publicidad Villa del Dique",
     "marketing digital Córdoba",
     "emprendimientos Villa del Dique",
-    "negocios locales",
-    "cobertura periodística",
-    "entrevistas comerciales",
-    "vuelos de dron comercial",
-    "redes sociales negocio",
+    "negocios locales Villa del Dique",
+    "cobertura periodística Villa del Dique",
+    "entrevistas comerciales Villa del Dique",
+    "vuelos de dron comercial Villa del Dique",
+    "redes sociales negocio Villa del Dique",
     "diseño web Villa del Dique",
-    "promoción empresarial",
+    "promoción empresarial Villa del Dique",
+    "marketing local Villa del Dique",
+    "publicidad digital Villa del Dique",
+    "portal empresarial Villa del Dique",
+    "difusión comercial Villa del Dique",
+    "servicios publicitarios Villa del Dique",
+    "promoción negocios Córdoba",
+    "marketing emprendimientos Villa del Dique",
+    "Villa del Dique Digital suscripción",
   ],
   authors: [{ name: "Villa del Dique Digital" }],
   creator: "Villa del Dique Digital",
@@ -31,9 +39,9 @@ export const metadata: Metadata = {
     canonical: "/suscribirse",
   },
   openGraph: {
-    title: "Suscríbete a Villa del Dique Digital - Promociona tu Negocio",
+    title: "Suscríbete a Villa del Dique Digital - Promociona tu Negocio Local",
     description:
-      "Únete a Villa del Dique Digital y obtén cobertura periodística, entrevistas, vuelos de dron y publicidad personalizada para tu negocio.",
+      "Únete a Villa del Dique Digital y obtén cobertura periodística, entrevistas exclusivas, vuelos de dron y publicidad personalizada para tu negocio en Villa del Dique.",
     url: "https://www.villadeldique.com.ar/suscribirse",
     siteName: "Villa del Dique Digital",
     images: [
@@ -41,7 +49,7 @@ export const metadata: Metadata = {
         url: "/images/og/subscripcion-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Suscríbete a Villa del Dique Digital - Promociona tu negocio",
+        alt: "Suscríbete a Villa del Dique Digital - Promociona tu negocio local",
       },
     ],
     locale: "es_AR",
@@ -51,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Suscríbete a Villa del Dique Digital - Promociona tu Negocio",
     description:
-      "Únete a Villa del Dique Digital y obtén cobertura periodística, entrevistas, vuelos de dron y publicidad personalizada.",
+      "Únete a Villa del Dique Digital y obtén cobertura periodística, entrevistas, vuelos de dron y publicidad personalizada para tu negocio.",
     images: ["/images/og/subscripcion-og-image.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
@@ -77,6 +85,8 @@ export const metadata: Metadata = {
     "business.contact_data.region": "Córdoba",
     "business.contact_data.postal_code": "5194",
     "business.contact_data.country_name": "Argentina",
+    "service.type": "Marketing Digital",
+    "service.area": "Villa del Dique, Córdoba, Argentina",
   },
 }
 

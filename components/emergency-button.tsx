@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Phone, ChevronDown, ChevronUp } from "lucide-react"
+import { ChevronDown, ChevronUp } from "lucide-react"
 
 export default function EmergencyButton() {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,34 +13,39 @@ export default function EmergencyButton() {
   ]
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
       <div className="relative">
         {isOpen && (
-          <div className="absolute bottom-16 right-0 bg-white rounded-lg shadow-lg border border-gray-200 min-w-48 overflow-hidden">
-            <div className="bg-red-600 text-white px-4 py-2 text-sm font-semibold">Números de Emergencia</div>
-            {emergencyNumbers.map((emergency, index) => (
-              <a
-                key={index}
-                href={`tel:${emergency.phone}`}
-                className="flex items-center justify-between px-4 py-3 hover:bg-gray-50 border-b border-gray-100 last:border-b-0 transition-colors"
-              >
-                <span className="text-gray-700 font-medium">{emergency.name}</span>
-                <div className="flex items-center text-red-600">
-                  <Phone className="w-4 h-4 mr-2" />
-                  <span className="text-sm">{emergency.phone}</span>
-                </div>
-              </a>
-            ))}
+          <div className="absolute bottom-16 right-0 bg-white rounded-lg shadow-xl border border-gray-200 min-w-56 overflow-hidden animate-in slide-in-from-bottom-2 duration-200">
+            <div className="bg-red-600 text-white px-4 py-3 text-sm font-semibold text-center">
+              Números de Emergencia
+            </div>
+            <div className="divide-y divide-gray-100">
+              {emergencyNumbers.map((emergency, index) => (
+                <a
+                  key={index}
+                  href={`tel:${emergency.phone}`}
+                  className="flex items-center justify-between px-4 py-4 hover:bg-gray-50 transition-colors group"
+                >
+                  <span className="text-gray-800 font-medium text-sm">{emergency.name}</span>
+                  <span className="text-red-600 font-semibold text-sm group-hover:text-red-700">{emergency.phone}</span>
+                </a>
+              ))}
+            </div>
           </div>
         )}
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-red-600 hover:bg-red-700 text-white rounded-full p-4 shadow-lg transition-all duration-200 flex items-center justify-center"
+          className="bg-red-600 hover:bg-red-700 text-white rounded-full p-3 sm:p-4 shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center group"
           aria-label="Números de emergencia"
         >
-          <Phone className="w-6 h-6" />
-          {isOpen ? <ChevronDown className="w-4 h-4 ml-1" /> : <ChevronUp className="w-4 h-4 ml-1" />}
+          <span className="text-xs sm:text-sm font-semibold mr-1">SOS</span>
+          {isOpen ? (
+            <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 transition-transform" />
+          ) : (
+            <ChevronUp className="w-3 h-3 sm:w-4 sm:h-4 transition-transform" />
+          )}
         </button>
       </div>
     </div>

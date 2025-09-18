@@ -7,24 +7,30 @@ import Footer from "@/components/footer"
 import NewsAdvertisingCarousel from "@/components/news-advertising-carousel"
 
 export const metadata: Metadata = {
-  title: "Noticias de Villa del Dique | Villa del Dique Digital",
+  title: "Noticias de Villa del Dique | Villa del Dique Digital - Portal de Noticias Locales",
   description:
-    "Mantente informado con las últimas noticias de Villa del Dique. Información local, eventos, cultura, seguridad y desarrollo comunitario en Córdoba, Argentina.",
+    "Mantente informado con las últimas noticias de Villa del Dique, Córdoba, Argentina. Información local actualizada, eventos, cultura, seguridad y desarrollo comunitario. El medio de noticias más confiable de Villa del Dique.",
   keywords: [
     "noticias Villa del Dique",
-    "información local",
-    "Córdoba",
-    "Argentina",
-    "eventos",
-    "cultura",
-    "bomberos",
-    "seguridad",
-    "comunidad",
-    "emprendimientos",
-    "polo cultural",
-    "desarrollo local",
-    "prensa local",
+    "información local Villa del Dique",
+    "noticias Córdoba Argentina",
+    "eventos Villa del Dique",
+    "cultura Villa del Dique",
+    "bomberos voluntarios Villa del Dique",
+    "seguridad Villa del Dique",
+    "comunidad Villa del Dique",
+    "emprendimientos Villa del Dique",
+    "polo cultural Villa del Dique",
+    "desarrollo local Villa del Dique",
+    "prensa local Villa del Dique",
     "medios Villa del Dique",
+    "portal noticias Villa del Dique",
+    "actualidad Villa del Dique",
+    "información comunitaria",
+    "noticias Valle de Calamuchita",
+    "medio digital Villa del Dique",
+    "periodismo local Córdoba",
+    "Villa del Dique Digital noticias",
   ],
   authors: [{ name: "Villa del Dique Digital" }],
   creator: "Villa del Dique Digital",
@@ -34,9 +40,9 @@ export const metadata: Metadata = {
     canonical: "/noticias",
   },
   openGraph: {
-    title: "Noticias de Villa del Dique",
+    title: "Noticias de Villa del Dique - Portal de Información Local",
     description:
-      "Las últimas noticias e información de Villa del Dique. Mantente al día con los eventos, cultura y desarrollo de nuestra comunidad.",
+      "Las últimas noticias e información de Villa del Dique, Córdoba, Argentina. Mantente al día con los eventos, cultura y desarrollo de nuestra comunidad.",
     url: "https://www.villadeldique.com.ar/noticias",
     siteName: "Villa del Dique Digital",
     images: [
@@ -44,7 +50,7 @@ export const metadata: Metadata = {
         url: "/images/og/noticias-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Villa del Dique - Noticias locales",
+        alt: "Villa del Dique - Noticias locales y actualidad",
       },
     ],
     locale: "es_AR",
@@ -52,8 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noticias de Villa del Dique",
-    description: "Las últimas noticias e información de Villa del Dique, Córdoba, Argentina.",
+    title: "Noticias de Villa del Dique - Portal de Información Local",
+    description:
+      "Las últimas noticias e información de Villa del Dique, Córdoba, Argentina. Tu fuente confiable de información local.",
     images: ["/images/og/noticias-og-image.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
@@ -75,6 +82,8 @@ export const metadata: Metadata = {
     "geo.position": "-32.1833;-64.4833",
     ICBM: "-32.1833, -64.4833",
     "news.keywords": "Villa del Dique, noticias locales, Córdoba, Argentina, comunidad",
+    "article.section": "Local News",
+    "article.tag": "Villa del Dique, noticias, Córdoba, Argentina",
   },
 }
 
