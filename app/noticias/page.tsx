@@ -228,6 +228,16 @@ const allNews = [
     category: "Cultura",
     author: "Villa del Dique Digital",
   },
+  {
+    id: "bomberos-voluntarios-nuevo-sitio-web",
+    title: "Los Bomberos Voluntarios de Villa del Dique presentan su nuevo sitio web",
+    excerpt:
+      "Un espacio digital para informar, conectar y recibir el apoyo de la comunidad. La institución lanzó oficialmente su plataforma web con información sobre su historia, cuerpo activo y formas de colaborar.",
+    image: "/images/bomberos-voluntarios-vdd-4.jpg",
+    date: "2025-09-19",
+    category: "Comunidad",
+    author: "Villa del Dique Digital",
+  },
 ]
 
 interface NewsPageProps {
