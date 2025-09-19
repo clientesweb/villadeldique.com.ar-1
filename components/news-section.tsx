@@ -3,6 +3,16 @@ import Link from "next/link"
 
 const newsData = [
   {
+    id: "bomberos-voluntarios-nuevo-sitio-web",
+    title: "Los Bomberos Voluntarios de Villa del Dique presentan su nuevo sitio web",
+    excerpt:
+      "Un espacio digital para informar, conectar y recibir el apoyo de la comunidad. La institución lanzó oficialmente su plataforma web con información sobre su historia, cuerpo activo y formas de colaborar.",
+    image: "/images/bomberos-voluntarios-vdd-4.jpg",
+    date: "2025-09-19",
+    displayDate: "19 de septiembre de 2025",
+    slug: "bomberos-voluntarios-nuevo-sitio-web",
+  },
+  {
     id: "villa-del-dique-perla-calamuchita",
     title: "Villa del Dique: la perla de Calamuchita",
     excerpt:
