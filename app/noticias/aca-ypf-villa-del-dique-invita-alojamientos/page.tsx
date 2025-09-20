@@ -217,8 +217,8 @@ export default function AcaYpfVillaDelDiqueInvitaAlojamientosPage() {
               <ul className="space-y-2 text-gray-700">
                 <li>
                   <strong>Teléfono/WhatsApp:</strong>{" "}
-                  <a href="tel:+5493546501444" className="text-brand-blue hover:text-blue-700 font-medium">
-                    +54 9 3546 50-1444
+                  <a href="tel:+5493546567560" className="text-brand-blue hover:text-blue-700 font-medium">
+                    +54 9 3546 56-7560
                   </a>
                 </li>
                 <li>
