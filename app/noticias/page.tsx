@@ -7,9 +7,9 @@ import Footer from "@/components/footer"
 import NewsAdvertisingCarousel from "@/components/news-advertising-carousel"
 
 export const metadata: Metadata = {
-  title: "Noticias de Villa del Dique | Villa del Dique Digital - Portal de Noticias Locales",
+  title: "Noticias de Villa del Dique | Villa del Dique Digital - Portal de Noticias Locales y del Valle de Calamuchita",
   description:
-    "Mantente informado con las últimas noticias de Villa del Dique, Córdoba, Argentina. Información local actualizada, eventos, cultura, seguridad y desarrollo comunitario. El medio de noticias más confiable de Villa del Dique.",
+    "Mantente informado con las últimas noticias de Villa del Dique y el Valle de Calamuchita, Córdoba, Argentina. Información local actualizada, eventos, cultura, seguridad y desarrollo comunitario. El medio de noticias local y del Valle de Calamuchita.",
   keywords: [
     "noticias Villa del Dique",
     "información local Villa del Dique",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Noticias de Villa del Dique - Portal de Información Local",
     description:
-      "Las últimas noticias e información de Villa del Dique, Córdoba, Argentina. Mantente al día con los eventos, cultura y desarrollo de nuestra comunidad.",
+      "Las últimas noticias e información de Villa del Dique y el Valle de Calamuchita, Córdoba, Argentina. Mantente al día con los eventos, cultura y desarrollo de nuestra comunidad.",
     url: "https://www.villadeldique.com.ar/noticias",
     siteName: "Villa del Dique Digital",
     images: [
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Noticias de Villa del Dique - Portal de Información Local",
     description:
-      "Las últimas noticias e información de Villa del Dique, Córdoba, Argentina. Tu fuente confiable de información local.",
+      "Las últimas noticias e información de Villa del Dique y el Valle de Calamuchita, Córdoba, Argentina. Noticias, turismo y negocios.",
     images: ["/images/og/noticias-og-image.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
