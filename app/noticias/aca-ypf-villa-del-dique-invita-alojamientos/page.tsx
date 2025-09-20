@@ -157,7 +157,7 @@ export default function AcaYpfVillaDelDiqueInvitaAlojamientosPage() {
             <p className="text-lg md:text-xl mb-6">
               El ACA YPF Villa del Dique, ubicado sobre la Ruta Nacional 5, se ha consolidado como un centro de paso y
               consulta permanente para los visitantes que arriban a la región. Además de ofrecer sus tradicionales
-              servicios de combustible, tienda y cafetería, comidas, la estación se convierte en un lugar estratégico
+              servicios de combustibles, tienda , cafetería FULL y comidas, la estación se convierte en un lugar estratégico
               donde los turistas buscan información rápida y confiable sobre hospedajes y actividades.
             </p>
 
