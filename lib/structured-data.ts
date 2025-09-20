@@ -199,6 +199,90 @@ export function generateLocalBusinessSchema() {
   }
 }
 
+export function generateEnhancedLocalBusinessSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "NewsMediaOrganization", "DigitalAgency"],
+    name: "Villa del Dique Digital",
+    alternateName: ["VDD Digital", "Portal Villa del Dique"],
+    description:
+      "Portal digital líder de Villa del Dique y Valle de Calamuchita. Noticias locales, promoción de emprendimientos, turismo y comercios. Medio digital independiente.",
+    url: "https://www.villadeldique.com.ar",
+    telephone: "+54-3546-533050",
+    email: "villadeldiquedigital@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Villa del Dique",
+      addressRegion: "Córdoba",
+      addressCountry: "AR",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: -32.1833,
+      longitude: -64.4833,
+    },
+    areaServed: [
+      {
+        "@type": "Place",
+        name: "Villa del Dique",
+      },
+      {
+        "@type": "Place",
+        name: "Valle de Calamuchita",
+      },
+      {
+        "@type": "Place",
+        name: "Dique Los Molinos",
+      },
+      {
+        "@type": "Place",
+        name: "Córdoba",
+      },
+    ],
+    serviceType: [
+      "Portal de noticias",
+      "Medio digital",
+      "Promoción de emprendimientos",
+      "Turismo local",
+      "Directorio comercial",
+      "Entrevistas",
+      "Cobertura de eventos",
+    ],
+    keywords: [
+      "Villa del Dique",
+      "Valle de Calamuchita",
+      "noticias Córdoba",
+      "turismo Villa del Dique",
+      "emprendimientos locales",
+      "comercios Villa del Dique",
+      "medio digital",
+      "portal noticias",
+      "Dique Los Molinos",
+      "entrevistas locales",
+    ],
+    sameAs: [
+      "https://www.instagram.com/vivivilladeldique",
+      "https://www.villadeldique.org",
+      "https://wa.me/3546533050",
+    ],
+    potentialAction: [
+      {
+        "@type": "SearchAction",
+        target: "https://www.villadeldique.com.ar/noticias?q={search_term}",
+        "query-input": "required name=search_term",
+      },
+      {
+        "@type": "SubscribeAction",
+        target: "https://www.villadeldique.com.ar/suscribirse",
+        object: {
+          "@type": "NewsletterService",
+          name: "Boletín Villa del Dique Digital",
+        },
+      },
+    ],
+  }
+}
+
 export function generateBreadcrumbSchema(items: Array<{ name: string; url: string }>) {
   return {
     "@context": "https://schema.org",
@@ -246,5 +330,38 @@ export function generateTouristDestinationSchema() {
       },
     ],
     hasMap: "https://maps.google.com/?q=Villa+del+Dique,+Córdoba,+Argentina",
+  }
+}
+
+export function generateFAQSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Qué es Villa del Dique Digital?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Villa del Dique Digital es el portal de noticias e información líder de Villa del Dique y Valle de Calamuchita, Córdoba. Conectamos a la comunidad con noticias locales, turismo, emprendimientos y comercios.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cómo puedo promocionar mi negocio en Villa del Dique Digital?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Puedes contactarnos a través de nuestro formulario de contacto o WhatsApp para conocer nuestros servicios de promoción digital, entrevistas y cobertura de emprendimientos locales.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué tipo de noticias publican?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Publicamos noticias locales de Villa del Dique y Valle de Calamuchita, información turística, eventos comunitarios, entrevistas a emprendedores, y todo lo relacionado con nuestra región.",
+        },
+      },
+    ],
   }
 }
