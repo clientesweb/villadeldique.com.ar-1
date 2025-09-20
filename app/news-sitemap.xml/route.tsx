@@ -7,19 +7,19 @@ export async function GET() {
     {
       id: "aca-ypf-villa-del-dique-alojamientos-disponibilidad",
       title: "ACA YPF Villa del Dique invita a alojamientos a compartir su disponibilidad",
-      date: "2024-12-19",
+      date: "2025-09-19",
       category: "Turismo",
     },
     {
       id: "entrevista-bomberos-voluntarios",
       title: "Entrevista exclusiva con Bomberos Voluntarios de Villa del Dique",
-      date: "2024-09-11",
+      date: "2025-09-09",
       category: "Comunidad",
     },
     {
       id: "emprender-villa-del-dique",
       title: "Emprender en Villa del Dique: Oportunidades y desafíos",
-      date: "2024-09-09",
+      date: "2025-09-09",
       category: "Emprendimientos",
     },
     // Add more recent articles here
