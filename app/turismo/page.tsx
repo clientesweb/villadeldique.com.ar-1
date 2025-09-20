@@ -236,7 +236,7 @@ export default function TurismoPage() {
             <div className="mt-8 text-center">
               <p className="font-sans text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed">
                 Encuentra información sobre negocios, servicios, capacitaciones, eventos y todo lo que necesitas para
-                disfrutar de Villa del Dique.
+                disfrutar de Villa del Dique y todo el Valle.
               </p>
             </div>
           </div>
