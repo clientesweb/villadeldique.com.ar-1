@@ -12,7 +12,7 @@ export default function NewsletterSection() {
               Boletín Informativo
             </h2>
             <p className="font-sans text-sm md:text-base leading-relaxed" style={{ color: "#ffffff" }}>
-              Mantente al día con las últimas noticias y eventos de Villa del Dique.
+              Mantente al día con las últimas noticias, eventos de Villa del Dique y El Valle.
             </p>
           </div>
 

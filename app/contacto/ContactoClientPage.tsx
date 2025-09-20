@@ -45,7 +45,7 @@ export default function ContactoClientPage() {
             </h1>
             <p className="font-sans text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12">
               {
-                "¿Tienes una noticia que compartir? ¿Quieres promocionar tu negocio? Estamos aquí para ayudarte a conectar con la comunidad de Villa del Dique."
+                "¿Tienes una noticia que compartir? ¿Quieres promocionar tu negocio? Estamos aquí para ayudarte a conectar con la comunidad de Villa del Dique y el Valle de Calamuchita."
               }
             </p>
 

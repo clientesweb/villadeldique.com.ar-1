@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Licencia MIT | Villa del Dique Digital",
+  title: "Licencia y Derechos de Autor | Villa del Dique Digital",
   description:
-    "Licencia MIT del sitio web Villa del Dique Digital. Información sobre los derechos de uso y distribución del código fuente.",
-  keywords: "licencia MIT, código abierto, Villa del Dique, open source",
+    "Información sobre los derechos de autor y licencia del contenido de Villa del Dique Digital. Conocé cómo usar nuestro contenido de manera responsable.",
+  keywords: "licencia, derechos de autor, Villa del Dique, contenido, copyright, uso responsable",
   openGraph: {
-    title: "Licencia MIT | Villa del Dique Digital",
-    description: "Licencia MIT del sitio web Villa del Dique Digital.",
+    title: "Licencia y Derechos de Autor | Villa del Dique Digital",
+    description: "Información sobre los derechos de autor y licencia del contenido de Villa del Dique Digital.",
     url: "https://www.villadeldique.com.ar/licencia",
     siteName: "Villa del Dique Digital",
     images: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         url: "/images/og/contacto-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Villa del Dique Digital - Licencia MIT",
+        alt: "Villa del Dique Digital - Licencia y Derechos de Autor",
       },
     ],
     locale: "es_AR",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Licencia MIT | Villa del Dique Digital",
-    description: "Licencia MIT del sitio web Villa del Dique Digital.",
+    title: "Licencia y Derechos de Autor | Villa del Dique Digital",
+    description: "Información sobre los derechos de autor y licencia del contenido de Villa del Dique Digital.",
     images: ["/images/og/contacto-og-image.jpg"],
   },
 }
@@ -38,86 +38,107 @@ export default function LicenciaPage() {
           <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mb-4">
             ← Volver al inicio
           </Link>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Licencia MIT</h1>
-          <p className="text-gray-600">Common Creator License</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Licencia y Derechos de Autor</h1>
+          <p className="text-gray-600">Información sobre el uso del contenido de Villa del Dique Digital</p>
         </div>
 
         <div className="bg-gray-50 rounded-lg p-8 mb-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">MIT License</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Derechos de Autor del Contenido</h2>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              <strong>Copyright (c) 2025 Villa del Dique Digital</strong>
+              <strong>© 2024 Villa del Dique Digital</strong> - Todos los derechos reservados.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
-              associated documentation files (the "Software"), to deal in the Software without restriction, including
-              without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-              copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
-              following conditions:
+              El contenido de este sitio web, incluyendo pero no limitado a textos, imágenes, fotografías, videos,
+              gráficos, logotipos, y diseño, está protegido por las leyes de derechos de autor de la República Argentina
+              y tratados internacionales.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              The above copyright notice and this permission notice shall be included in all copies or substantial
-              portions of the Software. Additionally, developer credits must remain intact and visible in any derivative
-              works or distributions.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed mb-6 font-semibold">
-              THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-              LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
-              EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-              IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
-              THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+              <strong>Villa del Dique Digital</strong> es el propietario exclusivo o tiene licencia para usar todo el
+              contenido publicado en este sitio web, salvo que se indique expresamente lo contrario.
             </p>
           </div>
         </div>
 
         <div className="prose prose-lg max-w-none">
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">¿Qué significa esto?</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Uso Permitido</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              La Licencia MIT es una licencia de software libre permisiva que permite:
+              Se permite el uso del contenido de Villa del Dique Digital bajo las siguientes condiciones:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
               <li>
-                <strong>Uso comercial:</strong> Puedes usar este software para propósitos comerciales
+                <strong>Uso personal:</strong> Puedes leer, descargar e imprimir contenido para uso personal y no
+                comercial
               </li>
               <li>
-                <strong>Modificación:</strong> Puedes modificar el software según tus necesidades
+                <strong>Compartir noticias:</strong> Puedes compartir enlaces a nuestros artículos en redes sociales
               </li>
               <li>
-                <strong>Distribución:</strong> Puedes distribuir copias del software original o modificado
+                <strong>Citas con atribución:</strong> Puedes citar fragmentos de nuestros artículos citando la fuente
               </li>
               <li>
-                <strong>Uso privado:</strong> Puedes usar y modificar el software de forma privada
+                <strong>Uso educativo:</strong> Instituciones educativas pueden usar nuestro contenido con fines
+                académicos
               </li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Condiciones</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Uso Prohibido</h2>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
               <li>
-                <strong>Incluir licencia y copyright:</strong> Debes incluir la licencia y el aviso de copyright en
-                todas las copias
+                <strong>Reproducción total:</strong> No se permite reproducir artículos completos sin autorización
               </li>
               <li>
-                <strong>Mantener créditos del desarrollador:</strong> Los créditos del desarrollador original deben
-                permanecer visibles y no pueden ser removidos
+                <strong>Uso comercial:</strong> No se permite usar nuestro contenido con fines comerciales sin permiso
               </li>
               <li>
-                <strong>Sin garantía:</strong> El software se proporciona "tal como está", sin garantías
+                <strong>Modificación:</strong> No se permite alterar o modificar nuestro contenido
+              </li>
+              <li>
+                <strong>Redistribución:</strong> No se permite redistribuir nuestro contenido sin atribución adecuada
               </li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Créditos</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Atribución Requerida</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Este sitio web fue desarrollado como parte del proyecto Villa del Dique Digital, con el objetivo de crear
-              una plataforma informativa para la comunidad de Villa del Dique.
+              Cuando uses nuestro contenido de manera permitida, debes incluir la siguiente atribución:
+            </p>
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+              <p className="text-blue-800 font-mono text-sm">
+                "Fuente: Villa del Dique Digital (www.villadeldique.com.ar)"
+              </p>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Solicitar Permisos</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Para usos que excedan los permisos otorgados, contactanos:
+            </p>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <ul className="list-none space-y-2 text-gray-700">
+                <li>
+                  <strong>Email:</strong> villadeldiquedigital@gmail.com
+                </li>
+                <li>
+                  <strong>Asunto:</strong> "Solicitud de permisos de uso de contenido"
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Créditos de Desarrollo</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Este sitio web fue desarrollado para fortalecer la comunicación digital en Villa del Dique y el Valle de
+              Calamuchita.
             </p>
             <p className="text-gray-700 leading-relaxed">
               <strong>Desarrollado por:</strong>{" "}

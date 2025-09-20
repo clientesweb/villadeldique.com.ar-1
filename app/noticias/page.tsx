@@ -7,13 +7,15 @@ import Footer from "@/components/footer"
 import NewsAdvertisingCarousel from "@/components/news-advertising-carousel"
 
 export const metadata: Metadata = {
-  title: "Noticias de Villa del Dique | Villa del Dique Digital - Portal de Noticias Locales y del Valle de Calamuchita",
+  title: "Noticias Villa del Dique | Portal de Información Local Valle de Calamuchita - Villa del Dique Digital",
   description:
-    "Mantente informado con las últimas noticias de Villa del Dique y el Valle de Calamuchita, Córdoba, Argentina. Información local actualizada, eventos, cultura, seguridad y desarrollo comunitario. El medio de noticias local y del Valle de Calamuchita.",
+    "🔥 Las últimas noticias de Villa del Dique, Córdoba, Argentina. Información local actualizada sobre eventos, cultura, turismo, emprendimientos, bomberos voluntarios y desarrollo comunitario en el Valle de Calamuchita. El medio digital más confiable de Villa del Dique.",
   keywords: [
     "noticias Villa del Dique",
+    "Villa del Dique noticias",
     "información local Villa del Dique",
     "noticias Córdoba Argentina",
+    "Valle de Calamuchita noticias",
     "eventos Villa del Dique",
     "cultura Villa del Dique",
     "bomberos voluntarios Villa del Dique",
@@ -31,18 +33,30 @@ export const metadata: Metadata = {
     "medio digital Villa del Dique",
     "periodismo local Córdoba",
     "Villa del Dique Digital noticias",
+    "dique Los Molinos noticias",
+    "turismo Villa del Dique noticias",
+    "anfiteatro Villa del Dique",
+    "Casa de la Cultura Villa del Dique",
+    "ACA YPF Villa del Dique",
+    "deportes Villa del Dique",
+    "educación Villa del Dique",
+    "salud Villa del Dique",
   ],
-  authors: [{ name: "Villa del Dique Digital" }],
+  authors: [{ name: "Villa del Dique Digital", url: "https://www.villadeldique.com.ar" }],
   creator: "Villa del Dique Digital",
   publisher: "Villa del Dique Digital",
   metadataBase: new URL("https://www.villadeldique.com.ar"),
   alternates: {
     canonical: "/noticias",
+    languages: {
+      "es-AR": "/noticias",
+      es: "/noticias",
+    },
   },
   openGraph: {
-    title: "Noticias de Villa del Dique - Portal de Información Local",
+    title: "🔥 Noticias Villa del Dique - Portal de Información Local Valle de Calamuchita",
     description:
-      "Las últimas noticias e información de Villa del Dique y el Valle de Calamuchita, Córdoba, Argentina. Mantente al día con los eventos, cultura y desarrollo de nuestra comunidad.",
+      "Las últimas noticias e información de Villa del Dique, Córdoba, Argentina. Mantente al día con los eventos, cultura, turismo y desarrollo de nuestra comunidad en el Valle de Calamuchita.",
     url: "https://www.villadeldique.com.ar/noticias",
     siteName: "Villa del Dique Digital",
     images: [
@@ -50,17 +64,20 @@ export const metadata: Metadata = {
         url: "/images/og/noticias-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Villa del Dique - Noticias locales y actualidad",
+        alt: "Villa del Dique Digital - Noticias locales y actualidad del Valle de Calamuchita",
       },
     ],
     locale: "es_AR",
     type: "website",
+    countryName: "Argentina",
+    region: "Córdoba",
+    placeName: "Villa del Dique",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noticias de Villa del Dique - Portal de Información Local",
+    title: "🔥 Noticias Villa del Dique - Portal de Información Local",
     description:
-      "Las últimas noticias e información de Villa del Dique y el Valle de Calamuchita, Córdoba, Argentina. Noticias, turismo y negocios.",
+      "Las últimas noticias e información de Villa del Dique, Córdoba, Argentina. Tu fuente confiable de información local del Valle de Calamuchita.",
     images: ["/images/og/noticias-og-image.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
@@ -76,14 +93,18 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  category: "Local News",
+  classification: "Portal de noticias locales",
   other: {
     "geo.region": "AR-X",
     "geo.placename": "Villa del Dique",
     "geo.position": "-32.1833;-64.4833",
     ICBM: "-32.1833, -64.4833",
-    "news.keywords": "Villa del Dique, noticias locales, Córdoba, Argentina, comunidad",
+    "news.keywords": "Villa del Dique, noticias locales, Córdoba, Argentina, Valle de Calamuchita, comunidad",
     "article.section": "Local News",
-    "article.tag": "Villa del Dique, noticias, Córdoba, Argentina",
+    "article.tag": "Villa del Dique, noticias, Córdoba, Argentina, Valle de Calamuchita",
+    "coverage.area": "Villa del Dique, Valle de Calamuchita, Córdoba, Argentina",
+    "target.audience": "Residentes y visitantes de Villa del Dique",
   },
 }
 

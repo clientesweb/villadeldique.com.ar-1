@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+
 export default function HeroBanner() {
   return (
     <section className="relative">
@@ -39,15 +41,32 @@ export default function HeroBanner() {
               Noticias, Turismo y Negocios
             </h1>
             <p
-              className="font-sans text-base md:text-lg lg:text-xl leading-relaxed"
+              className="font-sans text-base md:text-lg lg:text-xl leading-relaxed mb-6"
               style={{
                 color: "#ffffff",
                 textShadow: "2px 2px 4px rgba(0,0,0,0.9), -1px -1px 2px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.7)",
               }}
             >
               Últimas noticias, descubre los mejores destinos turísticos y contacta con los negocios locales de Villa
-              Del Dique y todo el Valle.
+              del Dique y El Valle.
             </p>
+            <Link
+              href="/nosotros"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-yellow text-brand-navy font-sans font-bold text-sm md:text-base rounded-lg hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+              style={{
+                textShadow: "none",
+              }}
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              Conocenos
+            </Link>
           </div>
         </div>
       </div>

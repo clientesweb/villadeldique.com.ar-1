@@ -6,14 +6,14 @@ import MainAdvertisingCarousel from "@/components/main-advertising-carousel"
 import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Suscríbete a Villa del Dique Digital - Promociona tu Negocio Local | Marketing Digital Córdoba",
+  title:
+    "💼 Promocioná tu Negocio en Villa del Dique | Marketing Digital Valle de Calamuchita - Villa del Dique Digital",
   description:
-    "Únete a Villa del Dique Digital y obtén cobertura periodística profesional, entrevistas exclusivas, vuelos de dron, publicidad personalizada y descuentos en diseño web para tu negocio o emprendimiento en Villa del Dique, Córdoba.",
+    "🚀 Promocioná tu negocio o emprendimiento en Villa del Dique con Villa del Dique Digital. Cobertura periodística profesional, entrevistas exclusivas, vuelos de dron, publicidad digital y 30% OFF en diseño web. El mejor marketing local del Valle de Calamuchita, Córdoba.",
   keywords: [
-    "suscripción Villa del Dique Digital",
     "promocionar negocio Villa del Dique",
+    "marketing digital Villa del Dique",
     "publicidad Villa del Dique",
-    "marketing digital Córdoba",
     "emprendimientos Villa del Dique",
     "negocios locales Villa del Dique",
     "cobertura periodística Villa del Dique",
@@ -30,18 +30,33 @@ export const metadata: Metadata = {
     "promoción negocios Córdoba",
     "marketing emprendimientos Villa del Dique",
     "Villa del Dique Digital suscripción",
+    "marketing Valle de Calamuchita",
+    "publicidad Valle de Calamuchita",
+    "promoción turismo Villa del Dique",
+    "marketing turístico Villa del Dique",
+    "publicidad local Córdoba",
+    "emprendedores Villa del Dique",
+    "comercios Villa del Dique",
+    "servicios Villa del Dique",
+    "gastronomía Villa del Dique",
+    "alojamiento Villa del Dique",
+    "actividades Villa del Dique",
   ],
-  authors: [{ name: "Villa del Dique Digital" }],
+  authors: [{ name: "Villa del Dique Digital", url: "https://www.villadeldique.com.ar" }],
   creator: "Villa del Dique Digital",
   publisher: "Villa del Dique Digital",
   metadataBase: new URL("https://www.villadeldique.com.ar"),
   alternates: {
     canonical: "/suscribirse",
+    languages: {
+      "es-AR": "/suscribirse",
+      es: "/suscribirse",
+    },
   },
   openGraph: {
-    title: "Suscríbete a Villa del Dique Digital - Promociona tu Negocio Local",
+    title: "💼 Promocioná tu Negocio en Villa del Dique | Marketing Digital Valle de Calamuchita",
     description:
-      "Únete a Villa del Dique Digital y obtén cobertura periodística, entrevistas exclusivas, vuelos de dron y publicidad personalizada para tu negocio en Villa del Dique.",
+      "🚀 Promocioná tu negocio en Villa del Dique con cobertura periodística, entrevistas exclusivas, vuelos de dron y publicidad digital. El mejor marketing local del Valle de Calamuchita.",
     url: "https://www.villadeldique.com.ar/suscribirse",
     siteName: "Villa del Dique Digital",
     images: [
@@ -49,17 +64,20 @@ export const metadata: Metadata = {
         url: "/images/og/subscripcion-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Suscríbete a Villa del Dique Digital - Promociona tu negocio local",
+        alt: "Promocioná tu negocio en Villa del Dique - Marketing digital Valle de Calamuchita",
       },
     ],
     locale: "es_AR",
     type: "website",
+    countryName: "Argentina",
+    region: "Córdoba",
+    placeName: "Villa del Dique",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Suscríbete a Villa del Dique Digital - Promociona tu Negocio",
+    title: "💼 Promocioná tu Negocio en Villa del Dique",
     description:
-      "Únete a Villa del Dique Digital y obtén cobertura periodística, entrevistas, vuelos de dron y publicidad personalizada para tu negocio.",
+      "🚀 Marketing digital para negocios locales en Villa del Dique. Cobertura periodística, entrevistas, vuelos de dron y publicidad personalizada.",
     images: ["/images/og/subscripcion-og-image.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
@@ -75,6 +93,8 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  category: "Business Services",
+  classification: "Servicios de marketing digital local",
   other: {
     "geo.region": "AR-X",
     "geo.placename": "Villa del Dique",
@@ -85,8 +105,9 @@ export const metadata: Metadata = {
     "business.contact_data.region": "Córdoba",
     "business.contact_data.postal_code": "5194",
     "business.contact_data.country_name": "Argentina",
-    "service.type": "Marketing Digital",
-    "service.area": "Villa del Dique, Córdoba, Argentina",
+    "service.type": "Marketing Digital Local",
+    "service.area": "Villa del Dique, Valle de Calamuchita, Córdoba, Argentina",
+    "target.audience": "Emprendedores y comerciantes de Villa del Dique",
   },
 }
 
@@ -122,7 +143,7 @@ export default function SuscribirsePage() {
           itemOffered: {
             "@type": "Service",
             name: "Entrevistas Exclusivas",
-            description: "Espacios dedicados para contar tu historia",
+            description: "Espacios dedicados para contar tu historia y proyectos",
           },
         },
         {
@@ -130,7 +151,7 @@ export default function SuscribirsePage() {
           itemOffered: {
             "@type": "Service",
             name: "Vuelos de Dron",
-            description: "Contenido audiovisual profesional con tomas aéreas",
+            description: "Contenido audiovisual profesional con tomas aéreas de tu negocio",
           },
         },
         {
@@ -138,7 +159,7 @@ export default function SuscribirsePage() {
           itemOffered: {
             "@type": "Service",
             name: "Publicidad Digital",
-            description: "Banner publicitario en nuestra página principal",
+            description: "Tu banner publicitario destacado en nuestra página principal",
           },
         },
         {
@@ -146,7 +167,15 @@ export default function SuscribirsePage() {
           itemOffered: {
             "@type": "Service",
             name: "Diseño Web",
-            description: "30% OFF en diseño y desarrollo de páginas web",
+            description: "30% OFF en diseño y desarrollo de páginas web profesionales",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Promoción en Redes",
+            description: "Diseño personalizado y promoción continua en nuestras redes sociales",
           },
         },
       ],
@@ -191,7 +220,7 @@ export default function SuscribirsePage() {
             </h1>
             <p className="font-sans text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
               {
-                "Únete a nuestra comunidad digital y obtén beneficios exclusivos para tu negocio o emprendimiento en todo el Valle"
+                "Únete a nuestra comunidad digital y obtén beneficios exclusivos para tu negocio o emprendimiento en Villa del Dique y El Valle."
               }
             </p>
 

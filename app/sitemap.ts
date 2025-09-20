@@ -56,6 +56,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       id: "inauguracion-polo-cultural",
       date: "2024-09-06",
     },
+    {
+      id: "aca-ypf-villa-del-dique-alojamientos-disponibilidad",
+      date: "2024-12-19",
+    },
   ]
 
   return [
@@ -78,6 +82,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/nosotros`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/suscribirse`,
       lastModified: new Date(),
       changeFrequency: "weekly",
@@ -88,6 +98,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/politica-privacidad`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.4,
     },
     {
       url: `${baseUrl}/terminos`,

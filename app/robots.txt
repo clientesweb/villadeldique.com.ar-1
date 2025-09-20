@@ -9,6 +9,8 @@ Allow: /noticias
 Allow: /turismo
 Allow: /suscribirse
 Allow: /contacto
+Allow: /nosotros
+Allow: /politica-privacidad
 Allow: /terminos
 Allow: /licencia
 
@@ -58,10 +60,9 @@ Sitemap: https://www.villadeldique.com.ar/news-sitemap.xml
 
 Crawl-delay: 0.2
 
-# Información adicional para SEO local
 # Este sitio web es el portal de noticias de Villa del Dique, Córdoba, Argentina
-# Contenido: Noticias locales, turismo, información comunitaria, emprendimientos
-# Audiencia: Residentes y visitantes de Villa del Dique y alrededores
+# Contenido: Noticias locales, turismo, información comunitaria, emprendimientos, comercios, entrevistas
+# Audiencia: Residentes y visitantes de Villa del Dique, Valle de Calamuchita y alrededores
 # Idioma: Español (Argentina)
-# Keywords: Villa del Dique, noticias, turismo, Córdoba, Argentina
+# Keywords: Villa del Dique, noticias, turismo, Córdoba, Argentina, Valle de Calamuchita, emprendimientos, medio digital, comercios, entrevistas, Dique Los Molinos
 # Última actualización: 2024-12-19
