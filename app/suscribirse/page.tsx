@@ -191,7 +191,7 @@ export default function SuscribirsePage() {
             </h1>
             <p className="font-sans text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
               {
-                "Únete a nuestra comunidad digital y obtén beneficios exclusivos para tu negocio o emprendimiento en Villa del Dique."
+                "Únete a nuestra comunidad digital y obtén beneficios exclusivos para tu negocio o emprendimiento en todo el Valle"
               }
             </p>
 
