@@ -37,8 +37,8 @@ export function generateOrganizationSchema() {
       availableLanguage: "Spanish",
     },
     sameAs: [
-      "https://www.instagram.com/vivivilladeldique",
-      "https://www.villadeldique.org",
+      "https://www.instagram.com/villadeldique.com.ar",
+      "https://www.villadeldique.com.ar",
       "https://wa.me/3546533050",
     ],
     areaServed: {
@@ -261,8 +261,8 @@ export function generateEnhancedLocalBusinessSchema() {
       "entrevistas locales",
     ],
     sameAs: [
-      "https://www.instagram.com/vivivilladeldique",
-      "https://www.villadeldique.org",
+      "https://www.instagram.com/villadeldique.com.ar",
+      "https://www.villadeldique.com.ar",
       "https://wa.me/3546533050",
     ],
     potentialAction: [
