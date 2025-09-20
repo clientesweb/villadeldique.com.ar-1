@@ -45,7 +45,7 @@ export default function HeroBanner() {
                 textShadow: "2px 2px 4px rgba(0,0,0,0.9), -1px -1px 2px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.7)",
               }}
             >
-              Últimas noticias, descubre los mejores destinos turísticos y contacta con los negocios locales de Dilla
+              Últimas noticias, descubre los mejores destinos turísticos y contacta con los negocios locales de Villa
               Del Dique y todo el Valle.
             </p>
           </div>
