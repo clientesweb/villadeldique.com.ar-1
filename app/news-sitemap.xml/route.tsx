@@ -11,10 +11,70 @@ export async function GET() {
       category: "Turismo",
     },
     {
+      id: "bomberos-voluntarios-nuevo-sitio-web",
+      title: "Bomberos Voluntarios de Villa del Dique estrenan sitio web oficial",
+      date: "2025-09-20",
+      category: "Comunidad",
+    },
+    {
+      id: "dia-del-profesor",
+      title: "Día del Profesor: homenaje a los educadores que inspiran",
+      date: "2025-09-17",
+      category: "Educación",
+    },
+    {
+      id: "dia-del-psicopedagogo",
+      title: "Día del Psicopedagogo: homenaje a Jean Piaget y a los profesionales de la educación",
+      date: "2025-09-17",
+      category: "Educación",
+    },
+    {
+      id: "dia-derechos-estudiantes-secundarios",
+      title: "Día de los Derechos de los Estudiantes Secundarios: memoria y compromiso",
+      date: "2025-09-16",
+      category: "Sociedad",
+    },
+    {
+      id: "dia-internacional-democracia",
+      title: "Día Internacional de la Democracia: reflexiones y desafíos actuales",
+      date: "2025-09-15",
+      category: "Sociedad",
+    },
+    {
+      id: "dia-mundial-linfoma",
+      title: "Día Mundial del Linfoma: concientización y apoyo a pacientes",
+      date: "2025-09-15",
+      category: "Salud",
+    },
+    {
+      id: "mega-feria-villa-del-dique",
+      title: "Mega Feria en Villa del Dique: encuentro de emprendedores y comunidad",
+      date: "2025-09-14",
+      category: "Eventos",
+    },
+    {
+      id: "desafio-cerro-lago",
+      title: "Desafío Cerro Lago: deporte y naturaleza en Villa del Dique",
+      date: "2025-09-13",
+      category: "Deportes",
+    },
+    {
+      id: "inauguracion-polo-cultural-asociacion",
+      title: "Inauguración del Polo Cultural de la Asociación Italiana",
+      date: "2025-09-12",
+      category: "Cultura",
+    },
+    {
       id: "entrevista-bomberos-voluntarios",
       title: "Entrevista exclusiva con Bomberos Voluntarios de Villa del Dique",
-      date: "2025-09-09",
+      date: "2025-09-11",
       category: "Comunidad",
+    },
+    {
+      id: "campana-prevencion-incendios",
+      title: "Campaña de prevención de incendios forestales en Villa del Dique",
+      date: "2025-09-10",
+      category: "Medio Ambiente",
     },
     {
       id: "emprender-villa-del-dique",
@@ -22,7 +82,18 @@ export async function GET() {
       date: "2025-09-09",
       category: "Emprendimientos",
     },
-    // Add more recent articles here
+    {
+      id: "septiembre-amarillo-prevencion",
+      title: "Septiembre Amarillo: mes de prevención del suicidio",
+      date: "2025-09-07",
+      category: "Salud",
+    },
+    {
+      id: "inauguracion-polo-cultural",
+      title: "Inauguración del Polo Cultural en Villa del Dique",
+      date: "2025-09-06",
+      category: "Cultura",
+    },
   ]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
