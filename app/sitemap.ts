@@ -5,6 +5,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const newsArticles = [
     {
+      id: "aca-ypf-villa-del-dique-invita-alojamientos",
+      date: "2025-09-20",
+    },
+    {
+      id: "bomberos-voluntarios-nuevo-sitio-web",
+      date: "2025-09-19",
+    },
+    {
+      id: "villa-del-dique-perla-calamuchita",
+      date: "2025-09-18",
+    },
+    {
       id: "dia-del-profesor",
       date: "2025-09-17",
     },
@@ -55,10 +67,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       id: "inauguracion-polo-cultural",
       date: "2025-09-06",
-    },
-    {
-      id: "aca-ypf-villa-del-dique-alojamientos-disponibilidad",
-      date: "2025-09-20",
     },
   ]
 
