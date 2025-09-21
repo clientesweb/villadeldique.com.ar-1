@@ -7,7 +7,7 @@ export async function GET() {
     {
       id: "aca-ypf-villa-del-dique-alojamientos-disponibilidad",
       title: "ACA YPF Villa del Dique invita a alojamientos a compartir su disponibilidad",
-      date: "2025-09-19",
+      date: "2025-09-20",
       category: "Turismo",
     },
     {
