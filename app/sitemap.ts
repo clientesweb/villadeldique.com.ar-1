@@ -58,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       id: "aca-ypf-villa-del-dique-alojamientos-disponibilidad",
-      date: "2025-09-19",
+      date: "2025-09-20",
     },
   ]
 
