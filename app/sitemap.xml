@@ -53,6 +53,40 @@
 
   <!-- Noticias individuales -->
   <url>
+    <loc>https://www.villadeldique.com.ar/noticias/bomberos-voluntarios-nuevo-sitio-web</loc>
+    <lastmod>2025-09-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-20T00:00:00+00:00</news:publication_date>
+      <news:title>Bomberos Voluntarios de Villa del Dique estrenan sitio web oficial</news:title>
+      <news:keywords>Villa del Dique, bomberos voluntarios, sitio web, comunidad</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-del-psicopedagogo</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-17T00:00:00+00:00</news:publication_date>
+      <news:title>Día del Psicopedagogo: homenaje a Jean Piaget y a los profesionales de la educación</news:title>
+      <news:keywords>Villa del Dique, día del psicopedagogo, educación, Jean Piaget, aprendizaje</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://www.villadeldique.com.ar/noticias/inauguracion-polo-cultural-asociacion</loc>
     <lastmod>2025-09-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
