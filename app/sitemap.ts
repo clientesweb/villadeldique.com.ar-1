@@ -6,59 +6,59 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const newsArticles = [
     {
       id: "dia-del-profesor",
-      date: "2024-09-17",
+      date: "2025-09-17",
     },
     {
       id: "dia-del-psicopedagogo",
-      date: "2024-09-17",
+      date: "2025-09-17",
     },
     {
       id: "dia-derechos-estudiantes-secundarios",
-      date: "2024-09-16",
+      date: "2025-09-16",
     },
     {
       id: "dia-internacional-democracia",
-      date: "2024-09-15",
+      date: "2025-09-15",
     },
     {
       id: "dia-mundial-linfoma",
-      date: "2024-09-15",
+      date: "2025-09-15",
     },
     {
       id: "mega-feria-villa-del-dique",
-      date: "2024-09-14",
+      date: "2025-09-14",
     },
     {
       id: "desafio-cerro-lago",
-      date: "2024-09-13",
+      date: "2025-09-13",
     },
     {
       id: "inauguracion-polo-cultural-asociacion",
-      date: "2024-09-12",
+      date: "2025-09-12",
     },
     {
       id: "entrevista-bomberos-voluntarios",
-      date: "2024-09-11",
+      date: "2025-09-11",
     },
     {
       id: "campana-prevencion-incendios",
-      date: "2024-09-10",
+      date: "2025-09-10",
     },
     {
       id: "emprender-villa-del-dique",
-      date: "2024-09-09",
+      date: "2025-09-09",
     },
     {
       id: "septiembre-amarillo-prevencion",
-      date: "2024-09-07",
+      date: "2025-09-07",
     },
     {
       id: "inauguracion-polo-cultural",
-      date: "2024-09-06",
+      date: "2025-09-06",
     },
     {
       id: "aca-ypf-villa-del-dique-alojamientos-disponibilidad",
-      date: "2024-12-19",
+      date: "2025-09-19",
     },
   ]
 
