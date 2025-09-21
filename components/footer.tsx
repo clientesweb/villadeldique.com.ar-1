@@ -29,7 +29,7 @@ export default function Footer() {
               addressRegion: "Córdoba",
               addressCountry: "AR",
             },
-            sameAs: ["https://www.instagram.com/villadeldiquedigital"],
+            sameAs: ["https://www.instagram.com/villadeldique.com.ar"],
             areaServed: {
               "@type": "Place",
               name: "Villa del Dique, Valle de Calamuchita, Córdoba, Argentina",
@@ -67,7 +67,7 @@ export default function Footer() {
                 <Image src="/images/email-official.png" alt="Email Villa del Dique Digital" width={32} height={32} />
               </a>
               <a
-                href="https://www.instagram.com/villadeldiquedigital"
+                href="https://www.instagram.com/villadeldique.com.ar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-opacity"
