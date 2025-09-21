@@ -116,8 +116,8 @@ export const metadata: Metadata = {
     title: "Villa del Dique Digital - Portal de Noticias",
     description: "Medio de noticias, turismo y negocios de Villa del Dique, Córdoba, Argentina. Portal digital.",
     images: ["/images/og-image.jpg"],
-    site: "@villadeldique",
-    creator: "@villadeldique",
+    site: "@villadeldique.com.ar",
+    creator: "@villadeldique.com.ar",
   },
   robots: {
     index: true,
@@ -290,8 +290,8 @@ export default function RootLayout({
                     areaServed: "Villa del Dique, Córdoba, Argentina",
                   },
                   sameAs: [
-                    "https://www.instagram.com/vivivilladeldique",
-                    "https://www.villadeldique.org",
+                    "https://www.instagram.com/villadeldique.com.ar",
+                    "https://www.villadeldique.com.ar",
                     "https://wa.me/3546533050",
                   ],
                   areaServed: {
