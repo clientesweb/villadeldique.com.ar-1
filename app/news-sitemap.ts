@@ -5,6 +5,11 @@ export default function newsSitemap(): MetadataRoute.Sitemap {
 
   const newsArticles = [
     {
+      id: "dia-de-la-sanidad",
+      date: "2025-09-21T10:00:00.000Z",
+      title: "21 de septiembre: Día de la Sanidad",
+    },
+    {
       id: "aca-ypf-villa-del-dique-invita-alojamientos",
       date: "2025-09-20T10:00:00.000Z",
       title: "ACA YPF Villa del Dique invita a los alojamientos a compartir su disponibilidad",
