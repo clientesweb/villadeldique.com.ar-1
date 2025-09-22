@@ -5,6 +5,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const newsArticles = [
     {
+      id: "dia-de-la-sanidad",
+      date: "2025-09-21",
+    },
+    {
       id: "aca-ypf-villa-del-dique-invita-alojamientos",
       date: "2025-09-20",
     },
