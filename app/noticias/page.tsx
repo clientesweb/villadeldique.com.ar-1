@@ -9,7 +9,7 @@ import NewsAdvertisingCarousel from "@/components/news-advertising-carousel"
 export const metadata: Metadata = {
   title: "Noticias Villa del Dique | Portal de Información Local Valle de Calamuchita - Villa del Dique Digital",
   description:
-    "🔥 Las últimas noticias de Villa del Dique, Córdoba, Argentina. Información local actualizada sobre eventos, cultura, turismo, emprendimientos, bomberos voluntarios y desarrollo comunitario en el Valle de Calamuchita. El medio digital más confiable de Villa del Dique.",
+    " Las últimas noticias de Villa del Dique, Córdoba, Argentina. Información local actualizada sobre eventos, cultura, turismo, emprendimientos, bomberos voluntarios y desarrollo comunitario en el Valle de Calamuchita. El medio digital más confiable de Villa del Dique.",
   keywords: [
     "noticias Villa del Dique",
     "Villa del Dique noticias",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "🔥 Noticias Villa del Dique - Portal de Información Local Valle de Calamuchita",
+    title: "Noticias Villa del Dique - Portal de Información Local Valle de Calamuchita",
     description:
       "Las últimas noticias e información de Villa del Dique, Córdoba, Argentina. Mantente al día con los eventos, cultura, turismo y desarrollo de nuestra comunidad en el Valle de Calamuchita.",
     url: "https://www.villadeldique.com.ar/noticias",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "🔥 Noticias Villa del Dique - Portal de Información Local",
+    title: "Noticias Villa del Dique - Portal de Información Local",
     description:
       "Las últimas noticias e información de Villa del Dique, Córdoba, Argentina. Tu fuente confiable de información local del Valle de Calamuchita.",
     images: ["/images/og/noticias-og-image.jpg"],
@@ -109,6 +109,16 @@ export const metadata: Metadata = {
 }
 
 const allNews = [
+  {
+    id: "dia-de-la-sanidad",
+    title: "21 de septiembre: Día de la Sanidad",
+    excerpt:
+      "Un reconocimiento a quienes cuidan nuestra salud todos los días. El 21 de septiembre se celebra en Argentina el Día de la Sanidad, en homenaje a los trabajadores de la salud.",
+    image: "/images/dia-de-la-sanidad.jpg",
+    date: "2025-09-21",
+    category: "Salud",
+    author: "Villa del Dique Digital",
+  },
   {
     id: "aca-ypf-villa-del-dique-invita-alojamientos",
     title: "ACA YPF Villa del Dique invita a los alojamientos a compartir su disponibilidad",
