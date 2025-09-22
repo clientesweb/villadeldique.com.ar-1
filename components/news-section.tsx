@@ -3,6 +3,16 @@ import Link from "next/link"
 
 const newsData = [
   {
+    id: "dia-de-la-sanidad",
+    title: "21 de septiembre: Día de la Sanidad",
+    excerpt:
+      "Un reconocimiento a quienes cuidan nuestra salud todos los días. El 21 de septiembre se celebra en Argentina el Día de la Sanidad, en homenaje a los trabajadores de la salud.",
+    image: "/images/dia-de-la-sanidad.jpg",
+    date: "2025-09-21",
+    displayDate: "21 de septiembre de 2025",
+    slug: "dia-de-la-sanidad",
+  },
+  {
     id: "aca-ypf-villa-del-dique-invita-alojamientos",
     title: "ACA YPF Villa del Dique invita a los alojamientos a compartir su disponibilidad",
     excerpt:
