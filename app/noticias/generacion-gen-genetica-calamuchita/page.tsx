@@ -30,7 +30,7 @@ const relatedNews = [
   {
     id: "dia-mundial-linfoma",
     title: "15 de septiembre: Día Mundial del Linfoma",
-    image: "/images/dia-mundial-linfoma.jpg",
+    image: "/images/portada-dia-mundial-linfoma.jpg",
     date: "2025-09-15",
     category: "Salud",
   },
