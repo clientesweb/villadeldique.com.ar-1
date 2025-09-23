@@ -9,7 +9,7 @@ import NewsAdvertisingCarousel from "@/components/news-advertising-carousel"
 export const metadata: Metadata = {
   title: "Noticias Villa del Dique | Portal de Información Local Valle de Calamuchita - Villa del Dique Digital",
   description:
-    " Las últimas noticias de Villa del Dique, Córdoba, Argentina. Información local actualizada sobre eventos, cultura, turismo, emprendimientos, bomberos voluntarios y desarrollo comunitario en el Valle de Calamuchita. El medio digital más confiable de Villa del Dique.",
+    "Las últimas noticias de Villa del Dique, Córdoba, Argentina. Información local actualizada sobre eventos, cultura, turismo, emprendimientos, bomberos voluntarios y desarrollo comunitario en el Valle de Calamuchita. El medio digital más confiable de Villa del Dique.",
   keywords: [
     "noticias Villa del Dique",
     "Villa del Dique noticias",
@@ -109,6 +109,16 @@ export const metadata: Metadata = {
 }
 
 const allNews = [
+  {
+    id: "dia-de-la-primavera",
+    title: "21 de septiembre: Día de la Primavera",
+    excerpt:
+      "Un nuevo ciclo florece en Calamuchita. El 21 de septiembre marca la llegada de la primavera, una estación que simboliza el renacer, la alegría y el encuentro con la naturaleza en nuestro Valle de Calamuchita.",
+    image: "/images/dia-de-la-primavera.jpg",
+    date: "2025-09-21",
+    category: "Comunidad",
+    author: "Villa del Dique Digital",
+  },
   {
     id: "dia-de-la-sanidad",
     title: "21 de septiembre: Día de la Sanidad",
