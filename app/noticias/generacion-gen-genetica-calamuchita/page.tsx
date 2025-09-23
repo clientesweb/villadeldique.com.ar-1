@@ -171,7 +171,7 @@ export default function GeneracionGenPage() {
                   <div className="flex flex-col md:flex-row gap-6 items-center">
                     <div className="w-32 h-32 relative flex-shrink-0">
                       <Image
-                        src="/images/generacion-gen-2.jpg"
+                        src="/images/generacion-gen-2.png"
                         alt="Evelyn Butassi, especialista en virología y genetista"
                         fill
                         className="object-cover rounded-full"
