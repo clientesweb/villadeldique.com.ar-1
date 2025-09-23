@@ -37,7 +37,7 @@ const relatedNews = [
   {
     id: "dia-del-psicopedagogo",
     title: "17 de septiembre: Día del Psicopedagogo",
-    image: "/images/dia-del-profesor-aula.jpg",
+    image: "/images/dia-de-psicopedadogo.jpeg",
     date: "2025-09-17",
     category: "Salud",
   },
