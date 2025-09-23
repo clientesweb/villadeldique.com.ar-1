@@ -5,10 +5,22 @@ export async function GET() {
 
   const newsArticles = [
     {
-      id: "aca-ypf-villa-del-dique-alojamientos-disponibilidad",
-      title: "ACA YPF Villa del Dique invita a alojamientos a compartir su disponibilidad",
-      date: "2025-09-20",
-      category: "Turismo",
+      id: "generacion-gen-genetica-calamuchita",
+      title: "Generación GEN: la genética explicada desde Calamuchita",
+      date: "2025-09-23",
+      category: "Ciencia",
+    },
+    {
+      id: "dia-de-la-primavera",
+      title: "21 de septiembre: Día de la Primavera",
+      date: "2025-09-21",
+      category: "Efemérides",
+    },
+    {
+      id: "dia-de-la-sanidad",
+      title: "21 de septiembre: Día de la Sanidad",
+      date: "2025-09-21",
+      category: "Salud",
     },
     {
       id: "bomberos-voluntarios-nuevo-sitio-web",
