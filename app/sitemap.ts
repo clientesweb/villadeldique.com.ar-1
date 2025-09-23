@@ -5,6 +5,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const newsArticles = [
     {
+      id: "dia-de-la-primavera",
+      date: "2025-09-21",
+    },
+    {
       id: "dia-de-la-sanidad",
       date: "2025-09-21",
     },
