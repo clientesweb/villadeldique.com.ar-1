@@ -3,6 +3,16 @@ import Link from "next/link"
 
 const newsData = [
   {
+    id: "dia-de-la-primavera",
+    title: "21 de septiembre: Día de la Primavera",
+    excerpt:
+      "Un nuevo ciclo florece en Calamuchita. El 21 de septiembre marca la llegada de la primavera, una estación que simboliza el renacer, la alegría y el encuentro con la naturaleza en nuestro Valle de Calamuchita.",
+    image: "/images/dia-de-la-primavera.jpg",
+    date: "2025-09-21",
+    displayDate: "21 de septiembre de 2025",
+    slug: "dia-de-la-primavera",
+  },
+  {
     id: "dia-de-la-sanidad",
     title: "21 de septiembre: Día de la Sanidad",
     excerpt:
