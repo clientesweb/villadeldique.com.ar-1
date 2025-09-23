@@ -110,6 +110,16 @@ export const metadata: Metadata = {
 
 const allNews = [
   {
+    id: "generacion-gen-genetica-calamuchita",
+    title: "Generación GEN: la genética explicada desde Calamuchita",
+    excerpt:
+      "La bioquímica Evelyn Butassi acerca la genética y la medicina personalizada al público general a través de un podcast disponible en Spotify, vinculado al trabajo del Laboratorio LEAC.",
+    image: "/images/portada-noticia-generacion-gen.jpg",
+    date: "2025-09-23",
+    category: "Ciencia",
+    author: "Candela Insaurralde",
+  },
+  {
     id: "dia-de-la-primavera",
     title: "21 de septiembre: Día de la Primavera",
     excerpt:
