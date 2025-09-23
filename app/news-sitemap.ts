@@ -5,6 +5,11 @@ export default function newsSitemap(): MetadataRoute.Sitemap {
 
   const newsArticles = [
     {
+      id: "generacion-gen-genetica-calamuchita",
+      date: "2025-09-23T10:00:00.000Z",
+      title: "Generación GEN: la genética explicada desde Calamuchita",
+    },
+    {
       id: "dia-de-la-primavera",
       date: "2025-09-21T12:00:00.000Z",
       title: "21 de septiembre: Día de la Primavera",
