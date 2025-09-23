@@ -37,54 +37,19 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-
-  /* Adding brand color variables to root */
-  --brand-navy: #050a30;
-  --brand-blue: #4a90e2;
-  --brand-green: #7cb342;
-  --brand-yellow: #ffd54f;
 }
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
-}
-
-/* Adding custom font variables for Inter and Montserrat */
 @theme inline {
   --font-sans: var(--font-inter);
   --font-serif: var(--font-montserrat);
-  --font-mono: var(--font-geist-mono);
+
+  /* Brand colors */
+  --color-brand-navy: #050a30;
+  --color-brand-blue: #4a90e2;
+  --color-brand-green: #7cb342;
+  --color-brand-yellow: #ffd54f;
+
+  /* shadcn/ui colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -121,26 +86,11 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-
-  /* Adding brand colors to Tailwind theme for proper utility support */
-  --color-brand-navy: var(--brand-navy);
-  --color-brand-blue: var(--brand-blue);
-  --color-brand-green: var(--brand-green);
-  --color-brand-yellow: var(--brand-yellow);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-/* Adding custom brand colors based on the logo */
+/* Brand color utilities */
 .bg-brand-navy {
-  background-color: #050a30 !important;
+  background-color: #050a30;
 }
 
 .bg-brand-blue {
@@ -155,13 +105,8 @@
   background-color: #ffd54f;
 }
 
-/* Adding new announcement bar color */
-.bg-announcement {
-  background-color: #0d6eb7;
-}
-
 .text-brand-navy {
-  color: #050a30 !important;
+  color: #050a30;
 }
 
 .text-brand-blue {
@@ -176,247 +121,22 @@
   color: #ffd54f;
 }
 
-/* Enhanced header navigation text contrast with higher specificity */
+/* Header navigation styles */
 header.bg-brand-navy nav a,
-header.bg-brand-navy nav a span,
-header.bg-brand-navy nav span,
-header .bg-brand-navy nav a,
-header .bg-brand-navy nav a span,
-header .bg-brand-navy nav span,
-header nav a,
-header nav a span,
-header nav span {
+header.bg-brand-navy nav a span {
   color: #ffffff !important;
 }
 
 header.bg-brand-navy nav a:hover,
-header.bg-brand-navy nav a:hover span,
-header.bg-brand-navy nav span:hover,
-header .bg-brand-navy nav a:hover,
-header .bg-brand-navy nav a:hover span,
-header .bg-brand-navy nav span:hover,
-header nav a:hover,
-header nav a:hover span,
-header nav span:hover {
+header.bg-brand-navy nav a:hover span {
   color: #ffd54f !important;
 }
 
-/* Enhanced specificity for all navigation links to ensure white text */
-header nav a[href="/suscribirse"],
-header nav a[href="/suscribirse"] span,
-header nav a[href="/contacto"],
-header nav a[href="/contacto"] span,
-header nav a[href="/turismo"],
-header nav a[href="/turismo"] span,
-header nav a[href="/noticias"],
-header nav a[href="/noticias"] span,
-header nav a[href="/"],
-header nav a[href="/"] span,
-header .bg-brand-navy nav a,
-header .bg-brand-navy nav a span,
-header .bg-brand-navy nav span,
-.bg-brand-navy nav a,
-.bg-brand-navy nav a span,
-.bg-brand-navy nav span {
-  color: #ffffff !important;
-  text-decoration: none;
-}
-
-/* Ensure hover states work properly for all navigation links */
-header nav a[href="/suscribirse"]:hover,
-header nav a[href="/suscribirse"]:hover span,
-header nav a[href="/contacto"]:hover,
-header nav a[href="/contacto"]:hover span,
-header nav a[href="/turismo"]:hover,
-header nav a[href="/turismo"]:hover span,
-header nav a[href="/noticias"]:hover,
-header nav a[href="/noticias"]:hover span,
-header nav a[href="/"]:hover,
-header nav a[href="/"]:hover span,
-header .bg-brand-navy nav a:hover,
-header .bg-brand-navy nav a:hover span,
-header .bg-brand-navy nav span:hover,
-.bg-brand-navy nav a:hover,
-.bg-brand-navy nav a:hover span,
-.bg-brand-navy nav span:hover {
-  color: #ffd54f !important;
-}
-
-/* Additional override to prevent any brand-navy color inheritance on text */
-header nav .text-brand-navy,
-header .text-brand-navy,
-.bg-brand-navy .text-brand-navy {
-  color: #ffffff !important;
-}
-
-/* Adding infinite scroll animation for sponsors carousel */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-33.333%);
-  }
-}
-
-.animate-scroll {
-  animation: scroll 30s linear infinite;
-}
-
-.animate-scroll:hover {
-  animation-play-state: paused;
-}
-
-/* Enhanced responsive design and performance optimizations */
-@layer utilities {
-  /* Responsive typography scale */
-  .text-responsive-xs {
-    @apply text-xs sm:text-sm;
-  }
-  .text-responsive-sm {
-    @apply text-sm sm:text-base;
-  }
-  .text-responsive-base {
-    @apply text-base sm:text-lg;
-  }
-  .text-responsive-lg {
-    @apply text-lg sm:text-xl;
-  }
-  .text-responsive-xl {
-    @apply text-xl sm:text-2xl;
-  }
-  .text-responsive-2xl {
-    @apply text-2xl sm:text-3xl md:text-4xl;
-  }
-  .text-responsive-3xl {
-    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
-  }
-
-  /* Responsive spacing */
-  .space-responsive {
-    @apply space-y-4 sm:space-y-6 md:space-y-8;
-  }
-  .p-responsive {
-    @apply p-4 sm:p-6 md:p-8;
-  }
-  .px-responsive {
-    @apply px-4 sm:px-6 lg:px-8;
-  }
-  .py-responsive {
-    @apply py-6 sm:py-8 md:py-12;
-  }
-
-  /* Performance optimizations */
-  .will-change-transform {
-    will-change: transform;
-  }
-  .will-change-scroll {
-    will-change: scroll-position;
-  }
-  .contain-layout {
-    contain: layout;
-  }
-  .contain-paint {
-    contain: paint;
-  }
-  .contain-size {
-    contain: size;
-  }
-
-  /* Smooth scrolling */
-  .scroll-smooth {
-    scroll-behavior: smooth;
-  }
-
-  /* Fixed focus ring to use standard blue color instead of custom brand-blue */
-  .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
-  }
-
-  /* Image optimization classes */
-  .img-responsive {
-    @apply w-full h-auto;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-  }
-
-  /* Aspect ratio utilities for consistent image display */
-  .aspect-video {
-    aspect-ratio: 16 / 9;
-  }
-  .aspect-square {
-    aspect-ratio: 1 / 1;
-  }
-  .aspect-portrait {
-    aspect-ratio: 3 / 4;
-  }
-  .aspect-landscape {
-    aspect-ratio: 4 / 3;
-  }
-}
-
-/* Enhanced mobile-first responsive breakpoints */
-@media (max-width: 640px) {
-  .prose {
-    @apply text-sm leading-relaxed;
-  }
-
-  .prose h1 {
-    @apply text-2xl leading-tight;
-  }
-
-  .prose h2 {
-    @apply text-xl leading-tight;
-  }
-
-  .prose h3 {
-    @apply text-lg leading-tight;
-  }
-}
-
-/* Performance optimizations for animations */
-@media (prefers-reduced-motion: reduce) {
-  .animate-scroll {
-    animation: none;
-  }
-
+@layer base {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    @apply border-border outline-ring/50;
   }
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-  .text-brand-blue {
-    color: #0066cc;
-  }
-
-  .bg-brand-blue {
-    background-color: #0066cc;
-  }
-}
-
-/* Print styles for better SEO and accessibility */
-@media print {
-  .no-print {
-    display: none !important;
-  }
-
   body {
-    font-size: 12pt;
-    line-height: 1.4;
-  }
-
-  h1,
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-    height: auto !important;
+    @apply bg-background text-foreground;
   }
 }
