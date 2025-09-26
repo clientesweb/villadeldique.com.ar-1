@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Villa del Dique Digital",
     images: [
       {
-        url: "/images/portada-dia-del-comerciante.webp",
+        url: "/images/portada-dia-del-comerciante.jpg",
         width: 1200,
         height: 630,
         alt: "Día del Empleado de Comercio - Villa del Dique",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "26 de septiembre: Día del Empleado de Comercio",
     description: "Un homenaje a quienes sostienen el pulso comercial de Villa del Dique.",
-    images: ["/images/portada-dia-del-comerciante.webp"],
+    images: ["/images/portada-dia-del-comerciante.jpg"],
     creator: "@villadeldique",
     site: "@villadeldique",
   },
@@ -66,7 +66,7 @@ const articleSchema = {
   headline: "26 de septiembre: Día del Empleado de Comercio",
   description:
     "Un homenaje a quienes sostienen el pulso comercial de Villa del Dique. Cada 26 de septiembre se celebra el Día del Empleado de Comercio, reconociendo la labor de quienes mantienen viva la economía local.",
-  image: "https://www.villadeldique.com.ar/images/portada-dia-del-comerciante.webp",
+  image: "https://www.villadeldique.com.ar/images/portada-dia-del-comerciante.jpg",
   datePublished: "2025-09-26",
   dateModified: "2025-09-26",
   author: {
