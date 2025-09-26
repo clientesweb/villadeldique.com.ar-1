@@ -5,6 +5,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const newsArticles = [
     {
+      id: "dia-del-empleado-de-comercio",
+      date: "2025-09-26",
+    },
+    {
       id: "generacion-gen-genetica-calamuchita",
       date: "2025-09-23",
     },

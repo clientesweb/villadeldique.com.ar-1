@@ -5,6 +5,11 @@ export default function newsSitemap(): MetadataRoute.Sitemap {
 
   const newsArticles = [
     {
+      id: "dia-del-empleado-de-comercio",
+      date: "2025-09-26T10:00:00.000Z",
+      title: "26 de septiembre: Día del Empleado de Comercio",
+    },
+    {
       id: "generacion-gen-genetica-calamuchita",
       date: "2025-09-23T10:00:00.000Z",
       title: "Generación GEN: la genética explicada desde Calamuchita",
@@ -35,6 +40,11 @@ export default function newsSitemap(): MetadataRoute.Sitemap {
       title: "Villa del Dique: la perla de Calamuchita",
     },
     {
+      id: "dia-del-profesor",
+      date: "2025-09-17T12:00:00.000Z",
+      title: "Día del Profesor: Celebrando a quienes inspiran con su enseñanza",
+    },
+    {
       id: "dia-del-psicopedagogo",
       date: "2025-09-17T10:00:00.000Z",
       title: "17 de septiembre: Día del Psicopedagogo",
@@ -60,9 +70,29 @@ export default function newsSitemap(): MetadataRoute.Sitemap {
       title: "Villa del Dique vive su primera Mega Feria en el Centro Cultural Pato Carret",
     },
     {
-      id: "inauguracion-polo-cultural",
-      date: "2025-09-06T10:00:00.000Z",
-      title: "Inauguración del Polo Cultural de Villa del Dique",
+      id: "desafio-cerro-lago",
+      date: "2025-09-13T10:00:00.000Z",
+      title: "Rumbo al 6° Desafío Cerro y Lago",
+    },
+    {
+      id: "inauguracion-polo-cultural-asociacion",
+      date: "2025-09-12T10:00:00.000Z",
+      title: "Villa del Dique celebra la inauguración de su nuevo Polo Cultural",
+    },
+    {
+      id: "entrevista-bomberos-voluntarios",
+      date: "2025-09-11T10:00:00.000Z",
+      title: "Bomberos Voluntarios de Villa del Dique: Vocación, Riesgo y Compromiso Comunitario",
+    },
+    {
+      id: "campana-prevencion-incendios",
+      date: "2025-09-10T10:00:00.000Z",
+      title: "Campaña de Prevención de Incendios en Villa del Dique",
+    },
+    {
+      id: "emprender-villa-del-dique",
+      date: "2025-09-09T10:00:00.000Z",
+      title: "Emprender en el Paraíso: Historias que laten en Villa del Dique",
     },
     {
       id: "septiembre-amarillo-prevencion",
@@ -70,9 +100,9 @@ export default function newsSitemap(): MetadataRoute.Sitemap {
       title: "Septiembre Amarillo: prevenir es acompañar",
     },
     {
-      id: "emprender-villa-del-dique",
-      date: "2025-09-09T10:00:00.000Z",
-      title: "Emprender en el Paraíso: Historias que laten en Villa del Dique",
+      id: "inauguracion-polo-cultural",
+      date: "2025-09-06T10:00:00.000Z",
+      title: "Inauguración del Polo Cultural de Villa del Dique",
     },
   ]
 

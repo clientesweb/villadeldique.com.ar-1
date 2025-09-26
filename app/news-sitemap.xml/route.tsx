@@ -5,6 +5,12 @@ export async function GET() {
 
   const newsArticles = [
     {
+      id: "dia-del-empleado-de-comercio",
+      title: "26 de septiembre: Día del Empleado de Comercio",
+      date: "2025-09-26",
+      category: "Comercio",
+    },
+    {
       id: "generacion-gen-genetica-calamuchita",
       title: "Generación GEN: la genética explicada desde Calamuchita",
       date: "2025-09-23",
@@ -23,10 +29,22 @@ export async function GET() {
       category: "Salud",
     },
     {
+      id: "aca-ypf-villa-del-dique-invita-alojamientos",
+      title: "ACA YPF Villa del Dique invita a los alojamientos a compartir su disponibilidad",
+      date: "2025-09-20",
+      category: "Turismo",
+    },
+    {
       id: "bomberos-voluntarios-nuevo-sitio-web",
       title: "Bomberos Voluntarios de Villa del Dique estrenan sitio web oficial",
-      date: "2025-09-20",
+      date: "2025-09-19",
       category: "Comunidad",
+    },
+    {
+      id: "villa-del-dique-perla-calamuchita",
+      title: "Villa del Dique: la perla de Calamuchita",
+      date: "2025-09-18",
+      category: "Turismo",
     },
     {
       id: "dia-del-profesor",

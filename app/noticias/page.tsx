@@ -110,6 +110,16 @@ export const metadata: Metadata = {
 
 const allNews = [
   {
+    id: "dia-del-empleado-de-comercio",
+    title: "26 de septiembre: Día del Empleado de Comercio",
+    excerpt:
+      "Un homenaje a quienes sostienen el pulso comercial de Villa del Dique. Cada 26 de septiembre se celebra el Día del Empleado de Comercio, reconociendo la labor de quienes mantienen viva la economía local.",
+    image: "/images/portada-dia-del-comerciante.webp",
+    date: "2025-09-26",
+    category: "Comercio",
+    author: "Candela Insaurralde",
+  },
+  {
     id: "generacion-gen-genetica-calamuchita",
     title: "Generación GEN: la genética explicada desde Calamuchita",
     excerpt:

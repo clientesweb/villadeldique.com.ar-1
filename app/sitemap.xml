@@ -6,25 +6,25 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
-  <!-- Página principal -->
+   Página principal 
   <url>
     <loc>https://www.villadeldique.com.ar/</loc>
-    <lastmod>2025-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <mobile:mobile/>
   </url>
 
-  <!-- Página de noticias -->
+   Página de noticias 
   <url>
     <loc>https://www.villadeldique.com.ar/noticias</loc>
-    <lastmod>2025-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <mobile:mobile/>
   </url>
 
-  <!-- Página de turismo -->
+   Página de turismo 
   <url>
     <loc>https://www.villadeldique.com.ar/turismo</loc>
     <lastmod>2025-09-21T00:00:00+00:00</lastmod>
@@ -33,7 +33,7 @@
     <mobile:mobile/>
   </url>
 
-  <!-- Página de suscripción -->
+   Página de suscripción 
   <url>
     <loc>https://www.villadeldique.com.ar/suscribirse</loc>
     <lastmod>2025-09-21T00:00:00+00:00</lastmod>
@@ -42,7 +42,7 @@
     <mobile:mobile/>
   </url>
 
-  <!-- Página de contacto -->
+   Página de contacto 
   <url>
     <loc>https://www.villadeldique.com.ar/contacto</loc>
     <lastmod>2025-09-21T00:00:00+00:00</lastmod>
@@ -51,7 +51,213 @@
     <mobile:mobile/>
   </url>
 
-  <!-- Noticias individuales -->
+   Added new Commerce Employee Day article 
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-del-empleado-de-comercio</loc>
+    <lastmod>2025-09-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-26T00:00:00+00:00</news:publication_date>
+      <news:title>Día del Empleado de Comercio: reconocimiento a quienes impulsan la economía local</news:title>
+      <news:keywords>Villa del Dique, día del empleado de comercio, comercio local, economía, trabajadores</news:keywords>
+    </news:news>
+  </url>
+
+   Added all missing news articles 
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-mundial-del-linfoma</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-15T00:00:00+00:00</news:publication_date>
+      <news:title>Día Mundial del Linfoma: concientización y esperanza</news:title>
+      <news:keywords>Villa del Dique, día mundial del linfoma, salud, concientización, cáncer</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-del-profesor</loc>
+    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-11T00:00:00+00:00</news:publication_date>
+      <news:title>Día del Profesor: homenaje a los forjadores del futuro</news:title>
+      <news:keywords>Villa del Dique, día del profesor, educación, docentes, enseñanza</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/mega-feria-villa-del-dique</loc>
+    <lastmod>2025-09-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-08T00:00:00+00:00</news:publication_date>
+      <news:title>Mega Feria en Villa del Dique: un encuentro de sabores y tradiciones</news:title>
+      <news:keywords>Villa del Dique, mega feria, gastronomía, tradiciones, evento</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/aca-ypf-villa-del-dique</loc>
+    <lastmod>2025-09-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-05T00:00:00+00:00</news:publication_date>
+      <news:title>ACA YPF llega a Villa del Dique: nueva estación de servicio</news:title>
+      <news:keywords>Villa del Dique, ACA YPF, estación de servicio, combustible, servicios</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-del-maestro</loc>
+    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-11T00:00:00+00:00</news:publication_date>
+      <news:title>Día del Maestro: celebrando a los educadores de Villa del Dique</news:title>
+      <news:keywords>Villa del Dique, día del maestro, educación, docentes, celebración</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-mundial-alzheimer</loc>
+    <lastmod>2025-09-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-21T00:00:00+00:00</news:publication_date>
+      <news:title>Día Mundial del Alzheimer: concientización y apoyo familiar</news:title>
+      <news:keywords>Villa del Dique, día mundial del alzheimer, salud mental, concientización, familia</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-mundial-corazon</loc>
+    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-29T00:00:00+00:00</news:publication_date>
+      <news:title>Día Mundial del Corazón: cuidar el corazón es cuidar la vida</news:title>
+      <news:keywords>Villa del Dique, día mundial del corazón, salud cardiovascular, prevención, bienestar</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-mundial-turismo</loc>
+    <lastmod>2025-09-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-27T00:00:00+00:00</news:publication_date>
+      <news:title>Día Mundial del Turismo: Villa del Dique, destino de ensueño</news:title>
+      <news:keywords>Villa del Dique, día mundial del turismo, destino turístico, naturaleza, lago</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-mundial-medio-ambiente</loc>
+    <lastmod>2025-06-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-06-05T00:00:00+00:00</news:publication_date>
+      <news:title>Día Mundial del Medio Ambiente: Villa del Dique y su compromiso verde</news:title>
+      <news:keywords>Villa del Dique, día mundial del medio ambiente, ecología, sustentabilidad, naturaleza</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-mundial-agua</loc>
+    <lastmod>2025-03-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-03-22T00:00:00+00:00</news:publication_date>
+      <news:title>Día Mundial del Agua: el tesoro líquido de Villa del Dique</news:title>
+      <news:keywords>Villa del Dique, día mundial del agua, recursos hídricos, lago, conservación</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.villadeldique.com.ar/noticias/dia-internacional-mujer</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>Villa del Dique Digital</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2025-03-08T00:00:00+00:00</news:publication_date>
+      <news:title>Día Internacional de la Mujer: celebrando el liderazgo femenino en Villa del Dique</news:title>
+      <news:keywords>Villa del Dique, día internacional de la mujer, liderazgo femenino, igualdad, empoderamiento</news:keywords>
+    </news:news>
+  </url>
+
+   Existing news articles 
   <url>
     <loc>https://www.villadeldique.com.ar/noticias/bomberos-voluntarios-nuevo-sitio-web</loc>
     <lastmod>2025-09-20T00:00:00+00:00</lastmod>
