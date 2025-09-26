@@ -3,10 +3,20 @@ import Link from "next/link"
 
 const newsData = [
   {
+    id: "dia-del-empleado-de-comercio",
+    title: "26 de septiembre: Día del Empleado de Comercio",
+    excerpt:
+      "Un homenaje a quienes sostienen el pulso comercial de Villa del Dique. Cada 26 de septiembre se celebra el Día del Empleado de Comercio, reconociendo la labor de quienes mantienen viva la economía local.",
+    image: "/images/portada-dia-del-comerciante.webp",
+    date: "2025-09-26",
+    displayDate: "26 de septiembre de 2025",
+    slug: "dia-del-empleado-de-comercio",
+  },
+  {
     id: "generacion-gen-genetica-calamuchita",
     title: "Generación GEN: la genética explicada desde Calamuchita",
     excerpt:
-      "La bioquímica Evelyn Butassi acerca la genética y la medicina personalizada al público general a través de un podcast disponible en Spotify, vinculado al trabajo del Laboratorio LEAC.",
+      "La bioquímica Evelyn Butassi acerca la genética y la medicina personalizada al público general a través de un podcast available en Spotify, vinculado al trabajo del Laboratorio LEAC.",
     image: "/images/portada-noticia-generacion-gen.jpg",
     date: "2025-09-23",
     displayDate: "23 de septiembre de 2025",
