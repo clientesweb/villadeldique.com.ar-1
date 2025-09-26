@@ -6,6 +6,7 @@ import AnnouncementBar from "@/components/announcement-bar"
 import Footer from "@/components/footer"
 import ShareButtons from "@/components/share-buttons"
 import NewsBreadcrumbs from "@/components/news-breadcrumbs"
+import NewsAdvertisingCarousel from "@/components/news-advertising-carousel"
 
 export const metadata: Metadata = {
   title: "26 de septiembre: Día del Empleado de Comercio | Villa del Dique Digital",
@@ -306,6 +307,8 @@ export default function DiaDelEmpleadoDeComercioPage() {
             />
           </div>
         </article>
+
+        <NewsAdvertisingCarousel />
 
         <NewsBreadcrumbs currentArticleId="dia-del-empleado-de-comercio" currentTitle={articleTitle} />
       </main>
